@@ -405,9 +405,6 @@
     [class^='checkOut'] aside > a img{
         display: block; width: 100%;
     }
-    [class^='checkOut'] aside > div:first-of-type{
-        
-    }
     [class^='checkOut'] aside div:first-of-type span:nth-child(2){
         display: inline-block; margin: 0 0 20px 5%;
     }

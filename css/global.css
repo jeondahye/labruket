@@ -653,8 +653,8 @@ input{
     #gnbPanel > ul .btn_close{
         display: none;
     }
-    #gnbPanel > ul:last-of-type li{
-        height: 440px;
+    #gnbPanel > ul > li{
+        height: 440px; 
     }
     #gnbPanel > ul:last-of-type li a{
         display: block; color: #fff; font-size: 19px; width: 100%; text-align: center; line-height: 60px;
@@ -675,7 +675,7 @@ input{
     #gnbPanel > ul:nth-of-type(5) li:nth-of-type(4){background-image: url('../images/header_contact.png');}
     #gnbPanel > ul:not(:last-of-type) > li{
         float: left; background-color: #fff; width: 47%; padding: 40px 0 40px 2%; font-size: 19px; 
-        border-right: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9; box-sizing: border-box;
     }
     #gnbPanel > ul:not(:last-of-type) > li ul{
        padding-top: 40px; height: 300px; 
@@ -690,7 +690,7 @@ input{
         color: #828282;
     }
     #gnbPanel > div{
-        background-color: #fff; width: 33%; padding: 0 1% 10px 1%;
+        background-color: #fff; width: 36%; padding: 0 1% 20px 2%;
         position: absolute; top: 0; right: 0; box-sizing: border-box; min-height: 440px;
     }
     #gnbPanel > div a{

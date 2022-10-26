@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABRUKET</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" id="search" placeholder="search">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>we're sorry, no results found for '"abcde"</span>
+    </div>
+    <div id="bagPanel">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>Your shopping bag is empty</span>
+        <span><a href="index.html">Continue shopping</a></span>        
+    </div>
+    <header> 
+        <div class="wrap">
+            <h1>
+                <a href="index.html"><img src="images/logo.png" alt="LABRUKET"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <!-- body -->
+                    <li data-gnbName="body">
+                        Body
+                    </li>
+                    <!-- hair -->
+                    <li data-gnbName="hair">
+                        Hair
+                    </li>
+                    <!-- face -->
+                    <li data-gnbName="face">
+                        Face
+                    </li>
+                    <!-- home -->
+                    <li data-gnbName="home"> 
+                        Home
+                    </li>
+                    <!-- explore -->
+                    <li data-gnbName="explore">
+                        Explore  
+                    </li>
+                </ul>
+            </nav>
+            <div id="gnbPanel">
+                <ul class="body">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listBody.html">shop all</a></li>
+                            <li><a href="listBodyLotionButter.html">body Lotion butter</a></li>
+                            <li><a href="listBodyWash.html">hand &amp;  body wash</a></li>
+                            <li><a href="listBodyCream.html">hand cream</a></li>
+                            <li><a href="listBodySalt.html">sea salt</a></li>
+                            <li><a href="listBodyEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listBodyCitrus.html">citrus</a></li>
+                            <li><a href="listBodyFloral.html">floral</a></li>
+                            <li><a href="listBodyFresh.html">fresh</a></li>
+                            <li><a href="listBodyHerbal.html">herbal</a></li>
+                            <li><a href="listBodyNatural.html">natural</a></li>
+                            <li><a href="listBodySpicy.html">spicy</a></li>
+                            <li><a href="listBodyWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="hair">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHair.html">shop all</a></li>
+                            <li><a href="listHairConditioner.html">conditioner</a></li>
+                            <li><a href="listHairShampoo.html">shampoo</a></li>                                    
+                            <li><a href="listHairEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listHairCitrus.html">citrus</a></li>
+                            <li><a href="listHairFloral.html">floral</a></li>                                       
+                            <li><a href="listHairNatural.html">natural</a></li>
+                            <li><a href="listHairSpicy.html">spicy</a></li>
+                            <li><a href="listHairWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="face">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listFace.html">shop all</a></li>
+                            <li><a href="listFaceCleansing.html">cleansing</a></li>
+                            <li><a href="listFaceMask.html">mask</a></li>
+                            <li><a href="listFaceCream.html">cream</a></li>
+                            <li><a href="listFaceOli.html">oli</a></li>
+                            <li><a href="listFaceMist.html">mist</a></li>
+                            <li><a href="listFaceShaving.html">shaving</a></li>
+                            <li><a href="listFaceEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listFaceCitrus.html">citrus</a></li>
+                            <li><a href="listFaceFresh.html">fresh</a></li>
+                            <li><a href="listFaceHerbal.html">herbal</a></li>
+                            <li><a href="listFaceNatural.html">natural</a></li>
+                            <li><a href="listFaceSpicy.html">spicy</a></li>
+                            <li><a href="listFaceWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="home">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHome.html">shop all</a></li>
+                            <li><a href="listHomeCandle.html">candle</a></li>
+                            <li><a href="listHomeTag.html">tag</a></li>
+                            <li><a href="listHomeDiffuser.html">diffuser</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listHomeCitrus.html">citrus</a></li>
+                            <li><a href="listHomeFloral.html">floral</a></li>
+                            <li><a href="listHomeFresh.html">fresh</a></li>
+                            <li><a href="listHomeHerbal.html">herbal</a></li>
+                            <li><a href="listHomeSpicy.html">spicy</a></li>
+                            <li><a href="listHomeWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="explore">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="treatments.html">
+                            Treatments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stories.html">
+                            Stories
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul> 
+                <div>
+                    <a href="contact.html">
+                        Help                              
+                    </a>
+                    <div class="selectComponent flagSelect">                                 
+                        <ul>
+                            <li class="active">
+                                France
+                            </li>                                            
+                            <li>Canada</li>
+                            <li>Italy</li>
+                            <li>Sweden</li>
+                            <li>United Kingdom</li>
+                            <li>United States</li>
+                        </ul>
+                    </div>    
+                    <div class="selectComponent languageSelect">
+                        <ul>
+                            <li class="active">
+                                Engilsh
+                            </li>
+                            <li>Deutsch</li>
+                            <li>Français</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="material-symbols-outlined btn_open" data-Panel="searchPanel">search</button>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                </a>             
+                <button class="material-symbols-outlined btn_open" data-Panel="bagPanel">shopping_bag</button>
+                <input type="button" value="moblieMenu" class="btn_mui">
+            </div>
+        </div>
+    </header>
+    <section class="termsConditionsFooterContainer">
+        <h2>Terms &amp; Conditions</h2>
+        <div>
+            <div>
+                <b>1. General</b>
+                <p>
+                    These terms and conditions apply for purchase from our online shop. Please read them 
+                    carefully before ordering products from us. In order to make a purchase you must 
+                    accept these terms and conditions and by doing so you agree to all that is stated 
+                    below. Both legal entities and private persons may place orders in the online shop. 
+                    These terms and conditions apply to both consumers and legal entities. Note that the 
+                    terms and conditions differ in some parts depending on if you place the order as a 
+                    consumer or as a representative of a legal entity. In these terms and conditions “you” 
+                    shall in relevant parts be interpreted as the legal entity you represent.
+                    L:a Bruket is a Swedish company that is subject to Swedish law including EU 
+                    regulations and directives. Furthermore, L:a Bruket strives to always comply with 
+                    mandatory consumer protection laws and regulations where you as a consumer has 
+                    your country of residence. L:a Bruket cannot guarantee that these terms and 
+                    conditions comply with all applicable mandatory consumer protection laws. Nothing 
+                    in these terms and conditions shall exclude or limit L:a Bruket’s liability with regard to 
+                    any matter for which it would be unlawful for L:a Bruket to limit or exclude its liability 
+                    according to applicable mandatory law. 
+                    L:a Bruket has the right to deny a person to place an order if the person, according to 
+                    applicable mandatory law in his/her country of residence, has no legal right and 
+                    ability to enter into a binding agreement with L:a Bruket. By placing an order you 
+                    confirm that you possess the legal right and ability to enter into a binding agreement
+                    with L:a Bruket.
+                    Please note that it is not possible to order from this online shop if you want to order 
+                    products to an address in Korea. Instead, we refer you to make your purchase here. 
+                </p>
+            </div>
+            <div>
+                <b>2. Prices</b>
+                <p>
+                    All prices in the online shop include 25 % Swedish VAT and the choices of currency is; 
+                    Euro (EUR), Swedish Krona (SEK) or US Dollar (USD). The prices in the online shop do 
+                    not include any payment- and shipping charges, billing- or handling charges, 
+                    packaging fees and/or customs duty. When you are resided in a country outside of the 
+                    EU and/or when ordered products are delivered to a country outside the EU, 
+                    additional taxes and charges may apply. 
+                    Please note that if your delivery address is located in a country outside the EU, the 
+                    VAT on products will be deducted at checkout, see “tax reduction” on the checkout 
+                    row. The prices applicable are set at the date upon which you place your order.
+                    We strive towards specifying extra costs in the online shop, but can only guarantee to 
+                    do so as regards to products that are purchased by a customer in the EU.
+                    We reserve for any price adjustments and obvious typing errors in the online shop, in 
+                    advertisements or in marketing material. When L:a Bruket has an online campaign the 
+                    price or offer will be valid until the product is out of stock or through the set period 
+                    of time.        
+                </p>
+            </div>
+            <div>
+                <b>3. Product information</b>
+                <p>
+                    Our skin care products are marked with a Best Before Date. Up until this date we 
+                    guarantee the product will keep its quality standard. The best before date is only a 
+                    recommendation, why the product can be used way beyond the date, however e.g. 
+                    function and scent may be degraded. Since we are using natural ingredients, they may 
+                    vary from one season to another depending on weather and soil conditions. This may 
+                    affect e.g. the scent experience between different batches even if we are using the 
+                    same formula. Please contact customer care, if you have any questions regarding our 
+                    products. L:a Bruket cannot guarantee that all products will look the same as the 
+                    product images on the website or that the ingredients are presented in the exact same 
+                    way on the web as on the labels, since this may change due to e.g. law regulations. 
+                    However, we always strive to present our products correctly wherever shown. The 
+                    products sold by L:a Bruket conform to any mandatory Swedish standards, 
+                    certifications and legal requirements. L:a Bruket does not take any responsibility for 
+                    that the products sold in the online shop conform to any other standards, 
+                    certifications, legal requirements or similar set out in any other country.       
+                </p>
+            </div>
+            <div>
+                <b>4. Stock availability</b>
+                <p>
+                    All products available for purchase are in stock if no other information is shown. If for 
+                    some reason a product is out of stock when your order is due for shipping, you will be 
+                    notified by email and have the option to keep your backorder and wait until the 
+                    product is back in stock, choose another product or ask for a refund.
+                </p>
+            </div>
+            <div>
+                <b>5. Use of information, pictures etc.</b>
+                <p>
+                    The information on our website/online shop is protected by, among others, intellectual 
+                    property and marketing legislation. This means that trademarks, trade names, product 
+                    names, images and graphics, design, layout and information on products, services and 
+                    other content may not be copied or used without the prior written consent of 
+                    L:a Bruket or its licensors. We may take legal actions against any unauthorized use 
+                    without further notice.
+                </p>
+            </div>
+            <div>
+                <b>6. Agreement and order confirmation</b>
+                <p>
+                    When placing an order, an agreement is entered into between you and L:a Bruket AB 
+                    (for further company details, see clause 15 below).When we receive an order from you, 
+                    we will send an order confirmation by email. We recommend you to save this since it 
+                    will make it easier for you if you should need to get in contact with our Customer 
+                    service, Forwarding agents etc. This is also your receipt upon purchase.
+                </p>
+            </div>
+            <div>
+                <b>7. Payment</b>
+                <p>
+                    You can pay your purchase using the payment methods described in the online shop. 
+                    We reserve the right to not always offer all payment methods to all customers. If you 
+                    are paying by bank- or credit card the payment transaction is carried out in 
+                    cooperation with our payment service provider Adyen. If you are paying by invoice 
+                    L:a Bruket’s right to receive payment and all other rights associated thereby are 
+                    assigned to Klarna. Payment by using invoice may therefore only be done to Klarna 
+                    and Klarna’s terms and conditions will apply in addition to these Terms. Click here to 
+                    view Klarna’s terms. All products remain the property of L:a Bruket until payment is 
+                    made in full.
+                </p>
+            </div>
+            <div>
+                <b>8. Shipping and delivery</b>
+                <p>
+                    Prices do not include shipping and delivery costs. This will be added upon ordering in 
+                    accordance with what is stated in the online shop. We offer different shipping
+                    methods as described in the online shop. Please note that restrictions in the delivery 
+                    may occur. For example, we do not make any deliveries to Korea. We are not 
+                    responsible for the products when in transit. Products that are in stock are normally 
+                    shipped within 2-4 days. The delivery time may vary depending on the delivery 
+                    method you have chosen and to which location the delivery shall be delivered. 
+                    The expected delivery time is stated in the order confirmation. Discrepancies may 
+                    occur from the specified delivery date. If you have ordered a product that is 
+                    temporarily out of stock delivery time is longer than for products in stock. You will be 
+                    notified by email if there are any problems which will delay the delivery. You shall, 
+                    depending on the selected delivery solution, retrieve, collect or receive the package 
+                    in accordance with the instructions from time to time provided by us or the freight 
+                    company. Depending on the selected delivery solution, you will receive a notice 
+                    indicating where and when the package may be retrieved or received. For unclaimed 
+                    or non-received packages a customer who is a consumer is charged a fee equivalent 
+                    to the shipping and delivery costs for returning the products. A customer that is a legal 
+                    entity is charged a fee equivalent to the shipping and delivery costs for returning the 
+                    products plus a fixed fee in accordance with what is stated on the website. A 
+                    customer that is a legal entity shall immediately upon retrieval, collection or receival 
+                    of ordered products inspect the shipment and report any damages on the outer box to 
+                    the pickup/access service of the forwarding agent and save a copy of the report for 
+                    your reference if something is damaged inside the box. We do not deliver ordered 
+                    products if you want the product delivered to an address in a country or region that is 
+                    illegal for us to deliver to (for example when there is a trade embargo), where there is 
+                    a war, conflict or instability of any kind. Please be informed that we may have limited 
+                    possibility to offer delivery to islands or other places that do not have fixed bridge 
+                    connections or where global freight legal entities do not normally deliver. If you have 
+                    any questions or queries regarding whether we deliver products to your delivery 
+                    address or not, please contact our customer service.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <b>9. Right of withdrawal</b>
+                <p>
+                    When a customer who is a consumer make a distance purchase a 14 day withdrawal 
+                    period applies in accordance with EU consumer protection law. Right of withdrawal 
+                    means that you as a consumer have the right to withdraw your purchase by notifying 
+                    this within 14 days from the day you or a person specified by you have received the 
+                    ordered product (the withdrawal period), see below. Please note that the right of 
+                    withdrawal does not apply to a customer that is a company.If you decide to withdraw 
+                    your purchase and you want full reimbursement of the product you may not handle the 
+                    product more than what is necessary to establish its nature, characteristics and 
+                    function. If you were to handle the product beyond this, we are entitled to make a 
+                    deduction for any diminished value of the product due to such handling, see further 
+                    information below. The right of withdrawal does not apply to sealed products which 
+                    are not suitable for return due to health protection or hygiene reasons that are 
+                    unsealed after delivery. When ordering a product for which the right of withdrawal 
+                    does not apply, you will get clear information about this. If you want to exercise your 
+                    right of withdrawal in time, before the expiry of the withdrawal period, please send a 
+                    clear and precise message to us stating that you want to exercise your right of 
+                    withdrawal. To facilitate the withdrawal, we recommend you to contact our customer 
+                    service. Please state your address and preferably other relevant information, e.g. order 
+                    number and date of order, and if you have purchased several products - which 
+                    products you want to withdraw in the message. You can also choose to fill out and 
+                    send us the model withdrawal form to exercise the right of withdrawal, see below and 
+                    on our website. In order for you to use your right of withdrawal in time, it will be 
+                    sufficient for you to, before the expiry of the withdrawal period, send a notification 
+                    stating that you want to exercise your right of withdrawal. When exercising your right 
+                    of withdrawal you must pay the costs for the return shipping and you are responsible 
+                    for the condition of the product from the time of receipt and during the return shipping. 
+                    We recommend that you send the product well packaged and in its original box 
+                    and/or packaging. The product shall be returned within 14 days from the date that we 
+                    received your notification stating that you want to exercise your right of withdrawal. 
+                    Returns shall be made to us according to the methods and procedures specified on 
+                    our website. When you exercise your right of withdrawal, we will reimburse you for the 
+                    returned product. We have the right to deduct a sum correspondent to the diminished 
+                    value of the product compared to the original value. This only applies if and to the 
+                    extent you are liable for any diminished value of the product resulting from the 
+                    handling of it other than what is necessary to establish the nature, characteristics and 
+                    functioning of the product. Please note that if you have received a free tester with the 
+                    product you do not need to open the packaging of the product in order to exercise 
+                    your right to establish the nature and characteristics of the product. We will promptly 
+                    reimburse the payments; at the latest within 14 days from the date we received your 
+                    notification stating that you want to exercise your right of withdrawal. However, we 
+                    will delay the reimbursement until we have received the product or you have showed 
+                    that the product has been returned. Reimbursement will be made to you by the same 
+                    payment method chosen by you unless otherwise agreed or there is any hindrance to 
+                    such reimbursement. We will not reimburse you the full costs for the shipping fees if 
+                    you have expressly chosen a certain type of delivery (for instance express delivery), 
+                    although we offered a common and generally acceptable type of delivery which 
+                    would have incurred lower shipping fees. In such case we will reimburse you for the 
+                    amount corresponding to the common and generally acceptable type of delivery. 
+                    Shipping fees are not reimbursed for partial returns.
+                </p>
+            </div>
+            <div>
+                <b>10. Complaints</b>
+                <p>
+                    Unless otherwise is provided by mandatory applicable law, you as a consumer are 
+                    entitled to lodge a complaint for a defect in the product within three years from the 
+                    date you received the product. . If you wish to lodge a complaint regarding an 
+                    ordered product must contact us as soon as possible after discovering the defect. 
+                    To be valid, the complaint must be made within a reasonable time after you 
+                    discovered or should have discovered the defect. Complaints made within two months 
+                    from the time when the you discovered the defect will be deemed to be lodged at the 
+                    right time. Upon a complaint, you must be able to demonstrate that the products have 
+                    been purchased by us, for example by showing a receipt. Notwithstanding the above, 
+                    L:a Bruket is only responsible for defects which a customer that is a legal entity 
+                    notifies L:a Bruket of within fifteen (15) days from collection or receival of the 
+                    purchased products. This does not apply if the customer fails to report to the 
+                    forwarding agent any defects which have arisen or are likely to have arisen during 
+                    shipment as described under clause 8 above. In such case, the customer loses its right 
+                    file a complaint to L:a Bruket. We recommend that complaints are made according to 
+                    the instructions set out on the website. We pay for return shipping of approved 
+                    complaints When we have received a complaint of a product and established that the 
+                    complaint is valid in accordance with applicable legislation, we will primarily replace 
+                    the product or rectify the defect.We reserve the right to deny a complaint if it turns 
+                    out that the product is not defective according to applicable legislation.
+                </p>
+            </div>
+            <div>
+                <b>11. Personal information</b>
+                <p>
+                    L:a Bruket will act responsibly for all personal information requested from you. 
+                    Please read our Privacy Policy for more information.
+                </p>
+            </div>
+            <div>
+                <b>12. Force Majeure</b>
+                <p>
+                    Events outside L:a Bruket&acute;s control, which are not reasonably foreseeable, shall be 
+                    considered force majeure, meaning that L:a Bruket is released from its obligations to 
+                    fulfil contractual agreements. Example of such events are, but not limited to; 
+                    government action or omission, new or amended legislation, conflict, embargo, fire or 
+                    flood, sabotage, accident, war, natural disasters, strikes or lack of delivery from 
+                    suppliers. The force majeure also includes government decisions that affect the market 
+                    negatively and products, for example, restrictions, warnings, ban, etc.
+                </p>
+            </div>
+            <div>
+                <b>13. Limitation of liability</b>
+                <p>
+                    L:a Bruket’s liability under these terms and conditions and the agreement with the 
+                    customer is for each loss or damage limited to an amount equal to the total amount 
+                    paid by the customer to L:a Bruket for the product to which the loss or damage 
+                    relates or derive from.L:a Bruket is not liable for indirect losses or loss of profitIn 
+                    relation to a customer who is a consumer, this clause 13 applies as far as possible 
+                    under mandatory consumer protection legislation.
+                </p>
+            </div>
+            <div>
+                <b>14. Applicable law and dispute resolution</b>
+                <p>
+                    Disputes concerning the interpretation or application of these terms and conditions or 
+                    the agreement between L:a Bruket and the customer shall be interpreted in 
+                    accordance with Swedish law. The UN purchasing law (CISG) shall not apply to the 
+                    agreement. Swedish law shall not however apply in a situation where a customer 
+                    which is a consumer has better rights according to mandatory applicable consumer 
+                    protection law in the country where the customer resides.In cases of any dispute with 
+                    customer who is consumer, we will follow the submitted recommendations from the 
+                    Swedish National Board for Consumer Disputes. The National Board for Consumer 
+                    Disputes may be accessed either via the website www.arn.se or address Box 174, 101 
+                    23 Stockholm, Sweden. A customer who is a consumer may also lodge a complaint at 
+                    the European Commission’s platform for online dispute resolution (the “ODR platform”) 
+                    which you may access here. A dispute with a customer who is a consumer can also be 
+                    settled by a public court. Any dispute with a customer that is a legal entity shall be 
+                    finally settled by arbitration procedure administered by the Arbitration Institute of the 
+                    Stockholm Chamber of Commerce (SCC). The Rules for Expedited Arbitrations shall 
+                    apply, unless the SCC in its discretion determines, taking into account the complexity 
+                    of the case, the amount in dispute and other circumstances, that the Arbitration Rules 
+                    shall apply. In the latter case, the SCC shall also decide whether the Arbitral Tribunal 
+                    shall be composed of one or three arbitrators. The seat of arbitration shall be 
+                    Stockholm, Sweden and the language of the procedure shall be English. In order to 
+                    avoid misunderstandings, the foregoing shall not prevent L:a Bruket from applying for 
+                    order to pay or conduct debt collection towards the customer if the customer fails to 
+                    pay a due debt. All arbitral proceeding conducted pursuant to the above, all 
+                    information disclosed and all documents submitted or issued by or on behalf of any of 
+                    the disputing parties or the arbitrators in any such proceedings as well as all decisions 
+                    and awards made or declared in the course of any such proceeding shall be kept 
+                    strictly confidential and may not be used for any other purpose than these 
+                    proceedings or the enforcement of any such decision or award, nor be disclosed to 
+                    any third part by the customer without the prior written consent of L:a Bruket. 
+                    Notwithstanding the foregoing, L:a Bruket may take any legal action necessary at any
+                    competent court in the customer’s country of residence for collection of delayed 
+                    payments. The parties do hereby accept that the jurisdiction of such court shall apply 
+                    for such purpose.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <div class="selectComponent flagSelect foot">                                 
+                    <ul>
+                        <li class="active">
+                            France
+                        </li>                                            
+                        <li>Canada</li>
+                        <li>Italy</li>
+                        <li>Sweden</li>
+                        <li>United Kingdom</li>
+                        <li>United States</li>
+                    </ul>
+                </div>    
+                <div class="selectComponent languageSelect foot">
+                    <ul>
+                        <li class="active">
+                            Engilsh
+                        </li>
+                        <li>Deutsch</li>
+                        <li>Français</li>
+                    </ul>
+                </div>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                    <span>Account</span>
+                </a>
+                <strong>Customer care</strong>
+                <ul>
+                    <li><a href="mailto:" class="material-symbols-outlined">Email customer care</a></li>
+                    <li><a href="tel:+" class="material-symbols-outlined">call +46340 87100</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Help</strong>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="QA.html">Q&amp;A</a></li>
+                    <li><a href="storeLocator.html">Store Locator</a></li>
+                    <li><a href="termsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="workWithUs.html">Work with us</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe to our newsletter</h3>
+                <strong>Stay in the know</strong>
+                <p>Receive email updates from LA BRUKET (including launch announcement, product info and exclusive access).</p>
+                <form>
+                    <fieldset>
+                        <input type="email" id="text" placeholder="Enter your email here...">
+                        <input type="submit" value="OK"> 
+                        <p>You can unsubscribe any time by using the link in our emails.</p>
+                        <p>Please see our Privacy Policy for more information  about how we handle and use personal information.</p>    
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <h2><img src="images/logo.png" alt="LABRUKET"></h2>
+                <p>Natural and organic skincare made on the west coast of Sweden with a simple philosophy: innovation driven by nature, not chemicals.</p>
+            </div>
+        </div>
+        <div>
+            <p>2022 © L:a Bruket. All rights reserved</p>
+            <a href="https://www.facebook.com/labruket/">
+                <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/labruket/">
+                <img src="images/instagram.png" alt="instagram">
+            </a>
+        </div>
+    </footer>                   
+</body>
+</html>

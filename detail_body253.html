@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABRUKET</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" id="search" placeholder="search">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>we're sorry, no results found for '"abcde"</span>
+    </div>
+    <div id="bagPanel">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>Your shopping bag is empty</span>
+        <span><a href="index.html">Continue shopping</a></span>        
+    </div>
+    <header> 
+        <div class="wrap">
+            <h1>
+                <a href="index.html"><img src="images/logo.png" alt="LABRUKET"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <!-- body -->
+                    <li data-gnbName="body">
+                        Body
+                    </li>
+                    <!-- hair -->
+                    <li data-gnbName="hair">
+                        Hair
+                    </li>
+                    <!-- face -->
+                    <li data-gnbName="face">
+                        Face
+                    </li>
+                    <!-- home -->
+                    <li data-gnbName="home"> 
+                        Home
+                    </li>
+                    <!-- explore -->
+                    <li data-gnbName="explore">
+                        Explore  
+                    </li>
+                </ul>
+            </nav>
+            <div id="gnbPanel">
+                <ul class="body">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listBody.html">shop all</a></li>
+                            <li><a href="listBodyLotionButter.html">body Lotion butter</a></li>
+                            <li><a href="listBodyWash.html">hand &amp;  body wash</a></li>
+                            <li><a href="listBodyCream.html">hand cream</a></li>
+                            <li><a href="listBodySalt.html">sea salt</a></li>
+                            <li><a href="listBodyEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listBodyCitrus.html">citrus</a></li>
+                            <li><a href="listBodyFloral.html">floral</a></li>
+                            <li><a href="listBodyFresh.html">fresh</a></li>
+                            <li><a href="listBodyHerbal.html">herbal</a></li>
+                            <li><a href="listBodyNatural.html">natural</a></li>
+                            <li><a href="listBodySpicy.html">spicy</a></li>
+                            <li><a href="listBodyWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="hair">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHair.html">shop all</a></li>
+                            <li><a href="listHairConditioner.html">conditioner</a></li>
+                            <li><a href="listHairShampoo.html">shampoo</a></li>                                    
+                            <li><a href="listHairEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listHairCitrus.html">citrus</a></li>
+                            <li><a href="listHairFloral.html">floral</a></li>                                       
+                            <li><a href="listHairNatural.html">natural</a></li>
+                            <li><a href="listHairSpicy.html">spicy</a></li>
+                            <li><a href="listHairWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="face">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listFace.html">shop all</a></li>
+                            <li><a href="listFaceCleansing.html">cleansing</a></li>
+                            <li><a href="listFaceMask.html">mask</a></li>
+                            <li><a href="listFaceCream.html">cream</a></li>
+                            <li><a href="listFaceOli.html">oli</a></li>
+                            <li><a href="listFaceMist.html">mist</a></li>
+                            <li><a href="listFaceShaving.html">shaving</a></li>
+                            <li><a href="listFaceEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listFaceCitrus.html">citrus</a></li>
+                            <li><a href="listFaceFresh.html">fresh</a></li>
+                            <li><a href="listFaceHerbal.html">herbal</a></li>
+                            <li><a href="listFaceNatural.html">natural</a></li>
+                            <li><a href="listFaceSpicy.html">spicy</a></li>
+                            <li><a href="listFaceWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="home">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHome.html">shop all</a></li>
+                            <li><a href="listHomeCandle.html">candle</a></li>
+                            <li><a href="listHomeTag.html">tag</a></li>
+                            <li><a href="listHomeDiffuser.html">diffuser</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listHomeCitrus.html">citrus</a></li>
+                            <li><a href="listHomeFloral.html">floral</a></li>
+                            <li><a href="listHomeFresh.html">fresh</a></li>
+                            <li><a href="listHomeHerbal.html">herbal</a></li>
+                            <li><a href="listHomeSpicy.html">spicy</a></li>
+                            <li><a href="listHomeWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="explore">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="treatments.html">
+                            Treatments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stories.html">
+                            Stories
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul> 
+                <div>
+                    <a href="contact.html">
+                        Help                              
+                    </a>
+                    <div class="selectComponent flagSelect">                                 
+                        <ul>
+                            <li class="active">
+                                France
+                            </li>                                            
+                            <li>Canada</li>
+                            <li>Italy</li>
+                            <li>Sweden</li>
+                            <li>United Kingdom</li>
+                            <li>United States</li>
+                        </ul>
+                    </div>    
+                    <div class="selectComponent languageSelect">
+                        <ul>
+                            <li class="active">
+                                Engilsh
+                            </li>
+                            <li>Deutsch</li>
+                            <li>Français</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="material-symbols-outlined btn_open" data-Panel="searchPanel">search</button>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                </a>             
+                <button class="material-symbols-outlined btn_open" data-Panel="bagPanel">shopping_bag</button>
+                <input type="button" value="moblieMenu" class="btn_mui">
+            </div>
+        </div>
+    </header>
+    <div class="detailContainer">      
+        <ul id="slideBar">
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+        </ul>
+        <aside>
+            <h2>LABRUKET / Body / Categories / Etc</h2>
+            <strong>253 Elemental body oil</strong>
+            <strong>42.00 EUR</strong>
+            <b>Bergamot / Patchouli</b>
+            <select title="size">
+                <option>120ml</option>
+            </select>
+            <button>Add to Bag</button>
+            <p>
+                Description: <br>
+                A fast absorbing body oil that provides a deep hydration and 
+                increase skin’s elasticity. It combines strengthening algae extracts 
+                with a blend of nourishing oils, leaving the skin silky smooth. 
+                100% of the ingredients are of natural origin. COSMOS Natural 
+                certified formula.
+            </p>
+            <p>
+                Key ingredients: <br>
+                Jojoba oil, Rapeseed oil, Complex of micro and macro algae.
+            </p>
+        </aside>
+        <img src="images/253.jpg" alt="Elemental body oil">
+        <aside>
+            <strong>
+                About the product
+            </strong>
+            <p>
+                A fast-absorbing body oil that deeply moisturises and increases skin’s elasticity. Enriche with a complex of micro and macro algae, rich in fatty acids and omega 3, it soothes and restores the skin’s moisture barrier. This complex is combined with nourishing oils such as safflower, rapeseed and jojoba oil to soften, nourish and protect the skin from free radicals, leaving it silky smooth. Organic and/or natural ingredients.
+            </p>
+            <ul id="productInfoAccordion">
+                <li>
+                    <span>How to use</span>
+                    <p>
+                        For best results, start your body ritual with a thorough exfoliation with 
+                        our Sea Salt Scrub. Post-shower, spray the body oil to still damp skin to 
+                        optimise hydration. Massage in circular motion all over your body. Extra 
+                        tip: add a few sprays to your bath for a rejuvenating aromatic experience.
+                    </p>
+                </li>
+                <li>
+                    <span>INCI list:</span>
+                    <p>
+                        Carthamus Tinctorius (Safflower) Seed Oil*, Prunus Amygdalus Dulcis 
+                        (Sweet Almond) Oil, Brassica Campestris (Rapeseed) Seed Oil*, Silybum 
+                        Marianum Seed Oil, Parfum, Simmondsia Chinensis (Jojoba) Seed Oil*, 
+                        Juniperus Virginiana Oil, Citrus Aurantium Bergamia (Bergamot) Peel Oil*, 
+                        Pogostemon Cablin (Patchouli) Oil, Tocopherol, Nannochloropsis Oculata 
+                        Extract, Helianthus Annuus (Sunflower) Seed Oil, Porphyra Umbilicalis 
+                        Extract, Limonene, Linalool.
+                    </p>
+                </li>
+                <li>
+                    <span>Active scent</span>
+                    <p>
+                        Bergamot / Patchouli
+                        A warm, fresh, herbal and spicy scent.
+                    </p>
+                </li>
+            </ul>
+        </aside>
+        <h3>Goes well with</h3>
+        <ul>
+            <li>
+                <a href="detail_body069.html">
+                    <span>069</span>
+                    <span>25.00 EUR</span>
+                    <img src="images/069_240ml.jpg" alt="Wash">
+                </a>
+            </li>
+            <li>
+                <a href="detail_body093_240ml.html">
+                    <span>093</span>
+                    <span>35.00 EUR</span>
+                    <img src="images/093_240ml.jpg" alt="Body lotion">
+                </a>
+            </li>
+            <li>
+                <a href="detail_body195_240ml.html">
+                    <span>195</span>
+                    <span>47.00 EUR</span>
+                    <img src="images/195_240ml.jpg" alt="Hand cream">
+                </a>
+            </li>
+            <li>
+                <a href="detail_body092_30ml.html">
+                    <span>092</span>
+                    <span>15.00 EUR</span>
+                    <img src="images/092_30ml.jpg" alt="Hand cream">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div>
+            <div>
+                <div class="selectComponent flagSelect foot">                                 
+                    <ul>
+                        <li class="active">
+                            France
+                        </li>                                            
+                        <li>Canada</li>
+                        <li>Italy</li>
+                        <li>Sweden</li>
+                        <li>United Kingdom</li>
+                        <li>United States</li>
+                    </ul>
+                </div>    
+                <div class="selectComponent languageSelect foot">
+                    <ul>
+                        <li class="active">
+                            Engilsh
+                        </li>
+                        <li>Deutsch</li>
+                        <li>Français</li>
+                    </ul>
+                </div>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                    <span>Account</span>
+                </a>
+                <strong>Customer care</strong>
+                <ul>
+                    <li><a href="mailto:" class="material-symbols-outlined">Email customer care</a></li>
+                    <li><a href="tel:+" class="material-symbols-outlined">call +46340 87100</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Help</strong>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="QA.html">Q&amp;A</a></li>
+                    <li><a href="storeLocator.html">Store Locator</a></li>
+                    <li><a href="termsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="workWithUs.html">Work with us</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe to our newsletter</h3>
+                <strong>Stay in the know</strong>
+                <p>Receive email updates from LA BRUKET (including launch announcement, product info and exclusive access).</p>
+                <form>
+                    <fieldset>
+                        <input type="email" id="text" placeholder="Enter your email here...">
+                        <input type="submit" value="OK"> 
+                        <p>You can unsubscribe any time by using the link in our emails.</p>
+                        <p>Please see our Privacy Policy for more information  about how we handle and use personal information.</p>    
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <h2><img src="images/logo.png" alt="LABRUKET"></h2>
+                <p>Natural and organic skincare made on the west coast of Sweden with a simple philosophy: innovation driven by nature, not chemicals.</p>
+            </div>
+        </div>
+        <div>
+            <p>2022 © L:a Bruket. All rights reserved</p>
+            <a href="https://www.facebook.com/labruket/">
+                <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/labruket/">
+                <img src="images/instagram.png" alt="instagram">
+            </a>
+        </div>
+    </footer>                   
+</body>
+</html>

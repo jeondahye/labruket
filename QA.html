@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABRUKET</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" id="search" placeholder="search">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>we're sorry, no results found for '"abcde"</span>
+    </div>
+    <div id="bagPanel">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>Your shopping bag is empty</span>
+        <span><a href="index.html">Continue shopping</a></span>        
+    </div>
+    <header> 
+        <div class="wrap">
+            <h1>
+                <a href="index.html"><img src="images/logo.png" alt="LABRUKET"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <!-- body -->
+                    <li data-gnbName="body">
+                        Body
+                    </li>
+                    <!-- hair -->
+                    <li data-gnbName="hair">
+                        Hair
+                    </li>
+                    <!-- face -->
+                    <li data-gnbName="face">
+                        Face
+                    </li>
+                    <!-- home -->
+                    <li data-gnbName="home"> 
+                        Home
+                    </li>
+                    <!-- explore -->
+                    <li data-gnbName="explore">
+                        Explore  
+                    </li>
+                </ul>
+            </nav>
+            <div id="gnbPanel">
+                <ul class="body">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listBody.html">shop all</a></li>
+                            <li><a href="listBodyLotionButter.html">body Lotion butter</a></li>
+                            <li><a href="listBodyWash.html">hand &amp;  body wash</a></li>
+                            <li><a href="listBodyCream.html">hand cream</a></li>
+                            <li><a href="listBodySalt.html">sea salt</a></li>
+                            <li><a href="listBodyEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listBodyCitrus.html">citrus</a></li>
+                            <li><a href="listBodyFloral.html">floral</a></li>
+                            <li><a href="listBodyFresh.html">fresh</a></li>
+                            <li><a href="listBodyHerbal.html">herbal</a></li>
+                            <li><a href="listBodyNatural.html">natural</a></li>
+                            <li><a href="listBodySpicy.html">spicy</a></li>
+                            <li><a href="listBodyWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="hair">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHair.html">shop all</a></li>
+                            <li><a href="listHairConditioner.html">conditioner</a></li>
+                            <li><a href="listHairShampoo.html">shampoo</a></li>                                    
+                            <li><a href="listHairEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listHairCitrus.html">citrus</a></li>
+                            <li><a href="listHairFloral.html">floral</a></li>                                       
+                            <li><a href="listHairNatural.html">natural</a></li>
+                            <li><a href="listHairSpicy.html">spicy</a></li>
+                            <li><a href="listHairWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="face">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listFace.html">shop all</a></li>
+                            <li><a href="listFaceCleansing.html">cleansing</a></li>
+                            <li><a href="listFaceMask.html">mask</a></li>
+                            <li><a href="listFaceCream.html">cream</a></li>
+                            <li><a href="listFaceOli.html">oli</a></li>
+                            <li><a href="listFaceMist.html">mist</a></li>
+                            <li><a href="listFaceShaving.html">shaving</a></li>
+                            <li><a href="listFaceEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listFaceCitrus.html">citrus</a></li>
+                            <li><a href="listFaceFresh.html">fresh</a></li>
+                            <li><a href="listFaceHerbal.html">herbal</a></li>
+                            <li><a href="listFaceNatural.html">natural</a></li>
+                            <li><a href="listFaceSpicy.html">spicy</a></li>
+                            <li><a href="listFaceWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="home">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHome.html">shop all</a></li>
+                            <li><a href="listHomeCandle.html">candle</a></li>
+                            <li><a href="listHomeTag.html">tag</a></li>
+                            <li><a href="listHomeDiffuser.html">diffuser</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listHomeCitrus.html">citrus</a></li>
+                            <li><a href="listHomeFloral.html">floral</a></li>
+                            <li><a href="listHomeFresh.html">fresh</a></li>
+                            <li><a href="listHomeHerbal.html">herbal</a></li>
+                            <li><a href="listHomeSpicy.html">spicy</a></li>
+                            <li><a href="listHomeWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="explore">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="treatments.html">
+                            Treatments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stories.html">
+                            Stories
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul> 
+                <div>
+                    <a href="contact.html">
+                        Help                              
+                    </a>
+                    <div class="selectComponent flagSelect">                                 
+                        <ul>
+                            <li class="active">
+                                France
+                            </li>                                            
+                            <li>Canada</li>
+                            <li>Italy</li>
+                            <li>Sweden</li>
+                            <li>United Kingdom</li>
+                            <li>United States</li>
+                        </ul>
+                    </div>    
+                    <div class="selectComponent languageSelect">
+                        <ul>
+                            <li class="active">
+                                Engilsh
+                            </li>
+                            <li>Deutsch</li>
+                            <li>Français</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="material-symbols-outlined btn_open" data-Panel="searchPanel">search</button>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                </a>             
+                <button class="material-symbols-outlined btn_open" data-Panel="bagPanel">shopping_bag</button>
+                <input type="button" value="moblieMenu" class="btn_mui">
+            </div>
+        </div>
+    </header>
+    <section class="qaFooterContainer">
+        <h2>Questions &amp; Answers</h2>
+        <div>
+            <h3>Product</h3>
+            <div>
+                <b>Where are L:a Bruket products manufactured?</b>
+                <p>
+                    The products are manufactured here on Sweden's west coast by an experienced team 
+                    with extensive knowledge and long experience of manufacturing natural and organic 
+                    skin care that extends over generations.
+                </p>
+            </div>
+            <div>
+                <b>What material are your containers made of?</b>
+                <p>
+                    We have chosen to use recycled and recyclable PET bottles and cans (PCR-Post 
+                    Consumer Recycled) of food quality for most of our range. A large glass bottle 
+                    requires more energy to produce, is heavy during transport and may break tiles or 
+                    bathroom ceramics if you drop it. Please always remember to recycle your used 
+                    containers, made from recyclable materials, as it is still the best alternative to reduce 
+                    waste and environmental impact and ensure that plastic does not end up in our 
+                    oceans.
+                </p>
+            </div>
+            <div>
+                <b>Are L:a Bruket products organic and natural?</b>
+                <p>
+                    Defining organic is not as simple as it may seem. As soon as an organic raw material is 
+                    processed in any way it is no longer considered organic. For instance, the soy wax in 
+                    our candles is made from organic soy, but since processed may not be called organic. 
+                    This goes for plants harvested in the wild as well, since they are not controlled through 
+                    farming, they may not be called organic. We use both organic raw materials that have 
+                    been processed (and therefore cannot be labelled or mentioned as organic) as well as 
+                    certified organic ingredients. For some products we have a content of more than 
+                    90% certified organic ingredients like for instance our face oil Petitgrain, shea butter 
+                    and jojoba oil. The base ingredients of our skin care range are always organic and/ or 
+                    natural, however in some cases we may need to use smaller amounts of nature 
+                    identical ingredients, such as preservatives that occur naturally in i.e. lingonberries, 
+                    but is not possible to produce large scale. They have the same molecular build up as 
+                    the natural original but can be produced without exterminating rare species of plants. 
+                    Another positive effect is that allergens that may occur naturally in some natural 
+                    ingredients can be eliminated.
+                </p>
+            </div>
+            <div>
+                <b>Does L:a Bruket use Palm oil?</b>
+                <p>
+                    We are happy to say we do not use any pure palm oil in any of our products. However, 
+                    there might be small amounts/ traces of it hidden in other ingredients we use, but we 
+                    are continuously developing formulas to stay clear of any content of palm oil due to 
+                    its dubious reputation. We assure the small quantities that may appear within other 
+                    ingredients are always RSPO-certified.                   
+                </p>
+            </div>
+            <div>
+                <b>Are L:a Bruket&acute;s products vegan?</b>
+                <p>
+                    We have a few products that are not completely vegan. Our body butters and lip balm 
+                    contain beeswax, but the harvest is not in any way harmful to the bees. All other 
+                    products are completely vegan.
+                </p>
+            </div>
+            <div>
+                <b>Are L:a Bruket products tested on animals?</b>
+                <p>
+                    No, we would never use animal testing for neither our ingredients nor our products. 
+                    The reason we don&acute;t inform about this fact on our packaging is that it is forbidden 
+                    by EU-legislation to mention “not tested on animals” as animal testing is prohibited 
+                    within the EU for many years.
+                </p>
+            </div>
+            <div>
+                <b>How should I store my L:a Bruket products?</b>
+                <p>
+                    Store in normal temperature (18°C) and keep away from direct sunlight in order for the 
+                    products to stay fresh.
+                </p>
+            </div>
+            <div>
+                <b>Does L:a Bruket products have an expiry date?</b>
+                <p>
+                    Opened products will last for about 6 months and is shown by the “Open jar symbol” 
+                    on the packaging. However, some products will last a lot longer so always use your 
+                    nose to determine the status of the product not to waste a perfectly good product. 
+                    Remember that our products have a shelf life (Best Before Date) of about 36 months.
+                </p>
+            </div>
+            <div>
+                <b>Do you have refills of your products?</b>
+                <p>
+                    Yes, we sell 1000ml refills for most of our Hand &amp; Body Wash scents as well as 
+                    our Dishwashing Liquid. We also do 260g refills for our range of Scented Candles.
+                </p>
+            </div>
+            <div>
+                <b>Does your sunscreen contain nanoparticles?</b>
+                <p>
+                    The titanium dioxide in our sunscreen has no nanoparticles in it. There is titanium 
+                    dioxide with nanoparticles and without, as it is the size of the particles that 
+                    determines whether “nano” or not. As the use of nanoparticles is disputed, we have 
+                    chosen to use titanium dioxide from a 100% natural source without nanoparticles.
+                </p>
+            </div>
+            <div>
+                <b>Why are there warning labels on some of you home range products?</b>
+                <p>
+                    As for our home range products like room diffusers, scented candles and dishwashing 
+                    liquids, a global legislation has come into force. It dictates that all products 
+                    containing a concentration of perfume/ fragrance that exceeds a certain percentage 
+                    must be labelled with a warning. This is regardless if the fragrance consists of natural 
+                    essential oils or synthetic perfume. Even if the amount of fragrance oil included in our 
+                    room diffusers contributes to about 19% of the total content, and the fragrance 
+                    substance which is the requirement for the labelling is only 2% of the total content, 
+                    there must be a warning label with standardized phrases of different 
+                    warnings/ cautions.
+                </p>
+            </div>
+            <div>
+                <b>Does your products contain parabens, silicones or sulphates?</b>
+                <p>
+                    We never use any parabens, silicones or sulphates in any of our products. The reason 
+                    we don&acute;t inform about this fact on our packaging is that it is forbidden by EU-law to 
+                    mention what a product “does not” contain.
+                </p>
+            </div>
+            <div>
+                <b>How do you scent your skin care products?</b>
+                <p>
+                    The essential oils in our skin care products gives them a natural fragrance, however 
+                    they are not added to give the product a scent first and foremost. The main reason we 
+                    use essential oils in our skin care is for their different properties, the scent in itself is 
+                    secondary. On rare occasions we add a natural fragrance to a product to give it a 
+                    certain scent. For instance, our Broccoli seed serum has a natural cucumber fragrance 
+                    added as the active extracts used have no natural scent at all and unfortunately 
+                    cucumber cannot produce an essential oil.
+                </p>
+            </div>
+            <div>
+                <b>Why is there stated “parfum” in your ingredient list? Is it a synthetic perfume?</b>
+                <p>
+                    Due to changes in EU legislation all products containing any kind of fragrance, natural 
+                    essential oils or synthetic, must have the word “Parfum” stated in the ingredient list. 
+                    For home care products it should be stated as “Perfume”. To clarify what we use we 
+                    added a bracket to our ingredient list explaining if it is a mix of essential oils or a 
+                    natural fragrance. Product experience & Product use
+                </p>
+            </div>
+            <div>
+                <b>Can your products differ in scent and texture?</b>
+                <p>
+                    Since we use natural ingredients the texture and scent may vary from one harvest to 
+                    another depending on soil conditions as well as weather conditions of little or much 
+                    rain or sunshine.
+                </p>
+            </div>
+            <div>
+                <b>Why does my skin get white from the sunscreen?</b>
+                <p>
+                    We innovate natural products and for that reason we of course chose to make a 
+                    sunscreen without chemical filters. Chemical sunscreen filters penetrate the skin and 
+                    absorbs the sun radiation through a chemical process and converts it to unharmful 
+                    radiation. These chemical filters are debated in what way they might impact the body 
+                    as well as what environmental damage they may cause for coral reefs and aquatic 
+                    life. We have chosen to use a physical UV filter of titanium dioxide, protecting the skin 
+                    by reflecting harmful sun rays and providing a beautiful tan without burning. This 
+                    means our sun protection leaves the skin slightly white after application.
+                </p>
+            </div>
+            <div>
+                <b>How come a scent smells differently depending on product?</b>
+                <p>
+                    The fragrance base is the same in all three products, however the rest of the 
+                    ingredients in a product carry the scent differently why we will perceive it in numerous 
+                    ways depending on the product.
+                </p>
+            </div>
+            <div>
+                <b>What if I have an allergic reaction to a product?</b>
+                <p>
+                    There might be several reasons for a skin reaction to a natural product. Some people 
+                    are sensitive or allergic to allergens that may occur in essential oils like; linalool, 
+                    limonene and geraniol etc. Another reason is skin not being used to active natural 
+                    ingredients. Skin might blush and burn at first, bit this will pass after continuous use as 
+                    it gets used to an increased stimulation of skin&acute;s circulation. Yet another reason might 
+                    be hormonal imbalances making skin blush suddenly after using a product that has 
+                    been used many times before. If you should experience a reaction to any of our 
+                    products and feel insecure of the reason, please contact us.
+                </p>
+            </div>
+            <div>
+                <b>Are L:a Bruket&acute;s products safe to use in the sun?</b>
+                <p>
+                    Our products are safe to use in the sun, however sensitive people may experience a 
+                    reaction to the essential oil of bergamot if spending time in the sun right after 
+                    application. The amount of essential oil is extremely low in all our products (less than 
+                    1% of the total content) so if you use bergamot products in the morning you should not 
+                    experience any problems spending time in the sun later in the day.
+                </p>
+            </div>
+            <div>
+                <b>Can you use L:a Bruket&acute;s products on children?</b>
+                <p>
+                    We use natural ingredients which makes most of our products well suited for sensitive 
+                    and delicate skin. The scents used come from natural essential oils from herbs, and 
+                    even though the content of essential oil is a very small percentage, a few people may 
+                    be sensitive to allergens naturally occurring in essential oils. Children and infants have 
+                    of course more sensitive skin and if you don&acute;t feel comfortable trying a scented 
+                    product for your child you can always use our all natural and unscented products; 
+                    No 047 Jojoba oil, No 016 Shea butter and No 017 Lip balm.
+                </p>
+            </div>
+            <div>
+                <b>Are L:a Bruket&acute;s products safe to use during pregnancy?</b>
+                <p>
+                    As the amount of essential oils are less than 1% in each product, one should not need 
+                    to worry about using for instance facial products with essential oils during pregnancy. 
+                    But of course, if you feel any hesitation, we can always recommend our unscented 
+                    natural products; No 016 Shea butter that works for body, hands, feet and elbows and 
+                    No 047 Jojoba oil that is perfect for face care and cuticles as well as for preventing
+                    stretchmarks.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h3>Shipping</h3>
+            <div>
+                <b>Where does L:a Bruket ship?</b>
+                <p>
+                    We ship worldwide with some exceptions. We do not deliver to any address in a 
+                    country or region that is illegal for us to deliver to, for example trade embargo, war or 
+                    conflict zones. Please note that we may have limited possibility to offer delivery to 
+                    islands or other areas that do not have fixed connections, or where global freight units 
+                    do not normally deliver.
+                </p>
+            </div>
+            <div>
+                <b>Which shipping methods do you offer?</b>
+                <p>
+                    We offer different shipping methods as specified in our online shop. Please note that 
+                    restrictions in the delivery may occur. Freight forwarders used are Postnord for 
+                    Sweden and Denmark, for Europe and worldwide we use UPS.
+                </p>
+            </div>
+            <div>
+                <b>When will my order ship?</b>
+                <p>
+                    Products in stock are normally shipped within 1-3 days. You will receive an order 
+                    confirmation by e-mail.
+                </p>
+            </div>
+            <div>
+                <b>How long does it take to ship?</b>
+                <p>
+                    Delivery time may vary depending on chosen delivery method and to which delivery 
+                    location you have chosen. The expected delivery time is stated in your order 
+                    confirmation. Though discrepancies may occur from the specified delivery date. 
+                    For ordered products temporarily out of stock you will be notified by e-mail if this will 
+                    delay the delivery.
+                </p>
+            </div>
+            <div>
+                <b>Tell me about shipping costs.</b>
+                <p>
+                    Freight cost will be added to your order in accordance with your chosen delivery 
+                    method stated in the online shop. For orders exceeding 80 EUR we offer free freight.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h3>Order</h3>
+            <div>
+                <b>How can I change the country I am shopping in?</b>
+                <p>
+                    To change region when shopping, scroll down to the bottom page and click “Your 
+                    location”. Then choose your preferred region in the tab that will appear.
+                </p>
+            </div>
+            <div>
+                <b>How can I edit my shipping address?</b>
+                <p>
+                    If your order is not shipped or booked for transport, we can ship to a different address. 
+                    Please send an e-mail to; order@labruket.se
+                </p>
+            </div>
+        </div>
+        <div>
+            <h3>Returns &amp; Exchanges</h3>
+            <div>
+                <b>How do I return products sent via Postnord?</b>
+                <ol>
+                    <li>1. Attach the return label to the package </li>
+                    <li>2. Leave the package at a Postnord access point </li>
+                    <li>3. Make sure to note the ID-number on your receipt </li>
+                    <li>
+                        4. You will receive a confirmation e-mail within 
+                        7 days after your return has arrived with us.
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <b>How do I return products sent via UPS?</b>
+                <ol>
+                    <li>1. Attach the return label to the package</li>
+                    <li>2. Leave the package at a Postnord access point</li>
+                    <li>
+                        3. Make sure to note the ID-number on your receipt 
+                        and keep it safe to be able to trace the shipment
+                    </li>
+                    <li>
+                        4. You will receive a confirmation e-mail within 
+                        7 days after your return has arrived with us.
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <b>How do I get a refund?</b>
+                <p>
+                    Send an email marked “Change” to <a href="mailto:info@labruket.se">info@labruket.se</a>, state your order number and list 
+                    the products you would like to return. You will then get a return label from us by e-mail. 
+                    We will refund the money through the same payment service you used for the initial 
+                    purchase, as soon as we have received your return. Please allow a few days for the 
+                    banks to handle the transfer of the funds.
+                </p>
+            </div>
+            <div>
+                <b>How do I change a product?</b>
+                <p>
+                    Send an email marked “Change” to <a href="mailto:info@labruket.se">info@labruket.se</a>, state your order number and list 
+                    the products you would like to return. You will then get a return label from us by e-mail. 
+                    We will refund the money through the same payment service you used for the initial 
+                    purchase, as soon as we have received your return. Please allow a few days for the 
+                    banks to handle the transfer of the funds.
+                </p>
+            </div>
+            <div>
+                <b>What if my product is broken upon arrival?</b>
+                <p>
+                    Please send an e-mail to; <a href="mailto:info@labruket.se">info@labruket.se</a> and describe what has happened as well 
+                    as add a photo of the damaged product and outer package.
+                </p>
+            </div>
+            <strong>Didn't find the answer you were looking for?</strong>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <div class="selectComponent flagSelect foot">                                 
+                    <ul>
+                        <li class="active">
+                            France
+                        </li>                                            
+                        <li>Canada</li>
+                        <li>Italy</li>
+                        <li>Sweden</li>
+                        <li>United Kingdom</li>
+                        <li>United States</li>
+                    </ul>
+                </div>    
+                <div class="selectComponent languageSelect foot">
+                    <ul>
+                        <li class="active">
+                            Engilsh
+                        </li>
+                        <li>Deutsch</li>
+                        <li>Français</li>
+                    </ul>
+                </div>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                    <span>Account</span>
+                </a>
+                <strong>Customer care</strong>
+                <ul>
+                    <li><a href="mailto:" class="material-symbols-outlined">Email customer care</a></li>
+                    <li><a href="tel:+" class="material-symbols-outlined">call +46340 87100</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Help</strong>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="QA.html">Q&amp;A</a></li>
+                    <li><a href="storeLocator.html">Store Locator</a></li>
+                    <li><a href="termsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="workWithUs.html">Work with us</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe to our newsletter</h3>
+                <strong>Stay in the know</strong>
+                <p>Receive email updates from LA BRUKET (including launch announcement, product info and exclusive access).</p>
+                <form>
+                    <fieldset>
+                        <input type="email" id="text" placeholder="Enter your email here...">
+                        <input type="submit" value="OK"> 
+                        <p>You can unsubscribe any time by using the link in our emails.</p>
+                        <p>Please see our Privacy Policy for more information  about how we handle and use personal information.</p>    
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <h2><img src="images/logo.png" alt="LABRUKET"></h2>
+                <p>Natural and organic skincare made on the west coast of Sweden with a simple philosophy: innovation driven by nature, not chemicals.</p>
+            </div>
+        </div>
+        <div>
+            <p>2022 © L:a Bruket. All rights reserved</p>
+            <a href="https://www.facebook.com/labruket/">
+                <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/labruket/">
+                <img src="images/instagram.png" alt="instagram">
+            </a>
+        </div>
+    </footer>                   
+</body>
+</html>

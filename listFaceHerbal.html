@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABRUKET</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" id="search" placeholder="search">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>we're sorry, no results found for '"abcde"</span>
+    </div>
+    <div id="bagPanel">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>Your shopping bag is empty</span>
+        <span><a href="index.html">Continue shopping</a></span>        
+    </div>
+    <div id="filterPanel">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <form>
+            <fieldset>
+                <legend>Sort by : Relevance</legend>
+                <ul>
+                    <li>
+                        <input type="radio" id="relevance" name="radioCheck">
+                        <label for="relevance">Relevance</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="priceLowtohigh" name="radioCheck">
+                        <label for="priceLowtohigh">Price: Low to high</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="priceHightolow" name="radioCheck">
+                        <label for="priceHightolow">Price: High to low</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Size</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="30ml">
+                        <label for="30ml">30ml</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="70ml">
+                        <label for="70ml">70ml</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="240ml">
+                        <label for="240ml">240ml</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="450ml">
+                        <label for="450ml">450ml</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="1000ml">
+                        <label for="1000ml">1000ml</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="120g">
+                        <label for="120g">120g</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="420g">
+                        <label for="420g">420g</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="450g">
+                        <label for="450g">450g</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="etc">
+                        <label for="etc">etc</label>
+                    </li>
+                </ul>                                                                                                                                 
+            </fieldset>
+            <fieldset class="customRange">
+                <legend>Price</legend>
+                <input type="range" id="price" min="0" max="10">
+                <label for="price">0 EUR</label>
+                <label for="price">80.00 EUR</label>      
+            </fieldset>
+        </form>
+    </div>
+    <header> 
+        <div class="wrap">
+            <h1>
+                <a href="index.html"><img src="images/logo.png" alt="LABRUKET"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <!-- body -->
+                    <li data-gnbName="body">
+                        Body
+                    </li>
+                    <!-- hair -->
+                    <li data-gnbName="hair">
+                        Hair
+                    </li>
+                    <!-- face -->
+                    <li data-gnbName="face">
+                        Face
+                    </li>
+                    <!-- home -->
+                    <li data-gnbName="home"> 
+                        Home
+                    </li>
+                    <!-- explore -->
+                    <li data-gnbName="explore">
+                        Explore  
+                    </li>
+                </ul>
+            </nav>
+            <div id="gnbPanel">
+                <ul class="body">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listBody.html">shop all</a></li>
+                            <li><a href="listBodyLotionButter.html">body Lotion butter</a></li>
+                            <li><a href="listBodyWash.html">hand &amp;  body wash</a></li>
+                            <li><a href="listBodyCream.html">hand cream</a></li>
+                            <li><a href="listBodySalt.html">sea salt</a></li>
+                            <li><a href="listBodyEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listBodyCitrus.html">citrus</a></li>
+                            <li><a href="listBodyFloral.html">floral</a></li>
+                            <li><a href="listBodyFresh.html">fresh</a></li>
+                            <li><a href="listBodyHerbal.html">herbal</a></li>
+                            <li><a href="listBodyNatural.html">natural</a></li>
+                            <li><a href="listBodySpicy.html">spicy</a></li>
+                            <li><a href="listBodyWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="hair">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHair.html">shop all</a></li>
+                            <li><a href="listHairConditioner.html">conditioner</a></li>
+                            <li><a href="listHairShampoo.html">shampoo</a></li>                                    
+                            <li><a href="listHairEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listHairCitrus.html">citrus</a></li>
+                            <li><a href="listHairFloral.html">floral</a></li>                                       
+                            <li><a href="listHairNatural.html">natural</a></li>
+                            <li><a href="listHairSpicy.html">spicy</a></li>
+                            <li><a href="listHairWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="face">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listFace.html">shop all</a></li>
+                            <li><a href="listFaceCleansing.html">cleansing</a></li>
+                            <li><a href="listFaceMask.html">mask</a></li>
+                            <li><a href="listFaceCream.html">cream</a></li>
+                            <li><a href="listFaceOli.html">oli</a></li>
+                            <li><a href="listFaceMist.html">mist</a></li>
+                            <li><a href="listFaceShaving.html">shaving</a></li>
+                            <li><a href="listFaceEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listFaceCitrus.html">citrus</a></li>
+                            <li><a href="listFaceFresh.html">fresh</a></li>
+                            <li><a href="listFaceHerbal.html">herbal</a></li>
+                            <li><a href="listFaceNatural.html">natural</a></li>
+                            <li><a href="listFaceSpicy.html">spicy</a></li>
+                            <li><a href="listFaceWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="home">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHome.html">shop all</a></li>
+                            <li><a href="listHomeCandle.html">candle</a></li>
+                            <li><a href="listHomeTag.html">tag</a></li>
+                            <li><a href="listHomeDiffuser.html">diffuser</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listHomeCitrus.html">citrus</a></li>
+                            <li><a href="listHomeFloral.html">floral</a></li>
+                            <li><a href="listHomeFresh.html">fresh</a></li>
+                            <li><a href="listHomeHerbal.html">herbal</a></li>
+                            <li><a href="listHomeSpicy.html">spicy</a></li>
+                            <li><a href="listHomeWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="explore">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="treatments.html">
+                            Treatments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stories.html">
+                            Stories
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul> 
+                <div>
+                    <a href="contact.html">
+                        Help                              
+                    </a>
+                    <div class="selectComponent flagSelect">                                 
+                        <ul>
+                            <li class="active">
+                                France
+                            </li>                                            
+                            <li>Canada</li>
+                            <li>Italy</li>
+                            <li>Sweden</li>
+                            <li>United Kingdom</li>
+                            <li>United States</li>
+                        </ul>
+                    </div>    
+                    <div class="selectComponent languageSelect">
+                        <ul>
+                            <li class="active">
+                                Engilsh
+                            </li>
+                            <li>Deutsch</li>
+                            <li>Français</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="material-symbols-outlined btn_open" data-Panel="searchPanel">search</button>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                </a>             
+                <button class="material-symbols-outlined btn_open" data-Panel="bagPanel">shopping_bag</button>
+                <input type="button" value="moblieMenu" class="btn_mui">
+            </div>
+        </div>
+    </header>
+    <div class="listContainer">
+        <ul id="slideBar">
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+            <li>Free shipping with any 80€/$100 order</li>
+        </ul>
+        <div>
+            <h2>Labruket / Face</h2>
+            <button class="btn_open" data-Panel="filterPanel">Filter</button>
+        </div>
+        <ul>
+            <li>
+                <a href="detail_face098_60ml.html">
+                    <span>098</span>
+                    <span>cleaning cream 60ml</span>
+                    <span>19.00 EUR</span>
+                    <img src="images/098_60ml.jpg" alt="cleaning cream">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face098_120ml.html">
+                    <span>098</span>
+                    <span>cleaning cream 120ml</span>
+                    <span>36.00 EUR</span>
+                    <img src="images/098_120ml.jpg" alt="cleaning cream">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face178_50ml.html">
+                    <span>178</span>
+                    <span>Eye maky-up remover 50ml</span>
+                    <span>31.00 EUR</span>
+                    <img src="images/178_50ml.jpg" alt="Eye maky-up remover">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face187_190ml.html">
+                    <span>187</span>
+                    <span>Fennel seed facial wash 190ml</span>
+                    <span>36.00 EUR</span>
+                    <img src="images/187_190ml.jpg" alt="Fennel seed facial wash">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face218_190ml.html">
+                    <span>218</span>
+                    <span>Beard wash 190ml</span>
+                    <span>32.00 EUR</span>
+                    <img src="images/218_190ml.jpg" alt="Beard wash">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face101_50ml.html">
+                    <span>101</span>
+                    <span>Facial cream rich 50ml</span>
+                    <span>44.00 EUR</span>
+                    <img src="images/101_50ml.jpg" alt="Facial cream rich">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face186_50ml.html">
+                    <span>186</span>
+                    <span>Facial cream light 50ml</span>
+                    <span>44.00EUR</span>
+                    <img src="images/186_50ml.jpg" alt="Facial cream light">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face017.html">
+                    <span>017</span>
+                    <span>Lip balm</span>
+                    <span>13.00 EUR</span>
+                    <img src="images/017.jpg" alt="Lip balm">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face050_120g.html">
+                    <span>050</span>
+                    <span>Face scrub 120g</span>
+                    <span>28.00 EUR</span>
+                    <img src="images/050_120g.jpg" alt="Face scrub">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face099_60ml.html">
+                    <span>099</span>
+                    <span>Facial toner &amp; refresher 60ml</span>
+                    <span>19.00 EUR</span>
+                    <img src="images/099_60ml.jpg" alt="Facial toner">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face099_120ml.html">
+                    <span>099</span>
+                    <span>Facial toner &amp; refresher 120ml</span>
+                    <span>28.00 EUR</span>
+                    <img src="images/099_120ml.jpg" alt="Facial toner">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face167_50ml.html">
+                    <span>167</span>
+                    <span>Serum 50ml</span>
+                    <span>58.00 EUR</span>
+                    <img src="images/167_50ml.jpg" alt="Serum">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face168_15ml.html">
+                    <span>168</span>
+                    <span>Cottonseed eye balm 15ml</span>
+                    <span>44.00 EUR</span>
+                    <img src="images/168_15ml.jpg" alt="Cottonseed eye balm 15ml">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face169_200ml.html">
+                    <span>169</span>
+                    <span>Sunscreen spf 30 200ml</span>
+                    <span>44.00 EUR</span>
+                    <img src="images/169_200ml.jpg" alt="Sunscreen spf">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face223.html">
+                    <span>223</span>
+                    <span>Face essential kit 5x10ml</span>
+                    <span>62.00 EUR</span>
+                    <img src="images/223.jpg" alt="Face essential kit">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face224.html">
+                    <span>224</span>
+                    <span>Face essential kit 5x10ml</span>
+                    <span>62.00 EUR</span>
+                    <img src="images/224.jpg" alt="Face essential kit">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face236.html">
+                    <span>236</span>
+                    <span>Face travel kit 3x10ml</span>
+                    <span>47.00 EUR</span>
+                    <img src="images/236.jpg" alt="Face travel kit">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face237.html">
+                    <span>237</span>
+                    <span>Face travel kit 3x10ml</span>
+                    <span>47.00 EUR</span>
+                    <img src="images/237.jpg" alt="Face travel kit">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face100_30ml.html">
+                    <span>100</span>
+                    <span>Face oli 30ml</span>
+                    <span>45.00 EUR</span>
+                    <img src="images/100_30ml.jpg" alt="Face oli">
+                </a>
+            </li>
+            <li>
+                <a href="detail_face177_30ml.html">
+                    <span>177</span>
+                    <span>Face oli 30ml</span>
+                    <span>45.00 EUR</span>
+                    <img src="images/177_30ml.jpg" alt="Face oli">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div>
+            <div>
+                <div class="selectComponent flagSelect foot">                                 
+                    <ul>
+                        <li class="active">
+                            France
+                        </li>                                            
+                        <li>Canada</li>
+                        <li>Italy</li>
+                        <li>Sweden</li>
+                        <li>United Kingdom</li>
+                        <li>United States</li>
+                    </ul>
+                </div>    
+                <div class="selectComponent languageSelect foot">
+                    <ul>
+                        <li class="active">
+                            Engilsh
+                        </li>
+                        <li>Deutsch</li>
+                        <li>Français</li>
+                    </ul>
+                </div>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                    <span>Account</span>
+                </a>
+                <strong>Customer care</strong>
+                <ul>
+                    <li><a href="mailto:" class="material-symbols-outlined">Email customer care</a></li>
+                    <li><a href="tel:+" class="material-symbols-outlined">call +46340 87100</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Help</strong>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="QA.html">Q&amp;A</a></li>
+                    <li><a href="storeLocator.html">Store Locator</a></li>
+                    <li><a href="termsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="workWithUs.html">Work with us</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe to our newsletter</h3>
+                <strong>Stay in the know</strong>
+                <p>Receive email updates from LA BRUKET (including launch announcement, product info and exclusive access).</p>
+                <form>
+                    <fieldset>
+                        <input type="email" id="text" placeholder="Enter your email here...">
+                        <input type="submit" value="OK"> 
+                        <p>You can unsubscribe any time by using the link in our emails.</p>
+                        <p>Please see our Privacy Policy for more information  about how we handle and use personal information.</p>    
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <h2><img src="images/logo.png" alt="LABRUKET"></h2>
+                <p>Natural and organic skincare made on the west coast of Sweden with a simple philosophy: innovation driven by nature, not chemicals.</p>
+            </div>
+        </div>
+        <div>
+            <p>2022 © L:a Bruket. All rights reserved</p>
+            <a href="https://www.facebook.com/labruket/">
+                <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/labruket/">
+                <img src="images/instagram.png" alt="instagram">
+            </a>
+        </div>
+    </footer>                   
+</body>
+</html>

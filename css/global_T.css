@@ -1,0 +1,153 @@
+body{
+    font-family: "Byredo Sans";
+}
+a{
+    text-decoration: none;
+}
+[id$='Panel']{
+    display: none;
+}
+[id$='Panel'].active{
+    display: block;
+}
+
+@media screen and (min-width: 1280px){
+    [class$='Container']{
+        padding-top: 60px;
+    }
+    .selectComponent{
+        border: 1px solid #d9d9d9; box-sizing: border-box; padding: 0 10px;
+    }
+    .selectComponent ul{
+        position: relative;
+        background: url('../images/expand_more.png') no-repeat right 20px;
+    }
+    .selectComponent ul.active{
+        background-image: url('../images/expand_less.png');
+    }
+    .selectComponent ul.active li{
+        display: block;
+    }
+    .selectComponent ul.active li:not(:last-child){
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .selectComponent ul li{
+        background-position: left 15px; background-size: 16px;
+        background-repeat: no-repeat; padding-left: 25px;
+        font-size: 17px; display: none; line-height: 50px;
+        width: 100%; box-sizing: border-box;
+    }
+
+    .selectComponent ul li.active{
+        display: block;
+    }
+
+    .flagSelect{
+        margin-bottom: 10px;
+    }
+    .flagSelect ul li:nth-child(1){background-image: url('../images/France.png');}
+    .flagSelect ul li:nth-child(2){background-image: url('../images/canada.png');}
+    .flagSelect ul li:nth-child(3){background-image: url('../images/italy.png');}
+    .flagSelect ul li:nth-child(4){background-image: url('../images/sweden.png');}
+    .flagSelect ul li:nth-child(5){background-image: url('../images/uk.png');}
+    .flagSelect ul li:nth-child(6){background-image: url('../images/us.png');}
+    .languageSelect ul li{background-image: url('../images/global.png');}
+
+    header{
+        box-sizing: border-box; position: fixed; width: 100%; background-color: #fff; border-bottom: 1px solid #d9d9d9;
+    }
+    header .wrap{
+        position: relative; padding: 0 20px;
+    }
+    header .wrap > *:not(nav){
+        position: absolute; top: 0;
+    }
+    header .wrap > h1{
+        left: 20px; max-width: 119px; width: 6.2%; padding: 20px 0;
+    }
+    header .wrap > h1 a{
+        display: block;
+    }
+    header .wrap > h1 a img{
+        width: 100%;
+    }
+    header .wrap > div{
+        position: absolute; right: 20px;
+    }
+    header .wrap nav{
+        line-height: 60px;
+    }
+    header .wrap nav > ul{
+        text-align: center;
+    }
+    header .wrap nav > ul > li{
+        display: inline-block; font-size: 19px; font-weight: 400; color: black; cursor: pointer;
+    }
+    header .wrap nav > ul > li:not(:first-child){
+        margin-left: 4.4%;
+    }
+    header .wrap nav > ul > li.active{
+        color: #828282;
+    }
+    header .wrap nav > ul > li > ul{
+        position: absolute; left: 0; top: 60px; width: 100%; display: none;
+    }
+    header .wrap nav > ul > li.active ul{
+        display: block;
+    }
+    header .wrap nav > ul > li > ul:not(:first-child){
+        display: none;
+    }
+    header .wrap nav > ul > li .inner{
+        width: 100%; margin: 0; border-top: 1px solid #d9d9d9;
+        background: #fff url(../images/body_bg.png) no-repeat right top / 51%;
+    }
+    header .wrap nav > ul > li .inner:after{
+        content: ''; display: block; clear: both; visibility: hidden;
+    }
+    header .wrap nav > ul > li .inner > li{
+        width: 15%; margin: 0; text-align: left;
+        padding: 30px 0 0 20px; float: left; line-height: 19px;
+    }
+    header .wrap nav > ul > li .inner > li:nth-child(2){
+        border-right: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9;
+    }
+    header .wrap nav > ul > li .inner > li > ul{
+        position: relative; left: 0; top: 0; margin-top: 30px;
+    }
+    header .wrap nav > ul > li .inner > li > ul li{
+        display: block; font-size: 15px; margin: 0; line-height: 15px; 
+    }
+    header .wrap nav > ul > li .inner > li > ul:last-child li:last-child{
+        padding-bottom: 140px;
+    }
+    header .wrap nav > ul > li .inner > li > ul li:not(:last-child){
+        padding-bottom: 20px;
+    }
+    header .wrap nav > ul > li .inner > li > ul li a{
+        color: black;
+    }
+    header .wrap nav > ul > li .inner > li > ul li a.active{
+        color: #828282;
+    }
+    header .wrap nav > ul > li .inner > li:last-child a{
+        font-size: 17px; display: block; color: #000; margin-bottom: 20px;
+    }
+    header .wrap nav > ul > li .inner > li:last-child a::before{
+        content: url(../images/help_img.png); width: 18px; padding-right: 5px; 
+    }
+    header .wrap > div{
+        padding: 20px 0;
+    }
+    header .wrap > div *{
+        width: 20px; line-height: 20px;
+    }
+    header .wrap > div a{
+        display: inline-block; color: black; margin: 0 15px;
+    }
+    header .wrap > div button{
+        background-color: transparent; border: none; padding: 0;
+    }
+}
+
+/* desktop */

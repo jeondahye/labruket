@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABRUKET</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" id="search" placeholder="search">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>we're sorry, no results found for '"abcde"</span>
+    </div>
+    <div id="bagPanel">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>Your shopping bag is empty</span>
+        <span><a href="index.html">Continue shopping</a></span>        
+    </div>
+    <header> 
+        <div class="wrap">
+            <h1>
+                <a href="index.html"><img src="images/logo.png" alt="LABRUKET"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <!-- body -->
+                    <li data-gnbName="body">
+                        Body
+                    </li>
+                    <!-- hair -->
+                    <li data-gnbName="hair">
+                        Hair
+                    </li>
+                    <!-- face -->
+                    <li data-gnbName="face">
+                        Face
+                    </li>
+                    <!-- home -->
+                    <li data-gnbName="home"> 
+                        Home
+                    </li>
+                    <!-- explore -->
+                    <li data-gnbName="explore">
+                        Explore  
+                    </li>
+                </ul>
+            </nav>
+            <div id="gnbPanel">
+                <ul class="body">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listBody.html">shop all</a></li>
+                            <li><a href="listBodyLotionButter.html">body Lotion butter</a></li>
+                            <li><a href="listBodyWash.html">hand &amp;  body wash</a></li>
+                            <li><a href="listBodyCream.html">hand cream</a></li>
+                            <li><a href="listBodySalt.html">sea salt</a></li>
+                            <li><a href="listBodyEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listBodyCitrus.html">citrus</a></li>
+                            <li><a href="listBodyFloral.html">floral</a></li>
+                            <li><a href="listBodyFresh.html">fresh</a></li>
+                            <li><a href="listBodyHerbal.html">herbal</a></li>
+                            <li><a href="listBodyNatural.html">natural</a></li>
+                            <li><a href="listBodySpicy.html">spicy</a></li>
+                            <li><a href="listBodyWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="hair">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHair.html">shop all</a></li>
+                            <li><a href="listHairConditioner.html">conditioner</a></li>
+                            <li><a href="listHairShampoo.html">shampoo</a></li>                                    
+                            <li><a href="listHairEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listHairCitrus.html">citrus</a></li>
+                            <li><a href="listHairFloral.html">floral</a></li>                                       
+                            <li><a href="listHairNatural.html">natural</a></li>
+                            <li><a href="listHairSpicy.html">spicy</a></li>
+                            <li><a href="listHairWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="face">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listFace.html">shop all</a></li>
+                            <li><a href="listFaceCleansing.html">cleansing</a></li>
+                            <li><a href="listFaceMask.html">mask</a></li>
+                            <li><a href="listFaceCream.html">cream</a></li>
+                            <li><a href="listFaceOli.html">oli</a></li>
+                            <li><a href="listFaceMist.html">mist</a></li>
+                            <li><a href="listFaceShaving.html">shaving</a></li>
+                            <li><a href="listFaceEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listFaceCitrus.html">citrus</a></li>
+                            <li><a href="listFaceFresh.html">fresh</a></li>
+                            <li><a href="listFaceHerbal.html">herbal</a></li>
+                            <li><a href="listFaceNatural.html">natural</a></li>
+                            <li><a href="listFaceSpicy.html">spicy</a></li>
+                            <li><a href="listFaceWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="home">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHome.html">shop all</a></li>
+                            <li><a href="listHomeCandle.html">candle</a></li>
+                            <li><a href="listHomeTag.html">tag</a></li>
+                            <li><a href="listHomeDiffuser.html">diffuser</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listHomeCitrus.html">citrus</a></li>
+                            <li><a href="listHomeFloral.html">floral</a></li>
+                            <li><a href="listHomeFresh.html">fresh</a></li>
+                            <li><a href="listHomeHerbal.html">herbal</a></li>
+                            <li><a href="listHomeSpicy.html">spicy</a></li>
+                            <li><a href="listHomeWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="explore">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="treatments.html">
+                            Treatments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stories.html">
+                            Stories
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul> 
+                <div>
+                    <a href="contact.html">
+                        Help                              
+                    </a>
+                    <div class="selectComponent flagSelect">                                 
+                        <ul>
+                            <li class="active">
+                                France
+                            </li>                                            
+                            <li>Canada</li>
+                            <li>Italy</li>
+                            <li>Sweden</li>
+                            <li>United Kingdom</li>
+                            <li>United States</li>
+                        </ul>
+                    </div>    
+                    <div class="selectComponent languageSelect">
+                        <ul>
+                            <li class="active">
+                                Engilsh
+                            </li>
+                            <li>Deutsch</li>
+                            <li>Français</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="material-symbols-outlined btn_open" data-Panel="searchPanel">search</button>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                </a>             
+                <button class="material-symbols-outlined btn_open" data-Panel="bagPanel">shopping_bag</button>
+                <input type="button" value="moblieMenu" class="btn_mui">
+            </div>
+        </div>
+    </header>
+    <section class="PolicyFooterContainer">
+        <h2>Privacy policy</h2>
+        <div>
+            <h3>
+                CUSTOMERS - PROCESSING OF PERSONAL DATA - 
+                INFORMATION UNDER THE DATA PROTECTION 
+                REGULATION (EU) 2016/679
+            </h3>
+            <div>
+                <b>1. Information we collect</b>
+                <p>
+                    L:a Bruket AB, a Swedish company with company organization number 556858-0657 
+                    (L:a Bruket) is responsible, as controller, for the processing of the personal data as 
+                    described below that we receive from you when you are:                    
+                </p>
+                <ol>
+                    <li>1) using our website</li>
+                    <li>2) contacting us</li>
+                    <li>3) signing up on our newsletter, other marketing and invitations</li>
+                    <li>4) shopping with us or data otherwise received when your purchase is prepared or administered</li>
+                </ol>
+                <p>
+                    The personal data that we process is your name, email address, phone number, 
+                    delivery address, payment details, IP address, behavior on the website and other 
+                    information that you voluntarily provide us. L:a Bruket will act responsibly for all 
+                    personal information requested from you. The personal information will be used e.g. to 
+                    ensure deliveries, for credit assessment and to provide offers and information to you.
+                    Below you can read more about how we process your personal data, depending on 
+                    how you interact with us. Should you have any questions regarding our processing of 
+                    your personal data, or if you wish to exercise any of your rights under data protection 
+                    legislation, please contact us at the contact details below.                   
+                </p>
+            </div>
+            <div>
+                <b>
+                    2. From where do we collect your personal data and 
+                    are you required to provide personal data to us?
+                </b>
+                <p>
+                    Generally, you are free to choose if you want to provide your personal data to us. It is 
+                    however in certain instances necessary for you to provide personal data to us, e.g. in 
+                    order to enable your purchase of our products. What exact personal data that we 
+                    require from you can be found below in relation to the legal bases “fulfilment of 
+                    contract” and “legal obligation”.                   
+                </p>
+                <p>
+                    If you don’t provide us with requested personal data, you will not be able to purchase 
+                    our products. Furthermore, we will not be able to handle any claims in relation to you 
+                    and we will not be able to comply with bookkeeping and accounting law.                    
+                </p>
+            </div>
+            <div>
+                <b>3. Purpose, legal ground and storage period</b>
+                <p>
+                    <strong>ORDER MANAGEMENT</strong>
+                    When you purchase products from L:a Bruket, the processing of your personal data is 
+                    necessary in order for us to fulfil our contract with you regarding your purchase. The 
+                    purpose of processing your personal data is to administer your purchase, including 
+                    delivering the product that you have purchased, to carry out payment and to send 
+                    order and delivery confirmation.
+                </p>
+                <p>
+                    <strong>CUSTOMER SERVICE</strong>
+                    If you contact us for support or other customer service matter, we will collect the 
+                    personal data that you provide us with, e.g. your name, contact details and the 
+                    information you provide regarding the matter. The legal basis for our processing is our 
+                    legitimate interest to process your personal data to answer any questions regarding 
+                    the purchase or our products. We will store your personal data for a period of three 
+                    months after the customer service matter has been resolved.
+                </p>
+                <p>
+                    <strong>NEWSLETTER, OTHER MARKETING AND INVITATIONS</strong>
+                    To register for our newsletter, other marketing and invitations you need to provide us 
+                    with your contact details and give us your consent. This data is processed for the 
+                    purpose of you receiving the newsletter and for us to marketing L:a Bruket products 
+                    and send invitations to events. You can unsubscribe from our newsletter by clicking the
+                    “unsubscribe” link in the newsletter or contact us and ask us to delete your email from 
+                    the list. If you unsubscribe from our newsletter, the information will be deleted 
+                    immediately.
+                </p>
+                <p>
+                    <strong>CLAIMS AND COMPLAINTS</strong>
+                    We will process your name, mobile telephone number, email address, delivery address 
+                    and information concerning your complaint or claim (e.g. details about the order) in 
+                    order to be able to handle your consumer rights such as your right of withdrawal, 
+                    make complaints or other claims. The processing is necessary in order for us to act in 
+                    accordance with consumer protection law, i.e. comply with a legal obligation that we 
+                    are subject to. We also have a legitimate interest to process your personal data to be
+                    able to defend ourselves against a possible legal claim and to initiate any claim. We 
+                    will store your personal data until we have processed the complaint or for the duration 
+                    of the potential dispute.
+                </p>
+                <p>
+                    <strong>ACCOUNTING</strong>
+                    We will process your name, history regarding payments made and other information 
+                    that constitutes accounting records to be able to comply with legal obligations to 
+                    which we are subject, i.e. the bookkeeping and accounting act. We will store your 
+                    personal data until and including the seventh year after the end of the calendar year 
+                    for the fiscal year to which the personal data relates.
+                </p>
+                <p>
+                    <strong>COMPANY ANALYSIS AND USER EXPERIENCE</strong>
+                    When you visit our website we collect browsing data (e.g. IP address, use of device, 
+                    date/time of visit and length, referring URL, pages visited on the site). The browsing 
+                    data are unlikely to use to identify the user in its nature, but it may allow identification 
+                    of the personal data if associated with other information. The data is processed for 
+                    the purpose of developing and analysing the user experience of our website, for 
+                    business and method development, market analysis and statistics and risk 
+                    management. The processing is based on our legitimate interest to process your 
+                    personal data to improve our website in order to improve the user experience of our 
+                    website. We will store your personal data for a period of three months after your visit 
+                    to our website. Read more in our Cookie policy.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <b>4. Balancing of interests’ assessments</b>
+                <p>
+                    As we state above, for some purposes, we process your personal data based upon our 
+                    “legitimate interest”. By carrying out a balancing of interests’ assessment concerning 
+                    our processing of your personal data, we have concluded that our legitimate interest 
+                    for the processing outweighs your interests or rights which require the protection of 
+                    your personal data. If you want more information in relation to our balancing of 
+                    interests’ assessments, please do not hesitate to contact us. Our contact details can 
+                    be found at the end of this privacy policy.
+                </p>
+            </div>
+            <div>
+                <b>5. Transfer of personal data</b>
+                <p>
+                    L:a Bruket will not disclose personal data to third parties other than in cases where (i) 
+                    it is specifically agreed between L:a Bruket and yourself, (ii) if it is necessary for us to 
+                    comply with statutory duty or comply with authority decisions or court decisions , or 
+                    (iii) in case we hire third-party service providers who carry out assignments on our 
+                    behalf. Recipients of personal data connected to your order are our IT-systems used to 
+                    administrate your order such as supplier of e-commerce platform, payment service 
+                    providers, contractual carriers and suppliers of ERP and TA system.
+                </p>
+                <p>
+                    We mainly process your personal data within EU/EEA. When we process your 
+                    personal data outside of EU/EEA we do so because Google, which help us analyse 
+                    the use of our website, will store your personal data outside of EU/EEA. When we 
+                    transfer your personal data outside of EU/EEA, this will only be done in accordance 
+                    with applicable data protection legislation. This means that the transfer will only be to
+                    a country that the European Commission has approved as providing an adequate 
+                    level of protection for personal data, or the transfer is based on the European 
+                    Commission approved standard contractual clauses or is to an organisation which is 
+                    certified to the Privacy Shield.
+                </p>
+                <p>
+                    If you have any questions regarding how we share your personal data or if you want 
+                    more information about the appropriate safeguards we have in place to protect your 
+                    personal data, please feel free to contact us.
+                </p>
+            </div>
+            <div>
+                <b>6. Your rights in relation to our processing of your personal data</b>
+                <p>
+                    According to applicable data protection legislation, depending on the circumstances, 
+                    you are entitled to a number of different rights which are set out below. If you have 
+                    any questions regarding these rights or if you want to use any of your rights, you are 
+                    welcome to contact us. Our contact details can be found in the end of this 
+                    privacy policy.
+                </p>
+                <p>
+                    <strong>RIGHT TO INFORMATION AND ACCESS</strong>
+                    You have the right to obtain a confirmation on whether or not we process your 
+                    personal data. If we process your personal data, you also have a right to receive 
+                    information about how we process the personal data and to receive a copy of your 
+                    personal data.
+                </p>
+                <p>
+                    <strong>RIGHT TO RECTIFICATION</strong>
+                    You have a right to have inaccurate personal data corrected and to have incomplete 
+                    personal data completed.
+                </p>
+                <p>
+                    <strong>
+                        RIGHT TO ERASURE (“RIGHT TO BE FORGOTTEN”) AND 
+                        RESTRICTION OF PROCESSING
+                    </strong>
+                    You have the right to have your personal data erased in certain instances. This is the 
+                    case e.g. when the personal data is no longer necessary for the purposes for which it 
+                    was collected or otherwise processed and where we process your personal data on 
+                    the basis of our legitimate interest and we find, following your objection (see below 
+                    under Right to object), that we do not have an overriding interest in continuing to 
+                    process it.You also have a right to request that we restrict our processing of your 
+                    personal data. For example, when you question the accuracy of the personal data, 
+                    when you have objected to our processing of your personal data based upon our 
+                    legitimate interest, or where the processing is unlawful, and you oppose to the erasure 
+                    of your personal data and instead want us to restrict our processing.
+                </p>
+                <p>
+                    <strong>RIGHT TO DATA PORTABILITY</strong>
+                    You have a right to in certain instances be provided with such personal data 
+                    (concerning you) that you have provided to us, in a structured, commonly used and 
+                    machine-readable format. You also have a right to in certain instances have such 
+                    personal data transferred to another controller, where technically feasible.
+                </p>
+                <p>
+                    <strong>RIGHT TO OBJECT</strong>
+                    You have the right to object to our processing of your personal data if we use it for 
+                    marketing purposes. You have also the right to withdraw a given consent at any time. 
+                    Your withdrawal will have effect from the time of your withdrawal.You also have a 
+                    right to object to our processing of your personal data when the processing is based 
+                    on legal basis “legitimate interest”. The situations when we base our processing on our 
+                    legitimate interest are stated above. In some instances, we may continue to process 
+                    your personal data even if you have objected to our processing. This can be the case 
+                    if we can show compelling legitimate reasons for the processing that outweigh your 
+                    interests or if it is for the purpose of establishing, exercising or defending against legal 
+                    claims.
+                </p>
+                <p>
+                    <strong>RIGHT TO LODGE A COMPLAINT TO A SUPERVISORY AUTHORITY</strong>
+                    You have the right to lodge a complaint to a supervisory authority concerning our 
+                    processing of your personal data. Such a complaint can be filed with the authority in 
+                    the EU/EEA member state where you live, work or where the alleged infringement of 
+                    applicable data protection legislation has occurred. In Sweden, the supervisory 
+                    authority is Datainspektionen.
+                </p>
+            </div>
+            <div>
+                <b>7. Contact information</b>
+                <p>
+                    Please contact us at info@labruket.com if you have any questions regarding our 
+                    personal data processing. This website/ online shop is owned and operated by 
+                    L:a Bruket AB. The company is registered in Sweden under registration number 
+                    556858-0657, and the registered head office is located at; Nätvägen 2, 432 74 
+                    Träslövsläge, Sweden.
+                </p>
+                <p>Last update of L:a Bruket Privacy Policy: 31 October 2019</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <div class="selectComponent flagSelect foot">                                 
+                    <ul>
+                        <li class="active">
+                            France
+                        </li>                                            
+                        <li>Canada</li>
+                        <li>Italy</li>
+                        <li>Sweden</li>
+                        <li>United Kingdom</li>
+                        <li>United States</li>
+                    </ul>
+                </div>    
+                <div class="selectComponent languageSelect foot">
+                    <ul>
+                        <li class="active">
+                            Engilsh
+                        </li>
+                        <li>Deutsch</li>
+                        <li>Français</li>
+                    </ul>
+                </div>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                    <span>Account</span>
+                </a>
+                <strong>Customer care</strong>
+                <ul>
+                    <li><a href="mailto:" class="material-symbols-outlined">Email customer care</a></li>
+                    <li><a href="tel:+" class="material-symbols-outlined">call +46340 87100</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Help</strong>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="QA.html">Q&amp;A</a></li>
+                    <li><a href="storeLocator.html">Store Locator</a></li>
+                    <li><a href="termsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="workWithUs.html">Work with us</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe to our newsletter</h3>
+                <strong>Stay in the know</strong>
+                <p>Receive email updates from LA BRUKET (including launch announcement, product info and exclusive access).</p>
+                <form>
+                    <fieldset>
+                        <input type="email" id="text" placeholder="Enter your email here...">
+                        <input type="submit" value="OK"> 
+                        <p>You can unsubscribe any time by using the link in our emails.</p>
+                        <p>Please see our Privacy Policy for more information  about how we handle and use personal information.</p>    
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <h2><img src="images/logo.png" alt="LABRUKET"></h2>
+                <p>Natural and organic skincare made on the west coast of Sweden with a simple philosophy: innovation driven by nature, not chemicals.</p>
+            </div>
+        </div>
+        <div>
+            <p>2022 © L:a Bruket. All rights reserved</p>
+            <a href="https://www.facebook.com/labruket/">
+                <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/labruket/">
+                <img src="images/instagram.png" alt="instagram">
+            </a>
+        </div>
+    </footer>                   
+</body>
+</html>

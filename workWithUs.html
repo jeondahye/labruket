@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABRUKET</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" id="search" placeholder="search">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>we're sorry, no results found for '"abcde"</span>
+    </div>
+    <div id="bagPanel">
+        <button class="material-symbols-outlined btn_close">close</button>
+        <span>Your shopping bag is empty</span>
+        <span><a href="index.html">Continue shopping</a></span>        
+    </div>
+    <header> 
+        <div class="wrap">
+            <h1>
+                <a href="index.html"><img src="images/logo.png" alt="LABRUKET"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <!-- body -->
+                    <li data-gnbName="body">
+                        Body
+                    </li>
+                    <!-- hair -->
+                    <li data-gnbName="hair">
+                        Hair
+                    </li>
+                    <!-- face -->
+                    <li data-gnbName="face">
+                        Face
+                    </li>
+                    <!-- home -->
+                    <li data-gnbName="home"> 
+                        Home
+                    </li>
+                    <!-- explore -->
+                    <li data-gnbName="explore">
+                        Explore  
+                    </li>
+                </ul>
+            </nav>
+            <div id="gnbPanel">
+                <ul class="body">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listBody.html">shop all</a></li>
+                            <li><a href="listBodyLotionButter.html">body Lotion butter</a></li>
+                            <li><a href="listBodyWash.html">hand &amp;  body wash</a></li>
+                            <li><a href="listBodyCream.html">hand cream</a></li>
+                            <li><a href="listBodySalt.html">sea salt</a></li>
+                            <li><a href="listBodyEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listBodyCitrus.html">citrus</a></li>
+                            <li><a href="listBodyFloral.html">floral</a></li>
+                            <li><a href="listBodyFresh.html">fresh</a></li>
+                            <li><a href="listBodyHerbal.html">herbal</a></li>
+                            <li><a href="listBodyNatural.html">natural</a></li>
+                            <li><a href="listBodySpicy.html">spicy</a></li>
+                            <li><a href="listBodyWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="hair">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHair.html">shop all</a></li>
+                            <li><a href="listHairConditioner.html">conditioner</a></li>
+                            <li><a href="listHairShampoo.html">shampoo</a></li>                                    
+                            <li><a href="listHairEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>                                
+                        Scent
+                        <ul>
+                            <li><a href="listHairCitrus.html">citrus</a></li>
+                            <li><a href="listHairFloral.html">floral</a></li>                                       
+                            <li><a href="listHairNatural.html">natural</a></li>
+                            <li><a href="listHairSpicy.html">spicy</a></li>
+                            <li><a href="listHairWoody.html">woody</a></li>
+                        </ul>                                
+                    </li>
+                </ul>
+                <ul class="face">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listFace.html">shop all</a></li>
+                            <li><a href="listFaceCleansing.html">cleansing</a></li>
+                            <li><a href="listFaceMask.html">mask</a></li>
+                            <li><a href="listFaceCream.html">cream</a></li>
+                            <li><a href="listFaceOli.html">oli</a></li>
+                            <li><a href="listFaceMist.html">mist</a></li>
+                            <li><a href="listFaceShaving.html">shaving</a></li>
+                            <li><a href="listFaceEtc.html">etc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listFaceCitrus.html">citrus</a></li>
+                            <li><a href="listFaceFresh.html">fresh</a></li>
+                            <li><a href="listFaceHerbal.html">herbal</a></li>
+                            <li><a href="listFaceNatural.html">natural</a></li>
+                            <li><a href="listFaceSpicy.html">spicy</a></li>
+                            <li><a href="listFaceWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="home">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        Categories
+                        <ul>
+                            <li><a href="listHome.html">shop all</a></li>
+                            <li><a href="listHomeCandle.html">candle</a></li>
+                            <li><a href="listHomeTag.html">tag</a></li>
+                            <li><a href="listHomeDiffuser.html">diffuser</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scent
+                        <ul>
+                            <li><a href="listHomeCitrus.html">citrus</a></li>
+                            <li><a href="listHomeFloral.html">floral</a></li>
+                            <li><a href="listHomeFresh.html">fresh</a></li>
+                            <li><a href="listHomeHerbal.html">herbal</a></li>
+                            <li><a href="listHomeSpicy.html">spicy</a></li>
+                            <li><a href="listHomeWoody.html">woody</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="explore">
+                    <button class="material-symbols-outlined btn_close">close</button>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="treatments.html">
+                            Treatments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stories.html">
+                            Stories
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul> 
+                <div>
+                    <a href="contact.html">
+                        Help                              
+                    </a>
+                    <div class="selectComponent flagSelect">                                 
+                        <ul>
+                            <li class="active">
+                                France
+                            </li>                                            
+                            <li>Canada</li>
+                            <li>Italy</li>
+                            <li>Sweden</li>
+                            <li>United Kingdom</li>
+                            <li>United States</li>
+                        </ul>
+                    </div>    
+                    <div class="selectComponent languageSelect">
+                        <ul>
+                            <li class="active">
+                                Engilsh
+                            </li>
+                            <li>Deutsch</li>
+                            <li>Français</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="material-symbols-outlined btn_open" data-Panel="searchPanel">search</button>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                </a>             
+                <button class="material-symbols-outlined btn_open" data-Panel="bagPanel">shopping_bag</button>
+                <input type="button" value="moblieMenu" class="btn_mui">
+            </div>
+        </div>
+    </header>
+    <section class="workWithUsFooterContainer">
+        <h2>Work with us</h2>
+        <div>
+            <h3>Purchasing Coordinator</h3>
+            <div>
+                <span>Contract: permanent contract</span>
+                <span>From: April 2022</span>
+                <span>Location: Varberg, Sweden </span>
+                <span>
+                    The position <br>
+                    As a Purchasing Coordinator, and reporting to the Purchase Manager, you will 
+                    execute purchases of products and components on behalf the company and 
+                    contribute to the following missions:
+                </span>
+            </div>
+            <div>
+                <b>PURCHASE COMPONENTS &amp; PRODUCTS</b>
+                <p>
+                    Execute the purchasing strategy
+                    Implement the right processes to track & report key functional metrics to continuously 
+                    improve quality, reduce costs and increase productivity in purchase Operate 
+                    purchases of L;a Bruket’s products and components according to forecasts. Determine 
+                    quantity and timing of deliveries, and monitor and forecast upcoming levels of demand.
+                    Be part of the sourcing process of any new component (support with calculations, 
+                    price targets, L:a Bruket requested conditions, professional fair and exhibitions visits)
+                    Work with quality assurance of components and products and assist with inspection 
+                    of goods Initiate and attend yearly supplier meetings. Prepare meetings beforehand 
+                    with reporting and analyses. Be part of the negotiation process with suppliers 
+                    Coordinate communication with suppliers
+                </p>
+            </div>
+            <div>
+                <b>PURCHASE POS MATERIAL</b>
+                <p>
+                    Operate purchases of L:a Bruket’s POSm. Determine quantity and timing.
+                    Be part of the sourcing process of any new POSm (support with calculations, price 
+                    targets, L:a Bruket requested conditions) Work with quality assurance of POSm and 
+                    assist with inspection of goods
+                </p>
+            </div>
+            <div>
+                <b>ARTWORK</b>
+                <p>
+                    Coordinate all artworks of labels, tubes, boxes, product leaflets internally and towards 
+                    graphic designer
+                </p>
+            </div>
+            <div>
+                <b>ASSORTMENT</b>
+                <p>
+                    Have a holistic overview of L:a Bruket range
+                    Be a part of the certification process of products (Cosmos standards).
+                    Article management in ERP system Continuously inform internally about additions, 
+                    deletions and changes to assortments and products
+                </p>
+            </div>
+            <div>
+                <b>PROFILE</b>
+                <p>
+                    Master level education with specialization in purchase production management
+                    3/5+ years confirmed experience in the appropriate field, in a fast-growth environment, 
+                    ideally in beauty, and or premium consumer goods Fluent English language skills are 
+                    essentials Strong working ability of data analysis and performance metrics, putting in 
+                    place and using reporting tools Office 365 literate Self-confidence in taking initiatives 
+                    with the necessary creativity in anticipating scenarios Go the extra-mile and 
+                    contribute to the company’s performance
+                </p>
+            </div>
+            <div>
+                <b>CONTACT</b>
+                <p>
+                    Submit CV + cover letter in both SE and ENG languages 
+                    to <a href="mailto:magnus.petersson@labruket.com">magnus.petersson@labruket.com</a>
+                </p>
+            </div>
+        </div>
+        <div>
+            <h3>Visual Merchandiser</h3>
+            <div>
+                <span>Contract: Freelance</span>
+                <span>From: April 2022</span>
+                <span>Location: London</span>
+            </div>
+            <div>
+                <b>THE POSITION</b>
+                <p>
+                    L:a Bruket is looking for a freelance visual merchandiser to work on a variety of retail 
+                    projects based in their satellite studio in London. The role will provide a great 
+                    opportunity for someone to work on a high frequency of high-profile projects with a 
+                    growing international team. Working closely with the interior architect and creative 
+                    director you will structure VM guidelines for a global network of retailers, while 
+                    developing a variety of brand store, pop-up and shop-in-shop projects, from concept 
+                    to completion.Initially the role will involve working four days per week using the 
+                    satellite studio as a base, with some flexibility to work remotely or from our Swedish 
+                    west coast and Parisian offices.
+                </p>
+            </div>
+            <div>
+                <b>THE APPLICANTS SHOULD:</b>
+                <ul>
+                    <li>
+                        • ideally have two years' relevant experience, ideally within the 
+                        beauty sector, or MA level qualifications
+                    </li>
+                    <li>
+                        • ideally have some experience or a background in architecture, 
+                        spatial or retail design                        
+                    </li>
+                    <li>
+                        • have excellent design and presentation skills with an eye for texture, 
+                        colour and detail
+                    </li>
+                    <li>
+                        • have a good understanding of contemporary design, art and culture
+                    </li>
+                    <li>
+                        • have an aptitude for both hands-on and digital design methods
+                    </li>
+                    <li>
+                        • be comfortable moving between sketches, planograms and mock-ups to 
+                        visualisation software/Adobe Suite to final prototypes
+                    </li>
+                    <li>
+                        • be willing to work autonomously
+                    </li>
+                    <li>
+                        • be fluent in English
+                    </li>
+                </ul>
+                <p>
+                    This is the perfect role if you are looking for the opportunity to gain a depth of 
+                    experience in retail design if you want a chance to play an important role in the 
+                    development of a growing brand's retail identity see your work quickly become a 
+                    reality, with the potential for career progression and exposure if you are looking for 
+                    the opportunity to work with a small but capable company poised for exciting 
+                    developments Please submit a CV and portfolio of your most recent work 
+                    to <a href="mailto:james.brooks@labruket.com">james.brooks@labruket.com</a>
+                </p>
+            </div>
+            <p>
+                Since its introduction in 2009, L:a Bruket AB has developed into one of 
+                the more recognized high-quality natural skin care brands with 
+                distribution worldwide. Today we ship to more than 50 countries and are 
+                displayed in more than 1,300 stores.We produce natural and organic 
+                skincare on the west coast of Sweden with a simple philosophy: 
+                innovation driven by nature, not chemicals.                
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <div class="selectComponent flagSelect foot">                                 
+                    <ul>
+                        <li class="active">
+                            France
+                        </li>                                            
+                        <li>Canada</li>
+                        <li>Italy</li>
+                        <li>Sweden</li>
+                        <li>United Kingdom</li>
+                        <li>United States</li>
+                    </ul>
+                </div>    
+                <div class="selectComponent languageSelect foot">
+                    <ul>
+                        <li class="active">
+                            Engilsh
+                        </li>
+                        <li>Deutsch</li>
+                        <li>Français</li>
+                    </ul>
+                </div>
+                <a href="signIn.html" class="material-symbols-outlined">
+                    person
+                    <span>Account</span>
+                </a>
+                <strong>Customer care</strong>
+                <ul>
+                    <li><a href="mailto:" class="material-symbols-outlined">Email customer care</a></li>
+                    <li><a href="tel:+" class="material-symbols-outlined">call +46340 87100</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Help</strong>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="QA.html">Q&amp;A</a></li>
+                    <li><a href="storeLocator.html">Store Locator</a></li>
+                    <li><a href="termsConditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="workWithUs.html">Work with us</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe to our newsletter</h3>
+                <strong>Stay in the know</strong>
+                <p>Receive email updates from LA BRUKET (including launch announcement, product info and exclusive access).</p>
+                <form>
+                    <fieldset>
+                        <input type="email" id="text" placeholder="Enter your email here...">
+                        <input type="submit" value="OK"> 
+                        <p>You can unsubscribe any time by using the link in our emails.</p>
+                        <p>Please see our Privacy Policy for more information  about how we handle and use personal information.</p>    
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <h2><img src="images/logo.png" alt="LABRUKET"></h2>
+                <p>Natural and organic skincare made on the west coast of Sweden with a simple philosophy: innovation driven by nature, not chemicals.</p>
+            </div>
+        </div>
+        <div>
+            <p>2022 © L:a Bruket. All rights reserved</p>
+            <a href="https://www.facebook.com/labruket/">
+                <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/labruket/">
+                <img src="images/instagram.png" alt="instagram">
+            </a>
+        </div>
+    </footer>                   
+</body>
+</html>

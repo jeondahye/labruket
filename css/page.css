@@ -1,0 +1,1637 @@
+@media screen and (max-width: 767px){
+    #slideBar{
+        background-color: #000; height: 40px; z-index: 3;
+    }
+    #slideBar li{
+        color: #fff; line-height: 40px; font-size: 14px; text-align: center;
+    }
+    [class$='Container'] > .bx-wrapper:first-of-type{
+        position: fixed; z-index: 2; background: #000; box-shadow: none; border: none; margin-bottom: 0;
+    }
+    .bx-wrapper:not(:first-of-type){
+        position: relative; box-shadow: none; border: none; margin-bottom: 0;
+    }
+    .bx-wrapper:not(:first-of-type) li a img{
+        margin: 0 auto; width: 100%;
+    }
+    .bx-wrapper:not(:first-child) .bx-controls-direction a{
+        z-index: 0; display: block; width: 50px; height: 50px;
+        background: transparent; background-repeat: no-repeat;
+    }
+    .bx-wrapper:not(:first-child) .bx-controls-direction a:first-child{
+        background-image: url('../images/prev.png'); 
+    }
+    .bx-wrapper:not(:first-child) .bx-controls-direction a:last-child{
+        background-image: url('../images/next.png'); background-position: right;
+    }
+    .mainContainer > ul:nth-child(2){
+        position: relative; top: 40px; 
+    }
+    /* .mainContainer > ul:not(#slideBar):not([class^='respSlider']):not(:last-of-type){
+        display: flex; 
+    } */
+    /* .mainContainer > ul:last-of-type{
+        display: flex; flex-wrap: wrap; 
+    } */
+    .mainContainer > ul:nth-child(2){
+        margin-bottom: 40px;
+    }
+    /* .mainContainer > ul:last-child li:not(:last-child){
+        width: 50%;
+    } */
+    .mainContainer > ul:not(#slideBar) li{
+        position: relative;
+    }
+    .mainContainer > ul:nth-child(4),
+    .mainContainer > ul:nth-child(6){
+        clear: left;
+    }
+    .mainContainer > ul:not(#slideBar) li a span,
+    .bx-wrapper:not(:first-of-type) li a span,
+    [class$='listContainer'] ul:last-child li a span{
+        position: absolute; bottom: 20px; font-size: 14px; 
+    }
+    .mainContainer ul:nth-of-type(1) li:not(:first-child) a span,
+    .mainContainer ul:nth-of-type(2) li:not(:first-child) a span,
+    .mainContainer ul:nth-of-type(2) li:first-child a span:not(:last-of-type),
+    .mainContainer ul:nth-of-type(4) li a span,
+    .mainContainer ul:nth-of-type(3) li:last-child a span,
+    .mainContainer ul:nth-of-type(3) li:first-child a span,
+    .mainContainer ul:nth-of-type(5) li:first-child a span,
+    .listContainer ul:last-child li a span,
+    .treatmentslistContainer ul:last-child li:hover a span,
+    .explorelistContainer ul li:hover a span,
+    .storieslistContainer ul li:hover a span,
+    [class^='checkOut'] aside div:last-of-type p span a{
+        color: #000;
+    }
+    .mainContainer ul:nth-of-type(3) li:nth-child(2) a span,
+    .mainContainer ul:nth-of-type(1):not([class^='respSlider']) li:not(:last-child) a span,
+    .mainContainer ul:nth-of-type(2) li:first-child a span:last-of-type{
+        color: #fff;
+    }
+    .bx-wrapper:not(:first-of-type) li a span:first-child,
+    .mainContainer ul:nth-of-type(3) li:first-child a span:first-child,
+    .mainContainer ul:nth-of-type(2) li:first-child a span:first-child,
+    .listContainer ul:last-child li a span:nth-of-type(2){
+        display: none;
+    }
+    .mainContainer > ul:not(#slideBar) li a span:not(:last-of-type),
+    .listContainer ul:last-child li a span:first-of-type,
+    .detailContainer > ul > li a span:first-of-type,
+    .bx-wrapper:not(:first-of-type) li a span:not(:last-of-type){
+        left: 20px; 
+    }
+    .mainContainer > ul:not(#slideBar) li a span:last-of-type,
+    .listContainer ul:last-child li a span:last-of-type,
+    .detailContainer > ul > li a span:last-of-type,
+    .bx-wrapper:not(:first-of-type) li a span:last-of-type{
+        right: 20px; 
+    }
+    .mainContainer > ul:not(#slideBar) li video,
+    .mainContainer > ul:not(#slideBar) a,
+    .mainContainer > ul:not(#slideBar) li a img,
+    [class$='listContainer'] ul:last-child li a,
+    [class$='listContainer'] ul:last-child li a img,
+    .listContainer ul:last-child li a img,
+    .detailContainer > ul > li a,
+    .detailContainer > ul > li a img{
+        width: 100%; display: block;
+    }
+    /* listContainer */
+    [class$='listContainer'] ul:last-child::after,
+    .detailContainer > ul::after{
+        content: ''; display: block; clear: both;
+    }
+    [class$='listContainer'] ul:last-child li{
+        float: left; width: 50%; position: relative;
+    }
+    .listContainer  div:last-of-type{
+        position: fixed; width: 100%; top: 100px; z-index: 1; background-color: #fff; 
+        line-height: 40px; font-size: 17px; margin-bottom: 80px;
+    }
+    .listContainer div:last-of-type h2{
+        padding-left: 20px;
+    }
+    .listContainer div:last-of-type button{
+        font-size: 17px; position: absolute; right: 30px; top: 6px; 
+    }
+    .listContainer div:last-of-type button::after{
+        content: url('../images/expand_more.png'); width: 11px; padding-left: 10px;
+    }
+    .listContainer ul:not(#slideBar){
+        margin-top: 80px;
+    }
+    .treatmentslistContainer ul:not(#slideBar),
+    .explorelistContainer ul:not(#slideBar),
+    .storieslistContainer ul:not(#slideBar){
+        margin-top: 40px;
+    }
+    .treatmentslistContainer ul:last-child li a span,
+    .explorelistContainer ul li a span,
+    .storieslistContainer ul:last-child li a span{
+        left: 20px; color: #fff;
+    }
+    /* detailContainer */
+    .detailContainer{
+        background-color: #f5f5f5;
+    }
+    .detailContainer > div{
+        margin-bottom: 40px;
+    }
+    .detailContainer aside{
+        width: 100%; 
+    }
+    .detailContainer aside{
+        padding: 0 2.5%; box-sizing: border-box;
+    }
+    .detailContainer aside:first-of-type h2{
+        font-size: 14px; margin-bottom: 90px; padding-top: 60px; line-height: 20px;
+    }
+    .detailContainer aside strong{
+        font-size: 19px; display: inline-block; margin-bottom: 30px;
+    }
+    .detailContainer aside:first-of-type b{
+        font-size: 19px; display: block; margin-bottom: 40px;
+    }
+    .detailContainer aside:first-of-type select{
+        width: 100%; padding: 15px 0 15px 10px; box-sizing: border-box; font-size: 19px; border: 1px solid #d9d9d9;
+    }
+    .detailContainer aside:first-of-type button{
+        width: 100%; font-size: 14px; margin-bottom: 15px;
+        background-color: #000; color: #fff; text-align: center; line-height: 40px;
+    }
+    .detailContainer aside:first-of-type  p{
+        line-height: 20px; font-size: 14px; margin-bottom: 20px;
+    }
+    .detailContainer aside:last-of-type{
+        margin: 20px 0;
+    }
+    .detailContainer aside:last-of-type > p{
+        font-size: 12px; line-height: 18px; margin-bottom: 40px;
+    }
+    .detailContainer aside:last-of-type ul{
+        position: relative;
+    }
+    .detailContainer aside:last-of-type ul > li:last-of-type{
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .detailContainer aside:last-of-type ul > li{
+        line-height: 50px; 
+        border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
+        background-repeat: no-repeat; background-position: right 10px center;
+        background-image: url('../images/expand_more.png'); 
+    }
+    .detailContainer aside:last-of-type ul > li span{
+        font-size: 14px; padding-left: 10px; display: block;
+    }
+    .detailContainer aside:last-of-type ul > li.active span{
+        background-repeat: no-repeat; background-position: right 10px center;
+        background-image: url('../images/expand_less.png'); 
+    }
+    .detailContainer aside:last-of-type ul > li p{
+        display: none; padding: 12% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
+        text-align: center;
+    }
+    .detailContainer aside:last-of-type ul > li.active p{
+        display: block;
+    }
+    .detailContainer > img,
+    .detailContainer video{
+        width: 100%; display: block;
+    }
+    .detailContainer h3{
+        background-color: #fff; line-height: 120px; font-size: 12px; padding-left: 20px;
+    }
+    .detailContainer > ul > li{
+        float: left; width: 50%; position: relative;
+    }
+    .detailContainer > ul > li a span{
+        position: absolute; bottom: 20px; font-size: 12px; color: #000;
+    }
+    /* accountContainer */
+    section,
+    [class$='SideContainer']{
+        background-color: #f5f5f5;
+        box-sizing: border-box; 
+    } 
+    section::after,
+    [class$='SideContainer']::after{
+        content: ''; display: block; clear: both;
+    }
+    section h2,
+    [class$='SideContainer'] aside{
+        width: 100%; background-color: #fff; margin: 50px 0 30px 0;
+        padding-left: 20px; box-sizing: border-box; font-size: 24px;
+    }
+    section h2,
+    [class$='SideContainer']:not(.mySettingSideContainer):not(.userInfoSideContainer):not(.myOrderSideContainer) aside{
+        line-height: 200px;
+    }
+    .mySettingSideContainer aside,
+    .userInfoSideContainer aside,
+    .myOrderSideContainer aside{
+        padding-top: 20px; padding-bottom: 20px;
+    }
+    section fieldset,
+    .accountContainer div,
+    .mySettingSideContainer div,
+    .userInfoSideContainer div,
+    .myOrderSideContainer div,
+    .explorePageContainer > div,
+    [class*='FooterContainer'] > div{
+        margin: 0 5%;
+    }
+    section fieldset,
+    .mySettingSideContainer form div fieldset:first-child{
+        padding-top: 30px;
+    }
+    .mySettingSideContainer form div fieldset:last-child{
+        padding-top: 45px;
+    }
+    section fieldset legend,
+    .mySettingSideContainer form div fieldset:first-child legend{
+        width: 100%; position: relative; display: block; font-size: 19px; 
+    }
+    .mySettingSideContainer form div fieldset:last-child legend,
+    [class*='FooterContainer'] > div h3{
+        font-size: 19px;
+    }
+    section fieldset legend small{
+        float: right; font-size: 12px;
+    }
+    section fieldset ul li:not(:last-child),
+    .mySettingSideContainer form div fieldset ul,
+    .mySettingSideContainer form div fieldset ul li:not(:last-child){
+        margin-bottom: 45px;
+    }
+    section:not([class*='Payment']) fieldset label:not([for="privacyPolicy"]),
+    .mySettingSideContainer form div fieldset ul li label,
+    [class*='Payment'] fieldset ul li:nth-child(2) label,
+    [class*='Payment'] fieldset ul li:nth-child(3) label,
+    [class*='Payment'] fieldset ul li:nth-child(4) label{
+        display: block; margin-bottom: 10px; font-size: 12px;
+    }
+    section:not([class*='Payment']) fieldset ul li label:not([for="privacyPolicy"]):not([for="policy"]):not([for="subscribe"]):after{
+        content: "*"; 
+    }
+    section fieldset ul li input:not([type="checkbox"]):not([type="radio"]),
+    .mySettingSideContainer form div fieldset ul li input,
+    .resetPasswordContainer fieldset input[type="email"]{
+        display: block; line-height: 50px; box-sizing: border-box; border: 1px solid #d9d9d9; padding-left: 2%;
+    }
+    .mySettingSideContainer form div fieldset ul li input,
+    .resetPasswordContainer fieldset input[type="email"],
+    section fieldset ul li input:not([type="checkbox"]):not([type="radio"]){
+        width: 100%;
+    }
+    /* section fieldset ul li input:not([type="checkbox"]):not([type="radio"]){
+        width: 90%;
+    } */
+    section fieldset ul li input[type="checkbox"]{
+        float: left; margin-right: 10px;
+    }
+    section fieldset ul li label[for="privacyPolicy"],
+    section fieldset ul li label[for="policy"],
+    section fieldset ul li label[for="subscribe"]{
+        line-height: 20px;
+    }
+    section fieldset > input:not([type="email"]),
+    .mySettingSideContainer form div fieldset > input,
+    .userInfoSideContainer div a{
+        width: 100%; line-height: 50px; background-color: #000; color: #fff; margin-bottom: 30px;
+    }
+    .mySettingSideContainer form div fieldset > input,
+    .userInfoSideContainer div a{
+        font-size: 19px;
+    }
+    section fieldset > input:not([type="email"]){
+        font-size: 13px;
+    }
+    .accountContainer fieldset ul li a{
+        float: right; display: block; font-size: 12px; color: #000;
+    }
+    /* .myOrderSideContainer div{
+        padding-top: 130px;
+    } */
+    .explorePageContainer img,
+    .explorePageContainer video,
+    [class*='FooterContainer'] img{
+        padding-top: 30px;
+    }
+    .accountContainer div strong,
+    .mySettingSideContainer > div strong{
+        font-size: 19px; display: block; margin-bottom: 30px;
+    }
+    .accountContainer div p{
+        max-width: 80%; font-size: 12px; line-height: 18px; margin-bottom: 30px;
+    }
+    .accountContainer div a{
+        display: block; width: 100%; line-height: 50px; background-color: #000; color: #fff; text-align: center; font-size: 19px;
+    }
+    .createAccountContainer fieldset ul{
+        clear: right;
+    }
+    section fieldset > a{
+        font-size: 12px; color: #000;
+    }
+    /* [class$='SideContainer'] aside ul li{
+        margin-bottom: 20px; 
+    } */
+    [class$='SideContainer'] aside ul li a{
+        font-size: 14px; color: #000;
+    }
+    [class$='SideContainer'] aside ul li a:hover{
+        color: #8b8b8b;
+    }
+    .mySettingSideContainer div fieldset ul li select,
+    .checkOutContainer fieldset ul li select{
+        display: block; padding: 20px 0; box-sizing: border-box; border: 1px solid #d9d9d9;
+    }
+    .mySettingSideContainer div fieldset ul li select,
+    .checkOutContainer fieldset ul li select{
+        width: 100%;
+    }
+    /* .checkOutContainer fieldset ul li select{
+        width: 90%;
+    } */
+    .mySettingSideContainer > div p{
+        font-size: 14px; color: #828282; line-height: 18px;
+    }
+    .mySettingSideContainer > div p a,
+    [class*='FooterContainer'] > div div p a,
+    .contactFooterContainer div ul li span a,
+    .locatorFooterContainer div div div a{
+        color: #828282;
+    }
+    .userInfoSideContainer div ul{
+        margin-bottom: 15px;
+    }
+    .accountContainer fieldset ul,
+    .userInfoSideContainer div ul li:first-child,
+    .resetPasswordContainer fieldset input[type="email"],
+    .checkOutContainer fieldset ul,
+    .qaFooterContainer > div:last-of-type > strong,
+    [class*='Payment'] fieldset ul{
+        margin-bottom: 70px;
+    }
+    section fieldset ul li label[for="privacyPolicy"]{
+        display: block; margin-bottom: 70px; font-size: 12px;
+    }
+    .userInfoSideContainer div ul li strong,
+    .myOrderSideContainer div strong{
+        font-size: 19px; display: block; margin-bottom: 45px;
+    }
+    .userInfoSideContainer div ul li span,
+    .myOrderSideContainer div span{
+        font-size: 14px; display: block;
+    }
+    .userInfoSideContainer div ul li:first-child span:first-of-type{
+        margin-bottom: 10px;
+    }
+    .userInfoSideContainer div a{
+        display: block; width: 90%; text-align: center;
+    }
+    [class^='checkOut'] aside{
+        margin: 30px 0; width: 100%; background-color: #fff; 
+        padding-top: 40px; box-sizing: border-box;
+    }
+    [class^='checkOut'] aside h3{
+        padding-left: 2%; margin-bottom: 40px;
+    }
+    [class^='checkOut'] aside > a{
+        float: left;  display: block; width: 100%; margin: 0 20px 40px 0; max-width: 250px;
+    }
+    [class^='checkOut'] aside > a img{
+        display: block; width: 100%;
+    }
+    [class^='checkOut'] aside > div:first-of-type{
+        
+    }
+    [class^='checkOut'] aside div:first-of-type span:nth-child(2){
+        display: inline-block; margin: 0 0 20px 5%;
+    }
+    [class^='checkOut'] aside div:first-of-type span:first-of-type{
+        display: block; margin: 0 0 20px 5%;
+    }
+    [class^='checkOut'] aside ul{
+        clear: left; background-color: #f5f5f5; margin-bottom: 40px;
+    }
+    [class^='checkOut'] aside ul li{
+        line-height: 60px; padding-left: 2%; font-size: 14px;
+    }
+    [class^='checkOut'] aside ul li:not(:last-of-type){
+        border-bottom: 1px solid #d9d9d9; box-sizing: border-box;
+    }
+    [class^='checkOut'] aside ul li span{
+        float: right; padding-right: 2%; 
+    }
+    [class^='checkOut'] aside ul li input{
+        font-size: 14px;
+    }
+    [class^='checkOut'] aside ul li input[type="text"]{
+        border: none; background-color: #f5f5f5; color: #828282;
+    }
+    [class^='checkOut'] aside ul li input[type="submit"]{
+        float: right; background-color: #000; color: #fff; line-height: 59px; width: 30%; 
+    }
+    [class^='checkOut'] aside div:last-of-type b{
+        display: block; width: 100%; line-height: 60px; padding-left: 10%; box-sizing: border-box; 
+        background-color: #f5f5f5; font-size: 14px; margin-bottom: 40px; 
+        background-image: url('../images/expand_more.png'); background-repeat: no-repeat; background-position: right 20px center;
+    }
+    [class^='checkOut'] aside div:last-of-type.active b{
+        background-image: url('../images/expand_less.png'); background-repeat: no-repeat; background-position: right 20px center;
+    }
+    [class^='checkOut'] aside div:last-of-type p{
+        display: none;
+    }
+    [class^='checkOut'] aside div:last-of-type.active p,
+    .locatorFooterContainer div div div span,
+    .contactFooterContainer div ul li span{
+        display: block; 
+    }
+    [class^='checkOut'] aside div:last-of-type{
+        padding-bottom: 40px;
+    }
+    [class^='checkOut'] aside div:last-of-type p span{ 
+        display: block; padding-left: 10%; margin-bottom: 40px; font-size: 14px;
+    }
+    [class*='Payment'] aside div:last-of-type div{
+        background-color: #000; color: #fff; width: 100%;
+        text-align: center; font-size: 24px; line-height: 290px;
+    }
+    [class*='Payment'] fieldset ul li:nth-of-type(3){
+        padding-right: 6%;
+    }
+    [class*='Payment'] fieldset ul li:nth-of-type(3),
+    [class*='Payment'] fieldset ul li:nth-of-type(4){
+        width: 47%; float: left;
+    }
+    [class*='Payment'] fieldset ul li:nth-of-type(5){
+        clear: both;
+    }
+    [class*='Payment'] fieldset ul li label{
+        font-size: 12px;
+    }
+    [class*='Payment'] fieldset ul li:nth-child(1) label,
+    [class*='Payment'] fieldset ul li:nth-child(5) label,
+    [class*='Payment'] fieldset ul li:nth-child(6) label{
+        vertical-align: -3px;
+    }
+    [class*='Payment'] fieldset ul li:nth-child(2) input{
+        background-image: url('../images/card.png'); background-repeat: no-repeat; background-position: right 10px center;
+    }
+    [class*='Payment'] fieldset ul li input[type="radio"]{
+        padding-right: 2%; width: 19px; height: 19px;
+        appearance: none; background-image: url('../images/radio.png');
+        background-repeat: no-repeat; 
+    }
+    [class*='Payment'] fieldset ul li input[type="radio"]:checked{
+        background-image: url('../images/radioChecked.png');
+    }
+    /* explorePageContainer */
+    .explorePageContainer img,
+    .explorePageContainer video{
+        width: 100%;
+    }
+    .explorePageContainer div h3{
+        margin-bottom: 30px; font-size: 19px; line-height: 25px;
+    }
+    .explorePageContainer div > p{
+        font-size: 14px; line-height: 22px; color: #828282;
+    }
+    .explorePageContainer div div b,
+    [class*='FooterContainer'] > div div b{
+        margin-bottom: 10px; display: block; font-size: 14px; line-height: 22px;
+    }
+    /* footerContainer */
+    [class*='FooterContainer'] img{
+        width: 100%;
+    }
+    [class*='FooterContainer'] div h3,
+    [class*='FooterContainer'] div div:not(:last-child),
+    .aboutFooterContainer div p:not(:last-of-type),
+    .PolicyFooterContainer > div div p:not(:last-of-type),
+    .PolicyFooterContainer > div div ol,
+    .qaFooterContainer > div:last-of-type div:last-of-type,
+    .workWithUsFooterContainer div div span:nth-child(3),
+    .workWithUsFooterContainer div:last-of-type div ul,
+    .contactFooterContainer div ul li,
+    .contactFooterContainer div ul li span:not(:nth-child(3)),
+    .explorePageContainer div div p:not(:last-of-type),
+    .explorePageContainer div div:not(:last-of-type){
+        margin-bottom: 30px; 
+    }
+    .aboutFooterContainer div p,
+    .contactFooterContainer div ul li span,
+    .workWithUsFooterContainer div > p{
+        font-size: 14px; color: #828282; line-height: 22px;
+    }
+    .PolicyFooterContainer > div h3{
+        line-height: 22px;
+    }
+    .PolicyFooterContainer > div div p,
+    .PolicyFooterContainer > div div ol li,
+    [class*='FooterContainer'] > div div p,
+    .qaFooterContainer > div:last-of-type div ol li,
+    .workWithUsFooterContainer div:last-of-type div ul li{
+        font-size: 12px; color: #828282; line-height: 16px;
+    }
+    .PolicyFooterContainer > div div p strong,
+    .workWithUsFooterContainer div div span,
+    .locatorFooterContainer div div div a{
+        font-size: 12px; display: block;
+    }
+    .qaFooterContainer > div div,
+    .locatorFooterContainer div div div a:not(:last-child),
+    .locatorFooterContainer div div div p,
+    .contactFooterContainer div ul li strong,
+    .PolicyFooterContainer > div div p strong{
+        margin-bottom: 10px;
+    }
+    .qaFooterContainer > div:last-of-type > strong,
+    .contactFooterContainer div ul li strong{
+        display: block; font-size: 19px;
+    }
+    .qaFooterContainer > div:last-of-type > a{
+        display: block; width: 100%; font-size: 19px; background-color: #000; color: #fff; text-align: center; line-height: 50px;
+    }
+    .workWithUsFooterContainer div div span{
+        line-height: 16px;
+    }
+}
+/* mobile */
+@media screen and (min-width:768px) and (max-width: 1279px){
+    #slideBar{
+        background-color: #000; height: 40px; z-index: 3;
+    }
+    #slideBar li{
+        color: #fff; line-height: 40px; font-size: 14px; text-align: center;
+    }
+    [class$='Container'] > .bx-wrapper:first-of-type{
+        position: fixed; z-index: 2; background: #000; box-shadow: none; border: none; margin-bottom: 0;
+    }
+    .bx-wrapper:not(:first-of-type){
+        position: relative; box-shadow: none; border: none; margin-bottom: 0;
+    }
+    .bx-wrapper:not(:first-of-type) li a img{
+        margin: 0 auto; width: 100%;
+    }
+    .bx-wrapper:not(:first-child) .bx-controls-direction a{
+        z-index: 0; display: block; width: 50px; height: 50px;
+        background: transparent; background-repeat: no-repeat;
+    }
+    .bx-wrapper:not(:first-child) .bx-controls-direction a:first-child{
+        background-image: url('../images/prev.png'); 
+    }
+    .bx-wrapper:not(:first-child) .bx-controls-direction a:last-child{
+        background-image: url('../images/next.png'); background-position: right;
+    }
+    .mainContainer > ul:nth-child(2){
+        position: relative; top: 40px; 
+    }
+    .mainContainer > ul:not(#slideBar):not([class^='respSlider']):not(:last-of-type){
+        display: flex; 
+    }
+    .mainContainer > ul:last-of-type{
+        display: flex; flex-wrap: wrap; 
+    }
+    .mainContainer > ul:nth-child(2){
+        margin-bottom: 40px;
+    }
+    .mainContainer > ul:last-child li:not(:last-child){
+        width: 50%;
+    }
+    .mainContainer > ul:not(#slideBar) li{
+        position: relative;
+    }
+    .mainContainer > ul:nth-child(4),
+    .mainContainer > ul:nth-child(6){
+        clear: left;
+    }
+    .mainContainer > ul:not(#slideBar) li a span,
+    .bx-wrapper:not(:first-of-type) li a span,
+    [class$='listContainer'] ul:last-child li a span{
+        position: absolute; bottom: 20px; font-size: 14px; 
+    }
+    .mainContainer ul:nth-of-type(1) li:not(:first-child) a span,
+    .mainContainer ul:nth-of-type(2) li:not(:first-child) a span,
+    .mainContainer ul:nth-of-type(2) li:first-child a span:not(:last-of-type),
+    .mainContainer ul:nth-of-type(4) li a span,
+    .mainContainer ul:nth-of-type(3) li:last-child a span,
+    .mainContainer ul:nth-of-type(3) li:first-child a span,
+    .mainContainer ul:nth-of-type(5) li:first-child a span,
+    .listContainer ul:last-child li a span,
+    .treatmentslistContainer ul:last-child li:hover a span,
+    .explorelistContainer ul li:hover a span,
+    .storieslistContainer ul li:hover a span,
+    [class^='checkOut'] aside div:last-of-type p span a{
+        color: #000;
+    }
+    .mainContainer ul:nth-of-type(3) li:nth-child(2) a span,
+    .mainContainer ul:nth-of-type(1):not([class^='respSlider']) li:not(:last-child) a span,
+    .mainContainer ul:nth-of-type(2) li:first-child a span:last-of-type{
+        color: #fff;
+    }
+    .bx-wrapper:not(:first-of-type) li a span:first-child,
+    .mainContainer ul:nth-of-type(3) li:first-child a span:first-child,
+    .mainContainer ul:nth-of-type(2) li:first-child a span:first-child,
+    .listContainer ul:last-child li a span:nth-of-type(1){
+        display: none;
+    }
+    .mainContainer > ul:not(#slideBar) li a span:not(:last-of-type),
+    .listContainer ul:last-child li a span:not(:last-of-type),
+    .detailContainer > ul > li a span:first-of-type,
+    .bx-wrapper:not(:first-of-type) li a span:not(:last-of-type){
+        left: 20px; 
+    }
+    .mainContainer > ul:not(#slideBar) li a span:last-of-type,
+    .listContainer ul:last-child li a span:last-of-type,
+    .detailContainer > ul > li a span:last-of-type,
+    .bx-wrapper:not(:first-of-type) li a span:last-of-type{
+        right: 20px; 
+    }
+    .mainContainer > ul:not(#slideBar) li video,
+    .mainContainer > ul:not(#slideBar) a,
+    .mainContainer > ul:not(#slideBar) li a img,
+    [class$='listContainer'] ul:last-child li a,
+    [class$='listContainer'] ul:last-child li a img,
+    .listContainer ul:last-child li a img,
+    .detailContainer > ul > li a,
+    .detailContainer > ul > li a img{
+        width: 100%; display: block;
+    }
+    /* listContainer */
+    [class$='listContainer'] ul:last-child::after,
+    .detailContainer > ul::after{
+        content: ''; display: block; clear: both;
+    }
+    [class$='listContainer'] ul:last-child li{
+        float: left; width: 50%; position: relative;
+    }
+    .listContainer  div:last-of-type{
+        position: fixed; width: 100%; top: 100px; z-index: 1; background-color: #fff; 
+        line-height: 40px; font-size: 17px; margin-bottom: 80px;
+    }
+    .listContainer div:last-of-type h2{
+        padding-left: 20px;
+    }
+    .listContainer div:last-of-type button{
+        font-size: 17px; position: absolute; right: 30px; top: 6px; 
+    }
+    .listContainer div:last-of-type button::after{
+        content: url('../images/expand_more.png'); width: 11px; padding-left: 10px;
+    }
+    .listContainer ul:not(#slideBar){
+        margin-top: 80px;
+    }
+    .treatmentslistContainer ul:not(#slideBar),
+    .explorelistContainer ul:not(#slideBar),
+    .storieslistContainer ul:not(#slideBar){
+        margin-top: 40px;
+    }
+    .treatmentslistContainer ul:last-child li a span,
+    .explorelistContainer ul li a span,
+    .storieslistContainer ul:last-child li a span{
+        left: 20px; color: #fff;
+    }
+    /* detailContainer */
+    .detailContainer{
+        background-color: #f5f5f5;
+    }
+    .detailContainer > div,
+    [class$='SideContainer'] aside h2{
+        margin-bottom: 40px;
+    }
+    .detailContainer aside{
+        width: 100%; 
+    }
+    .detailContainer aside{
+        padding-left: 2.5%; box-sizing: border-box;
+    }
+    .detailContainer aside:first-of-type h2{
+        font-size: 14px; margin-bottom: 90px; padding-top: 60px; line-height: 20px;
+    }
+    .detailContainer aside strong{
+        font-size: 19px; display: inline-block; margin-bottom: 30px;
+    }
+    .detailContainer aside:first-of-type b{
+        font-size: 19px; display: block; margin-bottom: 40px;
+    }
+    .detailContainer aside:first-of-type select{
+        width: 57%; padding: 15px 0 15px 10px; box-sizing: border-box; font-size: 19px; border: 1px solid #d9d9d9;
+    }
+    .detailContainer aside:first-of-type button{
+        width: 57%; font-size: 14px; margin-bottom: 15px;
+        background-color: #000; color: #fff; text-align: center; line-height: 40px;
+    }
+    .detailContainer aside:first-of-type  p{
+        max-width: 80%; line-height: 20px; font-size: 14px; margin-bottom: 20px;
+    }
+    .detailContainer aside:last-of-type{
+        margin: 20px 0;
+    }
+    .detailContainer aside:last-of-type > p{
+        max-width: 57%; font-size: 12px; line-height: 18px; margin-bottom: 40px;
+    }
+    .detailContainer aside:last-of-type ul{
+        position: relative;
+    }
+    .detailContainer aside:last-of-type ul > li:last-of-type{
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .detailContainer aside:last-of-type ul > li{
+        width: 57%; line-height: 50px; 
+        border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
+        background-repeat: no-repeat; background-position: right 10px center;
+        background-image: url('../images/expand_more.png'); 
+    }
+    .detailContainer aside:last-of-type ul > li span{
+        font-size: 14px; padding-left: 10px; display: block;
+    }
+    .detailContainer aside:last-of-type ul > li.active span{
+        background-repeat: no-repeat; background-position: right 10px center;
+        background-image: url('../images/expand_less.png'); 
+    }
+    .detailContainer aside:last-of-type ul > li p{
+        display: none; padding: 7% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
+        text-align: center;
+    }
+    .detailContainer aside:last-of-type ul > li.active p{
+        display: block;
+    }
+    .detailContainer > img,
+    .detailContainer video{
+        width: 100%; display: block;
+    }
+    .detailContainer h3{
+        background-color: #fff; line-height: 120px; font-size: 12px; padding-left: 20px;
+    }
+    .detailContainer > ul > li{
+        float: left; width: 25%; position: relative;
+    }
+    .detailContainer > ul > li a span{
+        position: absolute; bottom: 20px; font-size: 12px; color: #000;
+    }
+    /* accountContainer */
+    section,
+    [class$='SideContainer']{
+        background-color: #f5f5f5; position: relative; padding-left: 25%;
+        box-sizing: border-box; 
+    } 
+    section::after,
+    [class$='SideContainer']::after{
+        content: ''; display: block; clear: both;
+    }
+    section h2,
+    [class$='SideContainer'] aside{
+        width: 25%; background-color: #fff; height: calc(100% - 150px); position: absolute;
+        left: 0; top: 150px; padding: 40px 1% 0; padding-top: 40px; box-sizing: border-box; font-size: 24px;
+    }
+    section fieldset,
+    .accountContainer div,
+    .mySettingSideContainer div,
+    .userInfoSideContainer div,
+    .myOrderSideContainer div,
+    .explorePageContainer > div,
+    [class*='FooterContainer'] > div{
+        width: 90%; margin-left: 5%;
+    }
+    section fieldset,
+    .mySettingSideContainer form div fieldset:first-child{
+        padding-top: 170px;
+    }
+    .mySettingSideContainer form div fieldset:last-child{
+        padding-top: 45px;
+    }
+    section fieldset legend,
+    .mySettingSideContainer form div fieldset:first-child legend{
+        width: 100%; position: relative; top: 130px; display: block; font-size: 19px; 
+    }
+    .mySettingSideContainer form div fieldset:last-child legend,
+    [class*='FooterContainer'] > div h3{
+        font-size: 19px;
+    }
+    section fieldset legend small{
+        float: right; font-size: 12px;
+    }
+    section fieldset ul li:not(:last-child),
+    .mySettingSideContainer form div fieldset ul,
+    .mySettingSideContainer form div fieldset ul li:not(:last-child){
+        margin-bottom: 45px;
+    }
+    section:not([class*='Payment']) fieldset label:not([for="privacyPolicy"]),
+    .mySettingSideContainer form div fieldset ul li label,
+    [class*='Payment'] fieldset ul li:nth-child(2) label,
+    [class*='Payment'] fieldset ul li:nth-child(3) label,
+    [class*='Payment'] fieldset ul li:nth-child(4) label{
+        display: block; margin-bottom: 10px; font-size: 12px;
+    }
+    section:not([class*='Payment']) fieldset ul li label:not([for="privacyPolicy"]):not([for="policy"]):not([for="subscribe"]):after{
+        content: "*"; 
+    }
+    section fieldset ul li input:not([type="checkbox"]):not([type="radio"]),
+    .mySettingSideContainer form div fieldset ul li input,
+    .resetPasswordContainer fieldset input[type="email"]{
+        display: block; width: 100%; line-height: 50px; box-sizing: border-box; border: 1px solid #d9d9d9; padding-left: 2%;
+    }
+    section fieldset ul li input[type="checkbox"]{
+        float: left; margin-right: 10px;
+    }
+    section fieldset ul li label[for="privacyPolicy"],
+    section fieldset ul li label[for="policy"],
+    section fieldset ul li label[for="subscribe"]{
+        line-height: 20px;
+    }
+    section fieldset > input:not([type="email"]),
+    .mySettingSideContainer form div fieldset > input,
+    .userInfoSideContainer div a{
+        width: 100%; line-height: 50px; background-color: #000; color: #fff; font-size: 19px; margin-bottom: 30px;
+    }
+    .accountContainer fieldset ul li a{
+        float: right; display: block; font-size: 12px; color: #000;
+    }
+    .myOrderSideContainer div,
+    .userInfoSideContainer div,
+    .explorePageContainer > div,
+    .explorePageContainer img,
+    .explorePageContainer video,
+    [class*='FooterContainer'] > div,
+    [class*='FooterContainer'] img{
+        padding-top: 130px;
+    }
+    .accountContainer div strong,
+    .mySettingSideContainer > div strong{
+        font-size: 19px; display: block; margin-bottom: 30px;
+    }
+    .accountContainer div p{
+        max-width: 80%; font-size: 12px; line-height: 18px; margin-bottom: 30px;
+    }
+    .accountContainer div a{
+        display: block; width: 100%; line-height: 50px; background-color: #000; color: #fff; text-align: center; font-size: 19px;
+    }
+    .createAccountContainer fieldset ul{
+        clear: right;
+    }
+    section fieldset > a{
+        font-size: 12px; color: #000;
+    }
+    [class$='SideContainer'] aside ul li{
+        margin-bottom: 20px; 
+    }
+    [class$='SideContainer'] aside ul li a{
+        font-size: 14px; color: #000;
+    }
+    [class$='SideContainer'] aside ul li a:hover{
+        color: #8b8b8b;
+    }
+    .mySettingSideContainer div fieldset ul li select,
+    .checkOutContainer fieldset ul li select{
+        display: block; width: 100%; padding: 20px 0; box-sizing: border-box; border: 1px solid #d9d9d9;
+    }
+    .mySettingSideContainer > div p{
+        font-size: 14px; color: #828282; line-height: 18px;
+    }
+    .mySettingSideContainer > div p a,
+    [class*='FooterContainer'] > div div p a,
+    .contactFooterContainer div ul li span a,
+    .locatorFooterContainer div div div a{
+        color: #828282;
+    }
+    .userInfoSideContainer div ul{
+        margin-bottom: 15px;
+    }
+    .accountContainer fieldset ul,
+    .userInfoSideContainer div ul li:first-child,
+    .resetPasswordContainer fieldset input[type="email"],
+    .checkOutContainer fieldset ul,
+    .qaFooterContainer > div:last-of-type > strong,
+    [class*='Payment'] fieldset ul{
+        margin-bottom: 70px;
+    }
+    section fieldset ul li label[for="privacyPolicy"]{
+        display: block; margin-bottom: 70px; font-size: 12px;
+    }
+    .myOrderSideContainer div{
+        padding-bottom: 400px;
+    }
+    .userInfoSideContainer div ul li strong,
+    .myOrderSideContainer div strong{
+        font-size: 19px; display: block; margin-bottom: 45px;
+    }
+    .userInfoSideContainer div ul li span,
+    .myOrderSideContainer div span{
+        font-size: 14px; display: block;
+    }
+    .userInfoSideContainer div ul li:first-child span:first-of-type{
+        margin-bottom: 10px;
+    }
+    .userInfoSideContainer div a{
+        display: block; width: 90%; text-align: center;
+    }
+    [class^='checkOut'] aside{
+        margin: 30px 0 0 5%; width: 95%; background-color: #fff; 
+        padding-top: 40px; box-sizing: border-box;
+    }
+    [class^='checkOut'] aside h3{
+        padding-left: 2%; margin-bottom: 40px;
+    }
+    [class^='checkOut'] aside > a{
+        float: left;  display: block; width: 40%; margin: 0 20px 40px 0; max-width: 250px;
+    }
+    [class^='checkOut'] aside > a img{
+        display: block; width: 100%;
+    }
+    [class^='checkOut'] aside > div:first-of-type{
+        display: flex; flex-flow: row nowrap; height: 280px;
+    }
+    [class^='checkOut'] aside div:first-of-type span{
+        align-self: center;
+    }
+    [class^='checkOut'] aside div:first-of-type span:first-of-type{
+        flex:2 1 auto;
+    }
+    [class^='checkOut'] aside ul{
+        clear: left; background-color: #f5f5f5; margin-bottom: 40px;
+    }
+    [class^='checkOut'] aside ul li{
+        line-height: 60px; padding-left: 2%; font-size: 14px;
+    }
+    [class^='checkOut'] aside ul li:not(:last-of-type){
+        border-bottom: 1px solid #d9d9d9; box-sizing: border-box;
+    }
+    [class^='checkOut'] aside ul li span{
+        float: right; padding-right: 2%; 
+    }
+    [class^='checkOut'] aside ul li input{
+        font-size: 14px;
+    }
+    [class^='checkOut'] aside ul li input[type="text"]{
+        border: none; background-color: #f5f5f5; color: #828282;
+    }
+    [class^='checkOut'] aside ul li input[type="submit"]{
+        float: right; background-color: #000; color: #fff; line-height: 59px; width: 12%; 
+    }
+    [class^='checkOut'] aside div:last-of-type b{
+        display: block; width: 100%; line-height: 60px; padding-left: 10%; box-sizing: border-box; 
+        background-color: #f5f5f5; font-size: 14px; margin-bottom: 40px; 
+        background-image: url('../images/expand_more.png'); background-repeat: no-repeat; background-position: right 20px center;
+    }
+    [class^='checkOut'] aside div:last-of-type.active b{
+        background-image: url('../images/expand_less.png'); background-repeat: no-repeat; background-position: right 20px center;
+    }
+    [class^='checkOut'] aside div:last-of-type p{
+        display: none;
+    }
+    [class^='checkOut'] aside div:last-of-type.active p,
+    .locatorFooterContainer div div div span,
+    .contactFooterContainer div ul li span{
+        display: block; 
+    }
+    [class^='checkOut'] aside div:last-of-type{
+        padding-bottom: 40px;
+    }
+    [class^='checkOut'] aside div:last-of-type p span{ 
+        display: block; padding-left: 10%; margin-bottom: 40px; font-size: 14px;
+    }
+    [class*='Payment'] aside div:last-of-type div{
+        background-color: #000; color: #fff; width: 100%;
+        text-align: center; font-size: 24px; line-height: 290px;
+    }
+    [class*='Payment'] fieldset ul li:nth-of-type(3){
+        padding-right: 6%;
+    }
+    [class*='Payment'] fieldset ul li:nth-of-type(3),
+    [class*='Payment'] fieldset ul li:nth-of-type(4){
+        width: 47%; float: left;
+    }
+    [class*='Payment'] fieldset ul li:nth-of-type(5){
+        clear: both;
+    }
+    [class*='Payment'] fieldset ul li label{
+        font-size: 12px;
+    }
+    [class*='Payment'] fieldset ul li:nth-child(1) label,
+    [class*='Payment'] fieldset ul li:nth-child(5) label,
+    [class*='Payment'] fieldset ul li:nth-child(6) label{
+        vertical-align: -3px;
+    }
+    [class*='Payment'] fieldset ul li:nth-child(2) input{
+        background-image: url('../images/card.png'); background-repeat: no-repeat; background-position: right 10px center;
+    }
+    [class*='Payment'] fieldset ul li input[type="radio"]{
+        padding-right: 2%; width: 19px; height: 19px;
+        appearance: none; background-image: url('../images/radio.png');
+        background-repeat: no-repeat; 
+    }
+    [class*='Payment'] fieldset ul li input[type="radio"]:checked{
+        background-image: url('../images/radioChecked.png');
+    }
+    /* explorePageContainer */
+    .explorePageContainer img,
+    .explorePageContainer video{
+        width: 95%; margin-left: 5%;
+    }
+    .explorePageContainer div h3{
+        margin-bottom: 30px; font-size: 19px; line-height: 25px;
+    }
+    .explorePageContainer div > p{
+        font-size: 14px; line-height: 22px; color: #828282;
+    }
+    .explorePageContainer div div b,
+    [class*='FooterContainer'] > div div b{
+        margin-bottom: 10px; display: block; font-size: 14px; line-height: 22px;
+    }
+    /* footerContainer */
+    [class*='FooterContainer'] img{
+        width: 95%; margin-left: 5%;
+    }
+    [class*='FooterContainer'] div h3,
+    [class*='FooterContainer'] div div:not(:last-child),
+    .aboutFooterContainer div p:not(:last-of-type),
+    .PolicyFooterContainer > div div p:not(:last-of-type),
+    .PolicyFooterContainer > div div ol,
+    .qaFooterContainer > div:last-of-type div:last-of-type,
+    .workWithUsFooterContainer div div span:nth-child(3),
+    .workWithUsFooterContainer div:last-of-type div ul,
+    .contactFooterContainer div ul li,
+    .contactFooterContainer div ul li span:not(:nth-child(3)),
+    .explorePageContainer div div p:not(:last-of-type),
+    .explorePageContainer div div:not(:last-of-type){
+        margin-bottom: 30px; 
+    }
+    .aboutFooterContainer div p,
+    .contactFooterContainer div ul li span,
+    .workWithUsFooterContainer div > p{
+        font-size: 14px; color: #828282; line-height: 22px;
+    }
+    .PolicyFooterContainer > div h3{
+        line-height: 22px;
+    }
+    .PolicyFooterContainer > div div p,
+    .PolicyFooterContainer > div div ol li,
+    [class*='FooterContainer'] > div div p,
+    .qaFooterContainer > div:last-of-type div ol li,
+    .workWithUsFooterContainer div:last-of-type div ul li{
+        font-size: 12px; color: #828282; line-height: 16px;
+    }
+    .PolicyFooterContainer > div div p strong,
+    .workWithUsFooterContainer div div span,
+    .locatorFooterContainer div div div a{
+        font-size: 12px; display: block;
+    }
+    .qaFooterContainer > div div,
+    .locatorFooterContainer div div div a:not(:last-child),
+    .locatorFooterContainer div div div p,
+    .contactFooterContainer div ul li strong,
+    .PolicyFooterContainer > div div p strong{
+        margin-bottom: 10px;
+    }
+    .qaFooterContainer > div:last-of-type > strong,
+    .contactFooterContainer div ul li strong{
+        display: block; font-size: 19px;
+    }
+    .qaFooterContainer > div:last-of-type > a{
+        display: block; width: 100%; font-size: 19px; background-color: #000; color: #fff; text-align: center; line-height: 50px;
+    }
+    .workWithUsFooterContainer div div span{
+        line-height: 16px;
+    }
+}
+/* tablet */
+@media screen and (min-width: 1280px){
+    #slideBar{
+        background-color: #000; height: 40px; z-index: 3;
+    }
+    #slideBar li{
+        color: #fff; line-height: 40px; font-size: 14px; text-align: center;
+    }
+    [class$='Container'] > .bx-wrapper:first-of-type{
+        position: fixed; z-index: 2; background-color: #000; box-shadow: none; border: none; margin-bottom: 0;
+    }
+    .mainContainer > ul:nth-child(2){
+        position: relative; top: 40px; 
+    }
+    .mainContainer > ul:not(#slideBar):not([class^='respSlider']):not(:last-of-type){
+        display: flex;
+    }
+    .mainContainer > ul:not(#slideBar):not([class^='respSlider']):not(:last-of-type) li{
+        width: 50%;
+    }
+    .mainContainer > ul:nth-child(2){
+        margin-bottom: 40px;
+    }
+    .mainContainer > ul:last-child li:not(:last-child){
+        float: left; width: 50%;
+    }
+    .mainContainer > ul:last-child li:last-child{
+        clear: both;
+    }
+    .mainContainer > ul:not(#slideBar) li{
+        position: relative;
+    }
+    .mainContainer > ul:nth-child(4),
+    .mainContainer > ul:nth-child(6){
+        clear: left;
+    }
+    .mainContainer [class^='respSlider'] li{
+        float: left; width: 25%;
+    }
+    .mainContainer > ul:not(#slideBar) li a span,
+    [class$='listContainer'] ul:last-child li a span{
+        position: absolute; bottom: 20px; font-size: 14px; 
+    }
+    .mainContainer ul:nth-of-type(1) li a span,
+    .mainContainer ul:nth-of-type(2) li a span,
+    .mainContainer ul:nth-of-type(4) li a span,
+    .mainContainer ul:nth-of-type(3) li:last-child a span,
+    .mainContainer ul:nth-of-type(3) li:first-child a span:not(:last-of-type),
+    .mainContainer ul:nth-of-type(5) li:first-child a span,
+    .listContainer ul:last-child li a span,
+    .treatmentslistContainer ul:last-child li:hover a span,
+    .explorelistContainer ul li:hover a span,
+    .storieslistContainer ul li:hover a span,
+    [class^='checkOut'] aside div:last-of-type p span a{
+        color: #000;
+    }
+    .mainContainer ul:nth-of-type(3) li:first-child a span:last-of-type,
+    .mainContainer ul:nth-of-type(5) li:nth-child(2) a span{
+        color: #fff;
+    }
+    .mainContainer > ul:not(#slideBar) li a span:not(:last-of-type),
+    .listContainer ul:last-child li a span:not(:last-of-type),
+    .detailContainer > ul > li a span:first-of-type{
+        left: 20px; 
+    }
+    .mainContainer > ul:not(#slideBar) li a span:last-of-type,
+    .listContainer ul:last-child li a span:last-of-type,
+    .detailContainer > ul > li a span:last-of-type{
+        right: 20px; 
+    }
+    .mainContainer > ul:not(#slideBar) li a span:nth-of-type(2),
+    .mainContainer > ul:not(#slideBar) li:hover a span:nth-of-type(1),
+    .listContainer ul:last-child li a span:nth-of-type(2),
+    .listContainer ul:last-child li:hover a span:nth-of-type(1){
+        opacity: 0;
+    }
+    .mainContainer > ul:not(#slideBar) li:hover a span:nth-of-type(2),
+    .listContainer ul:last-child li:hover a span:nth-of-type(2){ 
+        opacity: 100;
+    }
+    .mainContainer > ul:not(#slideBar) li video,
+    .mainContainer > ul:not(#slideBar) a,
+    .mainContainer > ul:not(#slideBar) li a img,
+    [class$='listContainer'] ul:last-child li a,
+    [class$='listContainer'] ul:last-child li a img,
+    .listContainer ul:last-child li a img,
+    .detailContainer > ul > li a,
+    .detailContainer > ul > li a img{
+        width: 100%; display: block;
+    }
+    /* listContainer */
+    [class$='listContainer'] ul:last-child::after,
+    .detailContainer > ul::after{
+        content: ''; display: block; clear: both;
+    }
+    [class$='listContainer'] ul:last-child li{
+        float: left; width: 25%; position: relative;
+    }
+    .listContainer  div:last-of-type{
+        position: fixed; width: 100%; top: 100px; z-index: 1; background-color: #fff; 
+        line-height: 40px; font-size: 17px; margin-bottom: 80px;
+    }
+    .listContainer div:last-of-type h2{
+        padding-left: 20px;
+    }
+    .listContainer div:last-of-type button{
+        font-size: 17px; position: absolute; right: 30px; top: 6px; 
+    }
+    .listContainer div:last-of-type button::after{
+        content: url('../images/expand_more.png'); width: 11px; padding-left: 10px;
+    }
+    .listContainer ul:not(#slideBar){
+        margin-top: 80px;
+    }
+    .treatmentslistContainer ul:not(#slideBar),
+    .explorelistContainer ul:not(#slideBar),
+    .storieslistContainer ul:not(#slideBar){
+        margin-top: 40px;
+    }
+    .treatmentslistContainer ul:last-child li a span,
+    .explorelistContainer ul li a span,
+    .storieslistContainer ul:last-child li a span{
+        left: 20px; color: #fff;
+    }
+    .treatmentslistContainer ul:last-child li:hover a,
+    .explorelistContainer ul li:hover a{
+        opacity: 0.7;
+    }
+    .storieslistContainer ul li:hover a{
+        opacity: 0.7;
+    }
+    /* detailContainer */
+    .detailContainer{
+        position: relative; background-color: #f5f5f5;
+    }
+    .detailContainer > div,
+    [class$='SideContainer'] aside h2{
+        margin-bottom: 40px;
+    }
+    .detailContainer aside{
+        width: 22%; 
+    }
+    .detailContainer aside:first-of-type{
+        position: absolute; left: 20px; top: 165px;
+    }
+    .detailContainer aside:first-of-type h2{
+        font-size: 14px; margin-bottom: 90px; line-height: 20px;
+    }
+    .detailContainer aside strong{
+        font-size: 19px; display: inline-block; margin-bottom: 30px;
+    }
+    .detailContainer aside:first-of-type b{
+        font-size: 19px; display: block; margin-bottom: 40px;
+    }
+    .detailContainer aside:first-of-type select{
+        width: 100%; padding: 15px 0 15px 10px; box-sizing: border-box; font-size: 19px; border: 1px solid #d9d9d9;
+    }
+    .detailContainer aside:first-of-type button{
+        width: 100%; font-size: 14px; margin-bottom: 15px;
+        background-color: #000; color: #fff; text-align: center; line-height: 40px;
+    }
+    .detailContainer aside:first-of-type  p{
+        max-width: 80%; line-height: 20px; font-size: 14px; margin-bottom: 20px;
+    }
+    .detailContainer aside:last-of-type{
+        position: absolute; right: 20px; top: 265px; 
+    }
+    .detailContainer aside:last-of-type > p{
+        max-width: 95%; font-size: 12px; line-height: 18px; margin-bottom: 40px;
+    }
+    .detailContainer aside:last-of-type ul{
+        position: relative;
+    }
+    .detailContainer aside:last-of-type ul > li:last-of-type{
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .detailContainer aside:last-of-type ul > li{
+        width: 100%; line-height: 50px; 
+        border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
+        background-repeat: no-repeat; background-position: right 10px center;
+        background-image: url('../images/expand_more.png'); 
+    }
+    .detailContainer aside:last-of-type ul > li span{
+        font-size: 14px; padding-left: 10px; display: block;
+    }
+    .detailContainer aside:last-of-type ul > li.active span{
+        background-repeat: no-repeat; background-position: right 10px center;
+        background-image: url('../images/expand_less.png'); 
+    }
+    .detailContainer aside:last-of-type ul > li p{
+        display: none; padding: 7% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
+        text-align: center;
+    }
+    .detailContainer aside:last-of-type ul > li.active p{
+        display: block;
+    }
+    .detailContainer > img,
+    .detailContainer video{
+        width: 50%; display: block; margin: 0 auto;
+    }
+    .detailContainer h3{
+        background-color: #fff; line-height: 120px; font-size: 12px; padding-left: 20px;
+    }
+    .detailContainer > ul > li{
+        float: left; width: 25%; position: relative;
+    }
+    .detailContainer > ul > li a span{
+        position: absolute; bottom: 20px; font-size: 12px; color: #000;
+    }
+    /* accountContainer */
+    section,
+    [class$='SideContainer']{
+        background-color: #f5f5f5; position: relative; padding-left: 25%;
+        box-sizing: border-box; 
+    } 
+    section::after,
+    [class$='SideContainer']::after{
+        content: ''; display: block; clear: both;
+    }
+    section h2,
+    [class$='SideContainer'] aside{
+        width: 25%; background-color: #fff; height: calc(100% - 150px); position: absolute;
+        left: 0; top: 150px;
+        padding-left: 1%; padding-top: 40px; box-sizing: border-box; font-size: 24px;
+    }
+    section fieldset,
+    .accountContainer div,
+    .mySettingSideContainer div,
+    .userInfoSideContainer div,
+    .myOrderSideContainer div,
+    .explorePageContainer > div,
+    [class*='FooterContainer'] > div{
+        float: left; width: 31%; margin-left: 5%;
+    }
+    section fieldset,
+    .mySettingSideContainer form div fieldset:first-child{
+        padding-top: 170px;
+    }
+    .mySettingSideContainer form div fieldset:last-child{
+        padding-top: 45px;
+    }
+    section fieldset legend,
+    .mySettingSideContainer form div fieldset:first-child legend{
+        width: 100%; position: relative; top: 130px; display: block; font-size: 19px; 
+    }
+    .mySettingSideContainer form div fieldset:last-child legend,
+    [class*='FooterContainer'] > div h3{
+        font-size: 19px;
+    }
+    section fieldset legend small{
+        float: right; font-size: 12px;
+    }
+    section fieldset ul li:not(:last-child),
+    .mySettingSideContainer form div fieldset ul,
+    .mySettingSideContainer form div fieldset ul li:not(:last-child){
+        margin-bottom: 45px;
+    }
+    section:not([class*='Payment']) fieldset label:not([for="privacyPolicy"]),
+    .mySettingSideContainer form div fieldset ul li label,
+    [class*='Payment'] fieldset ul li:nth-child(2) label,
+    [class*='Payment'] fieldset ul li:nth-child(3) label,
+    [class*='Payment'] fieldset ul li:nth-child(4) label{
+        display: block; margin-bottom: 10px; font-size: 12px;
+    }
+    section:not([class*='Payment']) fieldset ul li label:not([for="privacyPolicy"]):not([for="policy"]):not([for="subscribe"]):after{
+        content: "*"; 
+    }
+    section fieldset ul li input:not([type="checkbox"]):not([type="radio"]),
+    .mySettingSideContainer form div fieldset ul li input,
+    .resetPasswordContainer fieldset input[type="email"]{
+        display: block; width: 100%; line-height: 50px; box-sizing: border-box; border: 1px solid #d9d9d9; padding-left: 2%;
+    }
+    section fieldset ul li input[type="checkbox"]{
+        float: left; margin-right: 10px;
+    }
+    section fieldset ul li label[for="privacyPolicy"],
+    section fieldset ul li label[for="policy"],
+    section fieldset ul li label[for="subscribe"]{
+        line-height: 20px;
+    }
+    section fieldset > input:not([type="email"]),
+    .mySettingSideContainer form div fieldset > input,
+    .userInfoSideContainer div a{
+        width: 100%; line-height: 50px; background-color: #000; color: #fff; font-size: 19px; margin-bottom: 30px;
+    }
+    .accountContainer fieldset ul li a{
+        float: right; display: block; font-size: 12px; color: #000;
+    }
+    .accountContainer div,
+    .mySettingSideContainer > div,
+    .myOrderSideContainer div,
+    .userInfoSideContainer div,
+    .explorePageContainer > div,
+    .explorePageContainer img,
+    .explorePageContainer video,
+    [class*='FooterContainer'] > div,
+    [class*='FooterContainer'] img{
+        padding-top: 130px;
+    }
+    .accountContainer div strong,
+    .mySettingSideContainer > div strong{
+        font-size: 19px; display: block; margin-bottom: 30px;
+    }
+    .accountContainer div p{
+        max-width: 80%; font-size: 12px; line-height: 18px; margin-bottom: 30px;
+    }
+    .accountContainer div a{
+        display: block; width: 100%; line-height: 50px; background-color: #000; color: #fff; text-align: center; font-size: 19px;
+    }
+    .createAccountContainer fieldset ul{
+        clear: right;
+    }
+    section fieldset > a{
+        font-size: 12px; color: #000;
+    }
+    [class$='SideContainer'] aside ul li{
+        margin-bottom: 20px; 
+    }
+    [class$='SideContainer'] aside ul li a{
+        font-size: 14px; color: #000;
+    }
+    [class$='SideContainer'] aside ul li a:hover{
+        color: #8b8b8b;
+    }
+    .mySettingSideContainer div fieldset ul li select,
+    .checkOutContainer fieldset ul li select{
+        display: block; width: 100%; padding: 20px 0; box-sizing: border-box; border: 1px solid #d9d9d9;
+    }
+    .mySettingSideContainer > div p{
+        font-size: 14px; color: #828282; line-height: 18px;
+    }
+    .mySettingSideContainer > div p a,
+    [class*='FooterContainer'] > div div p a,
+    .contactFooterContainer div ul li span a,
+    .locatorFooterContainer div div div a{
+        color: #828282;
+    }
+    .userInfoSideContainer div ul{
+        margin-bottom: 15px;
+    }
+    .accountContainer fieldset ul,
+    .userInfoSideContainer div ul li:first-child,
+    .resetPasswordContainer fieldset input[type="email"],
+    .checkOutContainer fieldset ul,
+    .qaFooterContainer > div:last-of-type > strong,
+    [class*='Payment'] fieldset ul{
+        margin-bottom: 70px;
+    }
+    section fieldset ul li label[for="privacyPolicy"]{
+        display: block; margin-bottom: 70px; font-size: 12px;
+    }
+    .myOrderSideContainer div,
+    .userInfoSideContainer div{
+        margin-bottom: 400px;
+    }
+    .userInfoSideContainer div ul li strong,
+    .myOrderSideContainer div strong{
+        font-size: 19px; display: block; margin-bottom: 45px;
+    }
+    .userInfoSideContainer div ul li span,
+    .myOrderSideContainer div span{
+        font-size: 14px; display: block;
+    }
+    .userInfoSideContainer div ul li:first-child span:first-of-type{
+        margin-bottom: 10px;
+    }
+    .userInfoSideContainer div a{
+        display: block; width: 100%; text-align: center;
+    }
+    [class^='checkOut'] aside{
+        float: left; margin: 90px 0 0 5%; width: 59%; background-color: #fff; 
+        padding-top: 40px; box-sizing: border-box;
+    }
+    [class^='checkOut'] aside h3{
+        padding-left: 2%; margin-bottom: 40px;
+    }
+    [class^='checkOut'] aside > a{
+        float: left;  display: block; width: 40%; margin: 0 20px 40px 0; max-width: 250px;
+    }
+    [class^='checkOut'] aside > a img{
+        display: block; width: 100%;
+    }
+    [class^='checkOut'] aside > div:first-of-type{
+        display: flex; flex-flow: row nowrap; height: 280px;
+    }
+    [class^='checkOut'] aside div:first-of-type span{
+        align-self: center;
+    }
+    [class^='checkOut'] aside div:first-of-type span:first-of-type{
+        flex:2 1 auto;
+    }
+    [class^='checkOut'] aside ul{
+        clear: left; background-color: #f5f5f5; margin-bottom: 40px;
+    }
+    [class^='checkOut'] aside ul li{
+        line-height: 60px; padding-left: 2%; font-size: 14px;
+    }
+    [class^='checkOut'] aside ul li:not(:last-of-type){
+        border-bottom: 1px solid #d9d9d9; box-sizing: border-box;
+    }
+    [class^='checkOut'] aside ul li span{
+        float: right; padding-right: 2%; 
+    }
+    [class^='checkOut'] aside ul li input{
+        font-size: 14px;
+    }
+    [class^='checkOut'] aside ul li input[type="text"]{
+        border: none; background-color: #f5f5f5; color: #828282;
+    }
+    [class^='checkOut'] aside ul li input[type="submit"]{
+        float: right; background-color: #000; color: #fff; line-height: 59px; width: 12%; 
+    }
+    [class^='checkOut'] aside div:last-of-type b{
+        display: block; width: 100%; line-height: 60px; padding-left: 10%; box-sizing: border-box; 
+        background-color: #f5f5f5; font-size: 14px; margin-bottom: 40px; 
+        background-image: url('../images/expand_more.png'); background-repeat: no-repeat; background-position: right 20px center;
+    }
+    [class^='checkOut'] aside div:last-of-type.active b{
+        background-image: url('../images/expand_less.png'); background-repeat: no-repeat; background-position: right 20px center;
+    }
+    [class^='checkOut'] aside div:last-of-type p{
+        display: none;
+    }
+    [class^='checkOut'] aside div:last-of-type.active p,
+    .locatorFooterContainer div div div span,
+    .contactFooterContainer div ul li span{
+        display: block; 
+    }
+    [class^='checkOut'] aside div:last-of-type p span{ 
+        display: block; padding-left: 10%; margin-bottom: 40px; font-size: 14px;
+    }
+    [class*='Payment'] aside div:last-of-type div{
+        background-color: #000; color: #fff; width: 100%;
+        text-align: center; font-size: 24px; line-height: 290px;
+    }
+    [class*='Payment'] fieldset ul li:nth-of-type(3){
+        padding-right: 6%;
+    }
+    [class*='Payment'] fieldset ul li:nth-of-type(3),
+    [class*='Payment'] fieldset ul li:nth-of-type(4){
+        width: 47%; float: left;
+    }
+    [class*='Payment'] fieldset ul li:nth-of-type(5){
+        clear: both;
+    }
+    [class*='Payment'] fieldset ul li label{
+        font-size: 12px;
+    }
+    [class*='Payment'] fieldset ul li:nth-child(1) label,
+    [class*='Payment'] fieldset ul li:nth-child(5) label,
+    [class*='Payment'] fieldset ul li:nth-child(6) label{
+        vertical-align: -3px;
+    }
+    [class*='Payment'] fieldset ul li:nth-child(2) input{
+        background-image: url('../images/card.png'); background-repeat: no-repeat; background-position: right 10px center;
+    }
+    [class*='Payment'] fieldset ul li input[type="radio"]{
+        padding-right: 2%; width: 19px; height: 19px;
+        appearance: none; background-image: url('../images/radio.png');
+        background-repeat: no-repeat; 
+    }
+    [class*='Payment'] fieldset ul li input[type="radio"]:checked{
+        background-image: url('../images/radioChecked.png');
+    }
+    /* explorePageContainer */
+    .explorePageContainer img,
+    .explorePageContainer video{
+        width: 59%; margin-left: 5%;
+    }
+    .explorePageContainer div h3{
+        margin-bottom: 30px; font-size: 19px; line-height: 25px;
+    }
+    .explorePageContainer div > p{
+        font-size: 14px; line-height: 22px; color: #828282;
+    }
+    .explorePageContainer div div b,
+    [class*='FooterContainer'] > div div b{
+        margin-bottom: 10px; display: block; font-size: 14px; line-height: 22px;
+    }
+    /* footerContainer */
+    [class*='FooterContainer'] img{
+        float: left; width: 59%; margin-left: 5%;
+    }
+    [class*='FooterContainer'] div h3,
+    [class*='FooterContainer'] div div,
+    .aboutFooterContainer div p:not(:last-of-type),
+    .PolicyFooterContainer > div div p:not(:last-of-type),
+    .PolicyFooterContainer > div div ol,
+    .qaFooterContainer > div:last-of-type div:last-of-type,
+    .workWithUsFooterContainer div div span:nth-child(3),
+    .workWithUsFooterContainer div:last-of-type div ul,
+    .contactFooterContainer div ul li,
+    .contactFooterContainer div ul li span:not(:nth-child(3)),
+    .explorePageContainer div div p:not(:last-of-type),
+    .explorePageContainer div div:not(:last-of-type){
+        margin-bottom: 30px; 
+    }
+    .aboutFooterContainer div p,
+    .contactFooterContainer div ul li span,
+    .workWithUsFooterContainer div > p{
+        font-size: 14px; color: #828282; line-height: 22px;
+    }
+    .PolicyFooterContainer > div h3{
+        line-height: 22px;
+    }
+    .PolicyFooterContainer > div div p,
+    .PolicyFooterContainer > div div ol li,
+    [class*='FooterContainer'] > div div p,
+    .qaFooterContainer > div:last-of-type div ol li,
+    .workWithUsFooterContainer div:last-of-type div ul li{
+        font-size: 12px; color: #828282; line-height: 16px;
+    }
+    .PolicyFooterContainer > div div p strong,
+    .workWithUsFooterContainer div div span,
+    .locatorFooterContainer div div div a{
+        font-size: 12px; display: block;
+    }
+    .qaFooterContainer > div div,
+    .locatorFooterContainer div div div a,
+    .locatorFooterContainer div div div p,
+    .contactFooterContainer div ul li strong,
+    .PolicyFooterContainer > div div p strong{
+        margin-bottom: 10px;
+    }
+    .qaFooterContainer > div:last-of-type > strong,
+    .contactFooterContainer div ul li strong{
+        display: block; font-size: 19px;
+    }
+    .qaFooterContainer > div:last-of-type > a{
+        display: block; width: 100%; font-size: 19px; background-color: #000; color: #fff; text-align: center; line-height: 50px;
+    }
+    .workWithUsFooterContainer div div span{
+        line-height: 16px;
+    }
+}
+/* desktop */

@@ -400,7 +400,7 @@
         padding-left: 2%; margin-bottom: 40px;
     }
     [class^='checkOut'] aside > a{
-        float: left;  display: block; width: 100%; margin: 0 20px 40px 0; max-width: 250px;
+        display: block; width: 100%; margin-bottom: 20px;
     }
     [class^='checkOut'] aside > a img{
         display: block; width: 100%;

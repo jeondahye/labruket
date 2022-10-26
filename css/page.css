@@ -149,7 +149,7 @@
         font-size: 14px; margin-bottom: 90px; padding-top: 60px; line-height: 20px;
     }
     .detailContainer aside strong{
-        font-size: 19px; display: inline-block; margin-bottom: 30px;
+        font-size: 19px; display: block; margin-bottom: 30px;
     }
     .detailContainer aside:first-of-type b{
         font-size: 19px; display: block; margin-bottom: 40px;
@@ -711,7 +711,7 @@
         font-size: 14px; margin-bottom: 90px; padding-top: 60px; line-height: 20px;
     }
     .detailContainer aside strong{
-        font-size: 19px; display: inline-block; margin-bottom: 30px;
+        font-size: 19px; display: block; margin-bottom: 30px;
     }
     .detailContainer aside:first-of-type b{
         font-size: 19px; display: block; margin-bottom: 40px;

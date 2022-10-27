@@ -1054,16 +1054,13 @@ input{
     #gnbPanel > ul{
         background-color: #fff; background-repeat: no-repeat; background-position: right top; display: none;
     }
-    #gnbPanel > ul:not(:last-of-type){
+    #gnbPanel > ul{
         width: 83%;
     }
     #gnbPanel > ul:nth-of-type(1){background-image: url('../images/body_bg.png');}
     #gnbPanel > ul:nth-of-type(2){background-image: url('../images/hair_bg.png');}
     #gnbPanel > ul:nth-of-type(3){background-image: url('../images/face_bg.png');}
     #gnbPanel > ul:nth-of-type(4){background-image: url('../images/home_bg.png');}
-    #gnbPanel > ul:last-of-type{
-        width: 100%; position: relative; z-index: 1;
-    }
     #gnbPanel > ul .btn_close{
         display: none;
     }
@@ -1093,7 +1090,7 @@ input{
         border-right: 1px solid #d9d9d9; box-sizing: border-box;
     }
     #gnbPanel > ul:not(:last-of-type) > li ul{
-       padding-top: 40px; height: 340px; box-sizing: border-box;
+       padding-top: 40px; height: 341px; box-sizing: border-box;
     }
     #gnbPanel > ul:not(:last-of-type) > li ul li:not(:last-child){
         margin-bottom: 20px;
@@ -1106,7 +1103,7 @@ input{
     }
     #gnbPanel > div{
         background-color: #fff; width: 17.5%; padding: 0 1% 20px 1%; box-sizing: border-box;
-        position: absolute; top: 0; right: 0; min-height: 439px;
+        position: absolute; top: 0; right: 0; min-height: 440px;
     }
     #gnbPanel > div a{
         display: block; padding-top: 40px; margin-bottom: 20px; color: #000; font-size: 17px;

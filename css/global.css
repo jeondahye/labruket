@@ -131,7 +131,10 @@ input{
         padding-bottom: 20px; box-sizing: border-box;
     }
     #filterPanel fieldset li{
-        padding-bottom: 15px;
+        padding-bottom: 15px; font-size: 14px;
+    }
+    #filterPanel fieldset li label{
+        vertical-align: -3px;
     }
     #filterPanel .customRange input{
         width: 95%; margin-bottom: 5px;
@@ -547,7 +550,10 @@ input{
         padding-bottom: 20px; box-sizing: border-box;
     }
     #filterPanel fieldset li{
-        padding-bottom: 15px;
+        padding-bottom: 15px; font-size: 14px;
+    }
+    #filterPanel fieldset li label{
+        vertical-align: -3px;
     }
     #filterPanel fieldset:first-of-type legend{
         padding-top: 35px; 
@@ -954,7 +960,10 @@ input{
         padding-bottom: 20px; box-sizing: border-box;
     }
     #filterPanel fieldset li{
-        padding-bottom: 15px;
+        padding-bottom: 15px; font-size: 14px;
+    }
+    #filterPanel fieldset li label{
+        vertical-align: -3px;
     }
     #filterPanel fieldset:first-of-type legend{
         padding-top: 35px; 

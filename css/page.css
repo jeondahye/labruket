@@ -99,16 +99,14 @@
     }
     .listContainer  div:last-of-type{
         position: fixed; width: 100%; top: 100px; z-index: 1; background-color: #fff; 
-        line-height: 40px; font-size: 17px; margin-bottom: 80px;
+        line-height: 40px; font-size: 17px; 
     }
     .listContainer div:last-of-type h2{
         padding-left: 20px;
     }
     .listContainer div:last-of-type button{
-        font-size: 17px; position: absolute; right: 30px; top: 6px; 
-    }
-    .listContainer div:last-of-type button::after{
-        content: url('../images/expand_more.png'); width: 11px; padding-left: 10px;
+        font-size: 17px; position: absolute; right: 30px; top: 10px; padding-right: 20px;
+        background: url('../images/expand_more.png') right center no-repeat; padding-left: 10px;
     }
     .listContainer ul:not(#slideBar){
         margin-top: 80px;
@@ -660,7 +658,7 @@
     }
     .listContainer  div:last-of-type{
         position: fixed; width: 100%; top: 100px; z-index: 1; background-color: #fff; 
-        line-height: 40px; font-size: 17px; margin-bottom: 80px;
+        line-height: 40px; font-size: 17px;
     }
     .listContainer div:last-of-type h2{
         padding-left: 20px;
@@ -668,8 +666,9 @@
     .listContainer div:last-of-type button{
         font-size: 17px; position: absolute; right: 30px; top: 6px; 
     }
-    .listContainer div:last-of-type button::after{
-        content: url('../images/expand_more.png'); width: 11px; padding-left: 10px;
+    .listContainer div:last-of-type button{
+        font-size: 17px; position: absolute; right: 30px; top: 10px; padding-right: 20px;
+        background: url('../images/expand_more.png') right center no-repeat; padding-left: 10px;
     }
     .listContainer ul:not(#slideBar){
         margin-top: 80px;
@@ -1187,16 +1186,14 @@
     }
     .listContainer  div:last-of-type{
         position: fixed; width: 100%; top: 100px; z-index: 1; background-color: #fff; 
-        line-height: 40px; font-size: 17px; margin-bottom: 80px;
+        line-height: 40px; font-size: 17px; 
     }
     .listContainer div:last-of-type h2{
-        padding-left: 20px;
+        padding-left: 20px; box-sizing: border-box;
     }
     .listContainer div:last-of-type button{
-        font-size: 17px; position: absolute; right: 30px; top: 6px; 
-    }
-    .listContainer div:last-of-type button::after{
-        content: url('../images/expand_more.png'); width: 11px; padding-left: 10px;
+        font-size: 17px; position: absolute; right: 30px; top: 10px; padding-right: 20px;
+        background: url('../images/expand_more.png') right center no-repeat; padding-left: 10px;
     }
     .listContainer ul:not(#slideBar){
         margin-top: 80px;

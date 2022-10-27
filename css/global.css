@@ -128,9 +128,9 @@ input{
         padding-left: 4%; box-sizing: border-box; margin-bottom: 35px;
     }
     #filterPanel fieldset legend{
-        padding-bottom: 20px; box-sizing: border-box;
+        padding-bottom: 20px; box-sizing: border-box; font-size: 17px;
     }
-    #filterPanel fieldset li{
+    #filterPanel fieldset li:not(.customRange){
         padding-bottom: 15px; font-size: 14px;
     }
     #filterPanel fieldset li label{
@@ -140,7 +140,7 @@ input{
         width: 95%; margin-bottom: 5px;
     }
     #filterPanel .customRange label{
-        border: 1px solid #d9d9d9; padding: 1%; box-sizing: border-box;
+        border: 1px solid #d9d9d9; padding: 1%; box-sizing: border-box; font-size: 12px;
     }
     #filterPanel .customRange label:first-of-type{
         float: left;
@@ -549,20 +549,20 @@ input{
     #filterPanel fieldset legend{
         padding-bottom: 20px; box-sizing: border-box;
     }
-    #filterPanel fieldset li{
+    #filterPanel fieldset li:not(.customRange){
         padding-bottom: 15px; font-size: 14px;
     }
     #filterPanel fieldset li label{
         vertical-align: -3px;
     }
     #filterPanel fieldset:first-of-type legend{
-        padding-top: 35px; 
+        padding-top: 35px; font-size: 17px;
     }
     #filterPanel .customRange input{
         width: 95%; margin-bottom: 5px;
     }
     #filterPanel .customRange label{
-        border: 1px solid #d9d9d9; padding: 1%; box-sizing: border-box;
+        border: 1px solid #d9d9d9; padding: 1%; box-sizing: border-box; font-size: 12px;
     }
     #filterPanel .customRange label:first-of-type{
         float: left;
@@ -959,20 +959,20 @@ input{
     #filterPanel fieldset legend{
         padding-bottom: 20px; box-sizing: border-box;
     }
-    #filterPanel fieldset li{
+    #filterPanel fieldset li:not(.customRange){
         padding-bottom: 15px; font-size: 14px;
     }
     #filterPanel fieldset li label{
         vertical-align: -3px;
     }
     #filterPanel fieldset:first-of-type legend{
-        padding-top: 35px; 
+        padding-top: 35px; font-size: 17px;
     }
     #filterPanel .customRange input{
         width: 95%; margin-bottom: 5px;
     }
     #filterPanel .customRange label{
-        border: 1px solid #d9d9d9; padding: 1%; box-sizing: border-box;
+        border: 1px solid #d9d9d9; padding: 1%; box-sizing: border-box; font-size: 12px;
     }
     #filterPanel .customRange label:first-of-type{
         float: left;

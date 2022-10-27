@@ -23,9 +23,6 @@ function panelControl(btn){
     $(".btn_close").click(function(){
         $(panelName).removeClass("active");
     });
-    $(window).scroll(function(){
-        $(panelName).removeClass('active');  
-    });
 }
 function customSelect(target){
     $(target).click(function(){

@@ -661,15 +661,8 @@ input{
     #gnbPanel > ul{
         background-color: #fff; background-repeat: no-repeat; background-position: right top; display: none;
     }
-    #gnbPanel > ul:not(:last-of-type){
+    #gnbPanel > ul{
         width: 68%;
-    }
-    /* #gnbPanel > ul:not(:last-of-type){
-        width: 83%; background-color: #fff; display: none;
-        background-repeat: no-repeat; background-position: right top;
-    } */
-    #gnbPanel > ul:last-of-type{
-        width: 100%; position: relative; z-index: 1;
     }
     #gnbPanel > ul .btn_close{
         display: none;
@@ -687,7 +680,7 @@ input{
         content: ''; display: block; clear: both;
     }
     #gnbPanel > ul:nth-of-type(5) li{
-        width: 50%; height: 440px; float: left; 
+        width: 50%; height: 220px; float: left; 
         background-repeat: no-repeat; background-size: cover; 
     }
     #gnbPanel > ul:nth-of-type(5) li:nth-of-type(1){background-image: url('../images/header_about.png');}

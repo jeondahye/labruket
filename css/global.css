@@ -897,8 +897,8 @@ input{
         margin-bottom: 50px;   
     }
     #bagPanel div:nth-of-type(2) >*:not(p){
-        vertical-align: middle;
-    }
+        vertical-align: middle; font-size: 12px;
+    } 
     #bagPanel div:nth-of-type(2) button{
         font-size: 14px; margin-right: 6%;
     }

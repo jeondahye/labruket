@@ -540,7 +540,7 @@ input{
         position: fixed; top: 140px; right: 0; z-index: 1; width: 59%; height: calc(100% - 140px); 
         overflow-y: scroll; background-color: #f5f5f5;
     }
-    #filterPanel.btn_close{
+    #filterPanel .btn_close{
         font-size: 16px; padding: 10px;
     }
     #filterPanel fieldset{

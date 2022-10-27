@@ -22,23 +22,14 @@
         background-image: url('../images/prev.png'); 
     }
     .bx-wrapper:not(:first-child) .bx-controls-direction a:last-child{
-        background-image: url('../images/next.png'); background-position: right;
+        background-image: url('../images/next.png'); background-position: right top;
     }
     .mainContainer > ul:nth-child(2){
         position: relative; top: 40px; 
     }
-    /* .mainContainer > ul:not(#slideBar):not([class^='respSlider']):not(:last-of-type){
-        display: flex; 
-    } */
-    /* .mainContainer > ul:last-of-type{
-        display: flex; flex-wrap: wrap; 
-    } */
     .mainContainer > ul:nth-child(2){
         margin-bottom: 40px;
     }
-    /* .mainContainer > ul:last-child li:not(:last-child){
-        width: 50%;
-    } */
     .mainContainer > ul:not(#slideBar) li{
         position: relative;
     }

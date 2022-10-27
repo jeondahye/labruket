@@ -574,7 +574,7 @@
         background-image: url('../images/prev.png'); 
     }
     .bx-wrapper:not(:first-child) .bx-controls-direction a:last-child{
-        background-image: url('../images/next.png'); background-position: right;
+        background-image: url('../images/next.png'); background-position: right top;
     }
     .mainContainer > ul:nth-child(2){
         position: relative; top: 40px; 

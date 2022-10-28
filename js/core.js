@@ -65,6 +65,8 @@ function gnbControl(target, panel){
         $(panel).addClass('active');
         $(panel).children('*:not(div)').removeClass('active');
         $(currentMenu).addClass('active');
+        $(target).removeClass("active");
+        $(this).addClass("active");
     });
     if (window.matchMedia("(max-width: 767px)").matches) {   
         $('.btn_close').click(function(){

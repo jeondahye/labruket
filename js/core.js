@@ -1,8 +1,6 @@
 $(document).ready(function(){
     customSelect(".flagSelect ul");
     customSelect(".languageSelect ul");
-    // customSelect(".flagSelect.foot ul");
-    // customSelect(".languageSelect.foot ul");
     gnbControl("header .wrap nav > ul > li","#gnbPanel");
     slide("#slideBar","horizontal",true,false,true);
     $(".fitvidsBox").fitVids();

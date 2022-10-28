@@ -53,7 +53,10 @@
     .treatmentslistContainer ul:last-child li:hover a span,
     .explorelistContainer ul li:hover a span,
     .storieslistContainer ul li:hover a span,
-    [class^='checkOut'] aside div:last-of-type p span a{
+    [class^='checkOut'] aside div:last-of-type p span a,
+    section fieldset > a,
+    [class$='SideContainer'] aside ul li a
+    {
         color: #000;
     }
     .mainContainer ul:nth-of-type(3) li:nth-child(2) a span,
@@ -137,11 +140,15 @@
     .detailContainer aside:first-of-type h2{
         font-size: 14px; margin-bottom: 90px; padding-top: 60px; line-height: 20px;
     }
+    .detailContainer aside strong,
+    .detailContainer aside:first-of-type b{
+        font-size: 19px; display: block; 
+    }
     .detailContainer aside strong{
-        font-size: 19px; display: block; margin-bottom: 30px;
+        margin-bottom: 30px;
     }
     .detailContainer aside:first-of-type b{
-        font-size: 19px; display: block; margin-bottom: 40px;
+        margin-bottom: 40px;
     }
     .detailContainer aside:first-of-type select{
         width: 100%; padding: 15px 0 15px 10px; box-sizing: border-box; font-size: 19px; border: 1px solid #d9d9d9;
@@ -168,15 +175,13 @@
     .detailContainer aside:last-of-type ul > li{
         line-height: 50px; 
         border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
-        background-repeat: no-repeat; background-position: right 10px center;
-        background-image: url('../images/expand_more.png'); 
+        background: url('../images/expand_more.png') no-repeat right 10px center; 
     }
     .detailContainer aside:last-of-type ul > li span{
         font-size: 14px; padding-left: 10px; display: block;
     }
     .detailContainer aside:last-of-type ul > li.active span{
-        background-repeat: no-repeat; background-position: right 10px center;
-        background-image: url('../images/expand_less.png'); 
+        background: url('../images/expand_less.png') no-repeat right 10px center; 
     }
     .detailContainer aside:last-of-type ul > li p{
         display: none; padding: 12% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
@@ -243,7 +248,9 @@
         width: 100%; position: relative; display: block; font-size: 19px; 
     }
     .mySettingSideContainer form div fieldset:last-child legend,
-    [class*='FooterContainer'] > div h3{
+    [class*='FooterContainer'] > div h3,
+    .mySettingSideContainer form div fieldset > input,
+    .userInfoSideContainer div a{
         font-size: 19px;
     }
     section fieldset legend small{
@@ -274,9 +281,6 @@
     section fieldset ul li input:not([type="checkbox"]):not([type="radio"]){
         width: 100%;
     }
-    /* section fieldset ul li input:not([type="checkbox"]):not([type="radio"]){
-        width: 90%;
-    } */
     section fieldset ul li input[type="checkbox"]{
         float: left; margin-right: 10px;
     }
@@ -290,19 +294,12 @@
     .userInfoSideContainer div a{
         width: 100%; line-height: 50px; background-color: #000; color: #fff; margin-bottom: 30px;
     }
-    .mySettingSideContainer form div fieldset > input,
-    .userInfoSideContainer div a{
-        font-size: 19px;
-    }
     section fieldset > input:not([type="email"]){
         font-size: 13px;
     }
     .accountContainer fieldset ul li a{
         float: right; display: block; font-size: 12px; color: #000;
     }
-    /* .myOrderSideContainer div{
-        padding-top: 130px;
-    } */
     .explorePageContainer img,
     .explorePageContainer video,
     [class*='FooterContainer'] img{
@@ -322,13 +319,10 @@
         clear: right;
     }
     section fieldset > a{
-        font-size: 12px; color: #000;
+        font-size: 12px; 
     }
-    /* [class$='SideContainer'] aside ul li{
-        margin-bottom: 20px; 
-    } */
     [class$='SideContainer'] aside ul li a{
-        font-size: 14px; color: #000;
+        font-size: 14px; 
     }
     [class$='SideContainer'] aside ul li a:hover{
         color: #8b8b8b;
@@ -341,9 +335,6 @@
     .checkOutContainer fieldset ul li select{
         width: 100%;
     }
-    /* .checkOutContainer fieldset ul li select{
-        width: 90%;
-    } */
     .mySettingSideContainer > div p{
         font-size: 14px; color: #828282; line-height: 18px;
     }
@@ -388,11 +379,12 @@
     [class^='checkOut'] aside h3{
         padding-left: 2%; margin-bottom: 40px;
     }
-    [class^='checkOut'] aside > a{
-        display: block; width: 100%; margin-bottom: 20px;
-    }
+    [class^='checkOut'] aside > a,
     [class^='checkOut'] aside > a img{
         display: block; width: 100%;
+    }
+    [class^='checkOut'] aside > a{
+        margin-bottom: 20px;
     }
     [class^='checkOut'] aside div:first-of-type span:nth-child(2){
         display: inline-block; margin: 0 0 20px 5%;
@@ -423,11 +415,11 @@
     }
     [class^='checkOut'] aside div:last-of-type b{
         display: block; width: 100%; line-height: 60px; padding-left: 10%; box-sizing: border-box; 
-        background-color: #f5f5f5; font-size: 14px; margin-bottom: 40px; 
-        background-image: url('../images/expand_more.png'); background-repeat: no-repeat; background-position: right 20px center;
+        font-size: 14px; margin-bottom: 40px;
+        background: #f5f5f5 url('../images/expand_more.png') no-repeat right 20px center; 
     }
     [class^='checkOut'] aside div:last-of-type.active b{
-        background-image: url('../images/expand_less.png'); background-repeat: no-repeat; background-position: right 20px center;
+        background-image: url('../images/expand_less.png'); 
     }
     [class^='checkOut'] aside div:last-of-type p{
         display: none;
@@ -466,12 +458,11 @@
         vertical-align: -3px;
     }
     [class*='Payment'] fieldset ul li:nth-child(2) input{
-        background-image: url('../images/card.png'); background-repeat: no-repeat; background-position: right 10px center;
+        background: url('../images/card.png') no-repeat right 10px center;
     }
     [class*='Payment'] fieldset ul li input[type="radio"]{
         padding-right: 2%; width: 19px; height: 19px;
-        appearance: none; background-image: url('../images/radio.png');
-        background-repeat: no-repeat; 
+        appearance: none; background: url('../images/radio.png') no-repeat;
     }
     [class*='Payment'] fieldset ul li input[type="radio"]:checked{
         background-image: url('../images/radioChecked.png');
@@ -700,11 +691,15 @@
     .detailContainer aside:first-of-type h2{
         font-size: 14px; margin-bottom: 90px; padding-top: 60px; line-height: 20px;
     }
+    .detailContainer aside strong,
+    .detailContainer aside:first-of-type b{
+        font-size: 19px; display: block; 
+    }
     .detailContainer aside strong{
-        font-size: 19px; display: block; margin-bottom: 30px;
+        margin-bottom: 30px;
     }
     .detailContainer aside:first-of-type b{
-        font-size: 19px; display: block; margin-bottom: 40px;
+        margin-bottom: 40px;
     }
     .detailContainer aside:first-of-type select{
         width: 57%; padding: 15px 0 15px 10px; box-sizing: border-box; font-size: 19px; border: 1px solid #d9d9d9;
@@ -732,17 +727,16 @@
         width: 57%; line-height: 50px; 
         border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
         background-repeat: no-repeat; background-position: right 10px center;
-        background-image: url('../images/expand_more.png'); 
+        background: url('../images/expand_more.png') no-repeat right 10px center; 
     }
     .detailContainer aside:last-of-type ul > li span{
         font-size: 14px; padding-left: 10px; display: block;
     }
     .detailContainer aside:last-of-type ul > li.active span{
-        background-repeat: no-repeat; background-position: right 10px center;
-        background-image: url('../images/expand_less.png'); 
+        background: url('../images/expand_less.png') no-repeat right 10px center; 
     }
     .detailContainer aside:last-of-type ul > li p{
-        display: none; padding: 7% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
+        display: none; padding: 12% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
         text-align: center;
     }
     .detailContainer aside:last-of-type ul > li.active p{
@@ -962,11 +956,11 @@
     }
     [class^='checkOut'] aside div:last-of-type b{
         display: block; width: 100%; line-height: 60px; padding-left: 10%; box-sizing: border-box; 
-        background-color: #f5f5f5; font-size: 14px; margin-bottom: 40px; 
-        background-image: url('../images/expand_more.png'); background-repeat: no-repeat; background-position: right 20px center;
+        font-size: 14px; margin-bottom: 40px; 
+        background: #f5f5f5 url('../images/expand_more.png') no-repeat right 20px center;
     }
     [class^='checkOut'] aside div:last-of-type.active b{
-        background-image: url('../images/expand_less.png'); background-repeat: no-repeat; background-position: right 20px center;
+        background-image: url('../images/expand_less.png');
     }
     [class^='checkOut'] aside div:last-of-type p{
         display: none;
@@ -1005,12 +999,11 @@
         vertical-align: -3px;
     }
     [class*='Payment'] fieldset ul li:nth-child(2) input{
-        background-image: url('../images/card.png'); background-repeat: no-repeat; background-position: right 10px center;
+        background: url('../images/card.png') no-repeat right 10px center; background-repeat: no-repeat; background-position: right 10px center;
     }
     [class*='Payment'] fieldset ul li input[type="radio"]{
         padding-right: 2%; width: 19px; height: 19px;
-        appearance: none; background-image: url('../images/radio.png');
-        background-repeat: no-repeat; 
+        appearance: none; background: url('../images/radio.png') no-repeat; 
     }
     [class*='Payment'] fieldset ul li input[type="radio"]:checked{
         background-image: url('../images/radioChecked.png');
@@ -1232,11 +1225,15 @@
     .detailContainer aside:first-of-type h2{
         font-size: 14px; margin-bottom: 90px; line-height: 20px;
     }
+    .detailContainer aside strong,
+    .detailContainer aside:first-of-type b{
+        font-size: 19px; display: inline-block; 
+    }
     .detailContainer aside strong{
-        font-size: 19px; display: inline-block; margin-bottom: 30px;
+        margin-bottom: 30px;
     }
     .detailContainer aside:first-of-type b{
-        font-size: 19px; display: block; margin-bottom: 40px;
+        margin-bottom: 40px;
     }
     .detailContainer aside:first-of-type select{
         width: 100%; padding: 15px 0 15px 10px; box-sizing: border-box; font-size: 19px; border: 1px solid #d9d9d9;
@@ -1263,18 +1260,16 @@
     .detailContainer aside:last-of-type ul > li{
         width: 100%; line-height: 50px; 
         border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
-        background-repeat: no-repeat; background-position: right 10px center;
-        background-image: url('../images/expand_more.png'); 
+        background: url('../images/expand_more.png') no-repeat right 10px center; 
     }
     .detailContainer aside:last-of-type ul > li span{
         font-size: 14px; padding-left: 10px; display: block;
     }
     .detailContainer aside:last-of-type ul > li.active span{
-        background-repeat: no-repeat; background-position: right 10px center;
-        background-image: url('../images/expand_less.png'); 
+        background: url('../images/expand_less.png') no-repeat right 10px center; 
     }
     .detailContainer aside:last-of-type ul > li p{
-        display: none; padding: 7% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
+        display: none; padding: 12% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
         text-align: center;
     }
     .detailContainer aside:last-of-type ul > li.active p{
@@ -1498,11 +1493,11 @@
     }
     [class^='checkOut'] aside div:last-of-type b{
         display: block; width: 100%; line-height: 60px; padding-left: 10%; box-sizing: border-box; 
-        background-color: #f5f5f5; font-size: 14px; margin-bottom: 40px; 
-        background-image: url('../images/expand_more.png'); background-repeat: no-repeat; background-position: right 20px center;
+        font-size: 14px; margin-bottom: 40px; 
+        background: #f5f5f5 url('../images/expand_more.png') no-repeat right 20px center; 
     }
     [class^='checkOut'] aside div:last-of-type.active b{
-        background-image: url('../images/expand_less.png'); background-repeat: no-repeat; background-position: right 20px center;
+        background-image: url('../images/expand_less.png');
     }
     [class^='checkOut'] aside div:last-of-type p{
         display: none;

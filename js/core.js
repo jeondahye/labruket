@@ -75,7 +75,8 @@ function gnbControl(target, panel){
     }
     if (window.matchMedia("(min-width: 768px)").matches) {        
         $(window).scroll(function(){
-            $(panel).removeClass('active');  
+            $(panel).removeClass('active');
+            $(target).removeClass("active");
         });
     }
 }

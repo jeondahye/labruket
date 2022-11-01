@@ -1081,13 +1081,13 @@
 /* tablet */
 @media screen and (min-width: 1280px){
     #slideBar{
-        background-color: #000; height: 40px; z-index: 3;
+        background-color: #000; height: 40px;
     }
     #slideBar li{
         color: #fff; padding: 13px 0; font-size: 14px; text-align: center;
     }
     [class$='Container'] > .bx-wrapper:first-of-type{
-        position: fixed; z-index: 2; background-color: #000; box-shadow: none; border: none; margin-bottom: 0;
+        position: fixed; z-index: 2; box-shadow: none; border: none; margin-bottom: 0;
     }
     .mainContainer > ul:nth-child(2){
         position: relative; top: 40px; 
@@ -1185,7 +1185,7 @@
     }
     .listContainer div:last-of-type button{
         font-size: 17px; position: absolute; right: 30px; top: 10px; padding-right: 20px;
-        background: url('../images/expand_more.png') right center no-repeat; padding-left: 10px;
+        background: url('../images/expand_more.png') right center no-repeat;
     }
     .listContainer ul:not(#slideBar){
         margin-top: 80px;

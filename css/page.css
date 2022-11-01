@@ -726,7 +726,6 @@
     .detailContainer aside:last-of-type ul > li{
         width: 57%; line-height: 50px; 
         border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
-        background-repeat: no-repeat; background-position: right 10px center;
         background: url('../images/expand_more.png') no-repeat right 10px center; 
     }
     .detailContainer aside:last-of-type ul > li span{
@@ -999,7 +998,7 @@
         vertical-align: -3px;
     }
     [class*='Payment'] fieldset ul li:nth-child(2) input{
-        background: url('../images/card.png') no-repeat right 10px center; background-repeat: no-repeat; background-position: right 10px center;
+        background: url('../images/card.png') no-repeat right 10px center;
     }
     [class*='Payment'] fieldset ul li input[type="radio"]{
         padding-right: 2%; width: 19px; height: 19px;
@@ -1533,12 +1532,11 @@
         vertical-align: -3px;
     }
     [class*='Payment'] fieldset ul li:nth-child(2) input{
-        background-image: url('../images/card.png'); background-repeat: no-repeat; background-position: right 10px center;
+        background: url('../images/card.png') no-repeat right 10px center;
     }
     [class*='Payment'] fieldset ul li input[type="radio"]{
         padding-right: 2%; width: 19px; height: 19px;
-        appearance: none; background-image: url('../images/radio.png');
-        background-repeat: no-repeat; 
+        appearance: none; background: url('../images/radio.png') no-repeat;
     }
     [class*='Payment'] fieldset ul li input[type="radio"]:checked{
         background-image: url('../images/radioChecked.png');

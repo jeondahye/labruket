@@ -5,6 +5,9 @@
     #slideBar li{
         color: #fff; padding: 13px 0; font-size: 14px; text-align: center;
     }
+    .bx-wrapper .bx-controls-direction a{
+        display: none;
+    }
     [class$='Container'] > .bx-wrapper:first-of-type{
         position: fixed; z-index: 2; background: #000; box-shadow: none; border: none; margin-bottom: 0;
     }
@@ -546,6 +549,9 @@
     #slideBar li{
         color: #fff; padding: 13px 0; font-size: 14px; text-align: center;
     }
+    .bx-wrapper .bx-controls-direction a{
+        display: none;
+    }
     [class$='Container'] > .bx-wrapper:first-of-type{
         position: fixed; z-index: 2; background: #000; box-shadow: none; border: none; margin-bottom: 0;
     }
@@ -1085,6 +1091,9 @@
     }
     #slideBar li{
         color: #fff; padding: 13px 0; font-size: 14px; text-align: center;
+    }
+    .bx-wrapper .bx-controls-direction a{
+        display: none;
     }
     [class$='Container'] > .bx-wrapper:first-of-type{
         position: fixed; z-index: 2; box-shadow: none; border: none; margin-bottom: 0;

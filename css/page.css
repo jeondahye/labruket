@@ -1254,7 +1254,7 @@
         max-width: 80%; line-height: 20px; font-size: 14px; margin-bottom: 20px;
     }
     .detailContainer aside:last-of-type{
-        position: absolute; right: 20px; top: 265px; 
+        position: absolute; right: 20px; top: 165px; 
     }
     .detailContainer aside:last-of-type > p{
         max-width: 95%; font-size: 12px; line-height: 18px; margin-bottom: 40px;

@@ -4,7 +4,7 @@ $(document).ready(function(){
     gnbControl("header .wrap nav > ul > li","#gnbPanel");
     slide("#slideBar","horizontal",true,false,true);
     $(".fitvidsBox").fitVids();
-    clickEvent("#productInfoAccordion li");
+    accordionEvent("#productInfoAccordion li span");
     clickEvent("footer > div:first-child > div:nth-child(2)");
     clickEvent("[class^='checkOut'] aside div");
     panelControl(".btn_open");
@@ -42,6 +42,13 @@ function slide(target,modVal,infVal,conVal,autoVal){
 function clickEvent(target){
     $(target).click(function(){
         $(this).toggleClass("active");
+    });
+}
+function accordionEvent(target){
+    $(target).click(function(){
+        $(this).toggleClass('active');
+        $(this).next().slideToggle(300);
+        $("#productInfoAccordion li span").not(this).next().slideUp(300);
     });
 }
 function respSlider(target,conVal){

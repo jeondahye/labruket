@@ -178,13 +178,13 @@
     .detailContainer aside:last-of-type ul > li{
         line-height: 50px; 
         border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
-        background: url('../images/expand_more.png') no-repeat right 10px center; 
     }
     .detailContainer aside:last-of-type ul > li span{
+        background-image: url('../images/expand_more.png'); background-position: right 10px top 20px; background-repeat: no-repeat; 
         font-size: 14px; padding-left: 10px; display: block;
     }
-    .detailContainer aside:last-of-type ul > li.active span{
-        background: url('../images/expand_less.png') no-repeat right 10px center; 
+    .detailContainer aside:last-of-type ul > li span.active{
+        background-image: url('../images/expand_less.png'); 
     }
     .detailContainer aside:last-of-type ul > li p{
         display: none; padding: 12% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
@@ -732,13 +732,13 @@
     .detailContainer aside:last-of-type ul > li{
         width: 57%; line-height: 50px; 
         border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
-        background: url('../images/expand_more.png') no-repeat right 10px center; 
     }
     .detailContainer aside:last-of-type ul > li span{
+        background-image: url('../images/expand_more.png'); background-position: right 10px top 20px; background-repeat: no-repeat; 
         font-size: 14px; padding-left: 10px; display: block;
     }
-    .detailContainer aside:last-of-type ul > li.active span{
-        background: url('../images/expand_less.png') no-repeat right 10px center; 
+    .detailContainer aside:last-of-type ul > li span.active{
+        background-image: url('../images/expand_less.png'); 
     }
     .detailContainer aside:last-of-type ul > li p{
         display: none; padding: 12% 2%; background-color: #fff; font-size: 12px; line-height: 18px;
@@ -1267,14 +1267,15 @@
     }
     .detailContainer aside:last-of-type ul > li{
         width: 100%; line-height: 50px; 
-        border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; 
-        background: url('../images/expand_more.png') no-repeat right 10px center; 
+        border-top: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9;
     }
     .detailContainer aside:last-of-type ul > li span{
+        background-repeat: no-repeat; background-position: right 10px top 20px;
+        background-image: url('../images/expand_more.png'); 
         font-size: 14px; padding-left: 10px; display: block;
     }
-    .detailContainer aside:last-of-type ul > li.active span{
-        background: url('../images/expand_less.png') no-repeat right 10px center; 
+    .detailContainer aside:last-of-type ul > li span.active{
+        background-image: url('../images/expand_less.png'); 
     }
     .detailContainer aside:last-of-type ul > li p{
         display: none; padding: 12% 2%; background-color: #fff; font-size: 12px; line-height: 18px;

@@ -1233,10 +1233,10 @@
     .detailContainer aside:first-of-type h2{
         font-size: 14px; margin-bottom: 90px; line-height: 20px;
     }
-    .detailContainer aside strong:first-of-type{
+    .detailContainer aside:first-of-type strong:first-of-type{
         float: left; 
     }
-    .detailContainer aside strong:last-of-type{
+    .detailContainer aside:first-of-type strong:last-of-type{
         text-align: right;
     }
     .detailContainer aside strong,

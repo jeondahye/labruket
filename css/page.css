@@ -1234,7 +1234,10 @@
         font-size: 14px; margin-bottom: 90px; line-height: 20px;
     }
     .detailContainer aside strong:first-of-type{
-        float: left; margin-right: 25%;
+        float: left; 
+    }
+    .detailContainer aside strong:last-of-type{
+        text-align: right;
     }
     .detailContainer aside strong,
     .detailContainer aside:first-of-type b{

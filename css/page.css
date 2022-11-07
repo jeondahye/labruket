@@ -1233,9 +1233,12 @@
     .detailContainer aside:first-of-type h2{
         font-size: 14px; margin-bottom: 90px; line-height: 20px;
     }
+    .detailContainer aside strong:first-of-type{
+        float: left; margin-right: 25%;
+    }
     .detailContainer aside strong,
     .detailContainer aside:first-of-type b{
-        font-size: 19px; display: inline-block; 
+        font-size: 19px; display: block; 
     }
     .detailContainer aside strong{
         margin-bottom: 30px;
